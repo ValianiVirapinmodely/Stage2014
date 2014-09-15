@@ -1,1 +1,0 @@
-﻿<%@ ServiceHost Language="C#" Debug="true" Service="MyNet.WebServices.MyNetDbService" CodeBehind="MyNetDbService.svc.cs" %>
