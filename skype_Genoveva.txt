@@ -540,37 +540,26 @@ et aussi les infos des institutions sur relationnel sur azure
 [24/07/2014 15:03:28] VIRAPINMODELY Valiani: sur cette page
 [24/07/2014 15:03:31] VIRAPINMODELY Valiani: y'a un endroit
 [24/07/2014 15:03:53] VIRAPINMODELY Valiani: où ils parlent de bound account type
-[24/07/2014 15:04:15] Rémi Domingues: oui
+[24/07/2014 15:04:15] : oui
 [24/07/2014 15:04:23] VIRAPINMODELY Valiani: je ne comprends pas ce que c'est
 [24/07/2014 15:04:40] VIRAPINMODELY Valiani: un compte lié ?
-[24/07/2014 15:04:54] Rémi Domingues: je peux me tromper
-[24/07/2014 15:05:02] Rémi Domingues: mais un compte linkedin peut avoir plusieurs sous compte
-[24/07/2014 15:05:10] Rémi Domingues: ou profils si tu veux
-[24/07/2014 15:05:19] Rémi Domingues: par exemple, mon profil par défaut est celui en francais
-[24/07/2014 15:05:24] Rémi Domingues: et j'ai un autre profil en anglais
+[24/07/2014 15:04:54] : je peux me tromper
+[24/07/2014 15:05:02] : mais un compte linkedin peut avoir plusieurs sous compte
+[24/07/2014 15:05:10] : ou profils si tu veux
+[24/07/2014 15:05:19] : par exemple, mon profil par défaut est celui en francais
+[24/07/2014 15:05:24] : et j'ai un autre profil en anglais
 [24/07/2014 15:05:32] VIRAPINMODELY Valiani: ah ?
-[24/07/2014 15:05:33] Rémi Domingues: ce sont deux pages différentes liees au meme compte
-[24/07/2014 15:05:48] Rémi Domingues: c'est peut être de ca dont ils parlent
-[24/07/2014 15:05:50] VIRAPINMODELY Valiani: oooooooooooooooooooooooooooooooooohhhhhhhh
-[24/07/2014 15:05:52] VIRAPINMODELY Valiani: je savais pas
+[24/07/2014 15:05:33] : ce sont deux pages différentes liees au meme compte
+[24/07/2014 15:05:48] : c'est peut être de ca dont ils parlent
 [24/07/2014 15:05:55] VIRAPINMODELY Valiani: merci ^^
-[24/07/2014 15:06:04] Rémi Domingues: :)
-[24/07/2014 15:06:47] VIRAPINMODELY Valiani: je vouslais te demander# ça voulait dire quoi
-[24/07/2014 15:06:51] VIRAPINMODELY Valiani: mais j'ai compris
-[24/07/2014 15:06:53] VIRAPINMODELY Valiani: c'est number
+[24/07/2014 15:06:04] : :)
 [24/07/2014 15:07:07] VIRAPINMODELY Valiani: après
 [24/07/2014 15:07:14] VIRAPINMODELY Valiani: y'a un endrois où ils parlent de connection
 [24/07/2014 15:07:21] VIRAPINMODELY Valiani: num-connections
-[24/07/2014 15:07:57] Rémi Domingues: ce sont les contacts
-[24/07/2014 15:08:00] Rémi Domingues: les 'amis'
-[24/07/2014 15:08:00] VIRAPINMODELY Valiani: what is a connection ?
-[24/07/2014 15:08:03] VIRAPINMODELY Valiani: oh !
-[24/07/2014 15:08:09] VIRAPINMODELY Valiani: can't be !!
-[24/07/2014 15:09:32] VIRAPINMODELY Valiani: aaaaaaaaaaaaaah
-[24/07/2014 15:09:33] VIRAPINMODELY Valiani: mais si
-[24/07/2014 15:09:49] VIRAPINMODELY Valiani: je suis toute bêta
+[24/07/2014 15:07:57] : ce sont les contacts
+[24/07/2014 15:08:00] : les 'amis'
 [24/07/2014 15:16:08] VIRAPINMODELY Valiani: j'ai d'autres questions :)
-[24/07/2014 15:16:24] Rémi Domingues: oui  ?^^
+[24/07/2014 15:16:24] : oui  ?^^
 [24/07/2014 15:16:52] VIRAPINMODELY Valiani: il y a des champs
 [24/07/2014 15:17:00] VIRAPINMODELY Valiani: que linkedIn va nous renvoyer
 [24/07/2014 15:17:13] VIRAPINMODELY Valiani: et qui contiendront une chaine de caratère précise
@@ -579,16 +568,16 @@ et aussi les infos des institutions sur relationnel sur azure
 [24/07/2014 15:17:28] VIRAPINMODELY Valiani: il peut être
 [24/07/2014 15:17:30] VIRAPINMODELY Valiani: "home"
 [24/07/2014 15:17:35] VIRAPINMODELY Valiani: "professional"
-[24/07/2014 15:17:42] Rémi Domingues: oui
+[24/07/2014 15:17:42] : oui
 [24/07/2014 15:17:45] VIRAPINMODELY Valiani: ou un autre"
 [24/07/2014 15:17:52] VIRAPINMODELY Valiani: ça se précise en UML ?
-[24/07/2014 15:17:59] Rémi Domingues: oui
-[24/07/2014 15:18:08] Rémi Domingues: tu as plusieurs solutions
-[24/07/2014 15:18:55] Rémi Domingues: la plus claire sera surement dans la definition de la colonne de la table :
+[24/07/2014 15:17:59] : oui
+[24/07/2014 15:18:08] : tu as plusieurs solutions
+[24/07/2014 15:18:55] : la plus claire sera surement dans la definition de la colonne de la table :
 phone: {'home', 'professional', 'autre'}
 [24/07/2014 15:19:03] VIRAPINMODELY Valiani:  ?
-[24/07/2014 15:19:14] Rémi Domingues: c'est l'equivalent de faire une classe de type enum et de dire que la colonne est de ce type
+[24/07/2014 15:19:14] : c'est l'equivalent de faire une classe de type enum et de dire que la colonne est de ce type
 [24/07/2014 15:19:21] VIRAPINMODELY Valiani: au lieu du type string
-[24/07/2014 15:19:25] Rémi Domingues: oui
-[24/07/2014 15:19:29] Rémi Domingues: c'est implicite
+[24/07/2014 15:19:25] : oui
+[24/07/2014 15:19:29] : c'est implicite
 [24/07/2014 15:19:30] VIRAPINMODELY Valiani: je décris carrément l'énum
