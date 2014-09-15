@@ -1,0 +1,5 @@
+//MasterProramDB
+Server=tcp:xgpgwhhd2b.database.windows.net,1433;Database=MasterProgramDB;User ID=valiani.virapinmodely@xgpgwhhd2b;Password={votre_mot_de_passe_ici};Trusted_Connection=False;Encrypt=True;Connection Timeout=30;
+
+//StudentDB
+Server=tcp:xgpgwhhd2b.database.windows.net,1433;Database=StudentDB;User ID=valiani.virapinmodely@xgpgwhhd2b;Password={votre_mot_de_passe_ici};Trusted_Connection=False;Encrypt=True;Connection Timeout=30;

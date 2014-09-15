@@ -1,0 +1,5 @@
+C:\Users\Valiani\Documents\Visual Studio 2012\Projects\MasterProgram\MasterProgram.WebServices\obj\Debug\MasterProgram.WebServices.csprojResolveAssemblyReference.cache
+C:\Users\Valiani\Documents\Visual Studio 2012\Projects\MasterProgram\MasterProgram.WebServices\bin\MasterProgram.WebServices.dll
+C:\Users\Valiani\Documents\Visual Studio 2012\Projects\MasterProgram\MasterProgram.WebServices\bin\MasterProgram.WebServices.pdb
+C:\Users\Valiani\Documents\Visual Studio 2012\Projects\MasterProgram\MasterProgram.WebServices\obj\Debug\MasterProgram.WebServices.dll
+C:\Users\Valiani\Documents\Visual Studio 2012\Projects\MasterProgram\MasterProgram.WebServices\obj\Debug\MasterProgram.WebServices.pdb

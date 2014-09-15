@@ -1,0 +1,50 @@
+ok donc nous avons 3 clouds
+
+[10:55:25]  J'ai représenté les services de données (une partie)
+[10:55:42]  Sur Azure notre DaaS va être un ou plusieurs SQLServer
+[10:55:55]  pour l'instant j'ai mis qu'un seul
+[10:56:38]  nous avons trois bases (au sens relationnel) la Base Formation, la Base Students et la Base Contacts (il manque dans ma figure)
+[10:56:51]  La Base Contacts est celle que tu as implanté
+
+[10:57:02]  qui est accesible à travers le service myNet
+[10:57:12]  qui se nourrit du service Facebook
+[10:57:29]  et qui stocke les données sur le DaaS SQL Server
+
+[10:58:53]  ensuite nous aurons la base Students avec des informations de Student que nous allons dériver et compléter à partir de l'info récupérée par le ServiceMyNet
+[10:59:08]  et qui sera fournie par le Service Students
+[10:59:36]  ah j'ai oublié tout ce qui est en rouge ce sont des services ou des fichiers qui vont alimenter nos bases
+
+[11:00:12]  Et nous avons la base Formation qui va implanter la base
+
+[11:00:15]  bordeaux
+[11:00:21]  bordeau
+[11:00:25]  bleu et noir
+[11:00:35]  Facebook est en bordeau
+
+[11:01:03]  ok
+[11:01:22]  donc la base formation sera accessible via le service MasterProgram
+[11:01:38]  et la base Students sera accessible via le service Students
+[11:01:56]  et tout cet écosystème sera déployé sur Azure
+
+[11:02:32]  Attention pour l'instant je n'ai pas mis les apps qui seront FrontEnd
+
+[11:03:24]  Ensuite dans un autre cloud nous allons implatner des services qui fourniront
+[11:03:35]  des informations professionnelles des étudiants
+[11:03:42]  qui seront stockées sur MongoDB
+[11:03:58]  et la base Mongo sera alimentée par linkedIn
+[11:04:26]  et un service d'Universités qui sera nourit par des informations récupérées de Google
+[11:04:35]  sur les institutions externes à l'université
+[11:04:39]  qui fournit la formation de master
+[11:05:21]  La pareil il faudra constuire les apps front end
+
+[11:05:43]  Enfin dans un autre cloud
+[11:05:58]  nous aurons la partie inscriptions
+[11:06:15]  qui disent qui suit quel cours
+[11:06:35]  stockées sur Neo4J
+[11:06:59]  là nous aurons également ce que tu as implanté avec le réseau de contacts
+[11:07:14]  avec les services et les app front end qui vont avec
+
+[11:09:09]  Donc il faut compléter ma figure avec les rectangles qui représentent les bases
+[11:09:29]  avec des commentaires sur le type de documents fournies par les services rouges
+[11:09:52]  les noms des clouds providers
+[11:10:20]  tu peux partager ce ppt avec tout cela

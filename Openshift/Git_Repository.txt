@@ -1,0 +1,1 @@
+ssh://541156174382ec4156000d37@inscription-mynetstage.rhcloud.com/~/git/inscription.git/

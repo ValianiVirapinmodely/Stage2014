@@ -1,0 +1,194 @@
+Sub creationscript()
+
+    Application.ScreenUpdating = False
+
+    v_path = "C:\Users\Valiani\Desktop\scripttest.txt"
+    v_nblignes = 853 'nombre de lignes du document (avec entête)
+    'creation d'un fichier texte
+    Open v_path For Output As #1
+    Close
+
+    Dim oFSO As Scripting.FileSystemObject
+    Dim oFl As Scripting.File
+    Dim oTxt As Scripting.TextStream
+    Dim i As Integer
+    'Instanciation du FSO
+    Set oFSO = New Scripting.FileSystemObject
+    Set oFl = oFSO.GetFile(v_path & v_nomfichier)
+    Set oTxt = oFl.OpenAsTextStream(ForWriting)
+    
+    'TRAITEMENT DES CARACTERES SPECIAUX-----------------------------------------------------------------------------------------------------------------
+
+    Cells.Replace What:="é", Replacement:="e", LookAt:=xlPart, SearchOrder _
+        :=xlByRows, MatchCase:=False, SearchFormat:=False, ReplaceFormat:=False
+    Cells.Replace What:="à", Replacement:="a", LookAt:=xlPart, SearchOrder _
+        :=xlByRows, MatchCase:=False, SearchFormat:=False, ReplaceFormat:=False
+    Cells.Replace What:="'", Replacement:=" ", LookAt:=xlPart, SearchOrder _
+        :=xlByRows, MatchCase:=False, SearchFormat:=False, ReplaceFormat:=False
+    Cells.Replace What:="è", Replacement:="e", LookAt:=xlPart, SearchOrder _
+        :=xlByRows, MatchCase:=False, SearchFormat:=False, ReplaceFormat:=False
+
+    'REMPLIR LA TABLE CONSTITUTION_DIPLOME--------------------------------------------------------------------------------------------------------------
+
+    'Cells.Select
+    ActiveWorkbook.Worksheets("Sheet 1").Sort.SortFields.Clear
+    ActiveWorkbook.Worksheets("Sheet 1").Sort.SortFields.Add Key:=Range("B2:B853" _
+        ), SortOn:=xlSortOnValues, Order:=xlAscending, DataOption:=xlSortNormal
+    ActiveWorkbook.Worksheets("Sheet 1").Sort.SortFields.Add Key:=Range("D2:D853" _
+        ), SortOn:=xlSortOnValues, Order:=xlAscending, DataOption:=xlSortNormal
+    With ActiveWorkbook.Worksheets("Sheet 1").Sort
+        .SetRange Range("A1:N853")
+        .Header = xlYes
+        .MatchCase = False
+        .Orientation = xlTopToBottom
+        .SortMethod = xlPinYin
+        .Apply
+    End With
+
+    For i = 2 To v_nblignes Step 1
+        v_nouveauiddiplome = ActiveSheet.Cells(i, 2)
+        If v_nouveauiddiplome <> v_iddiplome Then
+            For j = 2 To v_nblignes Step 1
+                'on récupère la valeur de la cellule
+                v_nouvauidue = ActiveSheet.Cells(j, 4)
+                If v_idue <> v_nouvauidue And ActiveSheet.Cells(j, 2) = v_nouveauiddiplome Then
+                    v_valeurs = "('" & v_nouveauiddiplome & "'" & "," & v_nouvauidue & ")"
+                    With oTxt
+                        .WriteLine ("INSERT INTO formation.CONSTITUTION_DIPLOME (IdDiplome, IdUE) VALUES" & v_valeurs) 'on crée une ligne dans le fichier texte
+                    End With
+                    v_idue = v_nouvauidue
+                End If
+            Next
+        End If
+        v_iddiplome = v_nouveauiddiplome
+    Next
+
+'    'Ajout de filtres
+'    Cells.Select
+'    Selection.AutoFilter
+
+
+    'REMPLIR LA TABLE DIPLOME--------------------------------------------------------------------------------------------------------------
+    'tri par IdDiplome (possible grâce à l'ajout de filtres)
+    ActiveWorkbook.Worksheets("Sheet 1").AutoFilter.Sort.SortFields.Clear
+    ActiveWorkbook.Worksheets("Sheet 1").AutoFilter.Sort.SortFields.Add Key:= _
+        Range("B1:B853"), SortOn:=xlSortOnValues, Order:=xlAscending, DataOption _
+        :=xlSortNormal
+    With ActiveWorkbook.Worksheets("Sheet 1").AutoFilter.Sort
+        .Header = xlYes
+        .MatchCase = False
+        .Orientation = xlTopToBottom
+        .SortMethod = xlPinYin
+        .Apply
+    End With
+
+    For i = 2 To v_nblignes Step 1
+        'on récupère la valeur de la cellule
+        v_nouvellevaleur = ActiveSheet.Cells(i, 2)
+        If v_valeuractuelle <> v_nouvellevaleur Then
+            v_valeurs = "('" & v_nouvellevaleur & "','" & ActiveSheet.Cells(i, 3) & "')"
+            With oTxt
+                .WriteLine ("INSERT INTO formation.DIPLOME (IdDiplome, Intitule) VALUES" & v_valeurs) 'on crée une ligne dans le fichier texte
+            End With
+            v_valeuractuelle = v_nouvellevaleur
+        End If
+    Next
+
+    'REMPLIR LA TABLE UE-----------------------------------------------------------------------------------------------------------------------
+    'tri par IdUE
+    ActiveWorkbook.Worksheets("Sheet 1").AutoFilter.Sort.SortFields.Clear
+    ActiveWorkbook.Worksheets("Sheet 1").AutoFilter.Sort.SortFields.Add Key:= _
+        Range("D1:D853"), SortOn:=xlSortOnValues, Order:=xlAscending, DataOption _
+        :=xlSortNormal
+    With ActiveWorkbook.Worksheets("Sheet 1").AutoFilter.Sort
+        .Header = xlYes
+        .MatchCase = False
+        .Orientation = xlTopToBottom
+        .SortMethod = xlPinYin
+        .Apply
+    End With
+
+    For i = 2 To v_nblignes Step 1
+        'on récupère la valeur de la cellule
+        v_nouvellevaleur = ActiveSheet.Cells(i, 4)
+        If v_valeuractuelle <> v_nouvellevaleur Then
+            v_valeurs = "(" & v_nouvellevaleur & ",'" & ActiveSheet.Cells(i, 5) & "', NULL, NULL" & ")"
+            With oTxt
+                .WriteLine ("INSERT INTO formation.UE (IdUE, Intitule, Descriptif, Semestre) VALUES" & v_valeurs) 'on crée une ligne dans le fichier texte
+            End With
+            v_valeuractuelle = v_nouvellevaleur
+        End If
+    Next
+
+    'REMPLIR LA TABLE MODULE---------------------------------------------------------------------------------------------------------------
+    'tri par IdModule
+    ActiveWorkbook.Worksheets("Sheet 1").AutoFilter.Sort.SortFields.Clear
+    ActiveWorkbook.Worksheets("Sheet 1").AutoFilter.Sort.SortFields.Add Key:= _
+        Range("H1:H853"), SortOn:=xlSortOnValues, Order:=xlAscending, DataOption _
+        :=xlSortNormal
+    With ActiveWorkbook.Worksheets("Sheet 1").AutoFilter.Sort
+        .Header = xlYes
+        .MatchCase = False
+        .Orientation = xlTopToBottom
+        .SortMethod = xlPinYin
+        .Apply
+    End With
+
+    For i = 2 To v_nblignes Step 1
+        'on récupère la valeur de la cellule
+        v_nouvellevaleur = ActiveSheet.Cells(i, 8)
+        If v_valeuractuelle <> v_nouvellevaleur And ActiveSheet.Cells(i, 11).Value <> "" Then
+            v_choix = "false"
+            If (v_nouvellevaleur >= 38551 And v_nouvellevaleur <= 38553) Or v_nouvellevaleur = 40076 Or v_nouvellevaleur = 40077 Or v_nouvellevaleur = 40082 Or (v_nouvellevaleur >= 40085 And v_nouvellevaleur <= 40087) Or (v_nouvellevaleur >= 39245 And v_nouvellevaleur <= 39256) Or (v_nouvellevaleur >= 39271 And v_nouvellevaleur <= 39280) Then
+                v_choix = "true"
+            End If
+            v_valeurs = "(" & v_nouvellevaleur & ",'" & ActiveSheet.Cells(i, 9) & "'," & v_choix & "," &  ActiveSheet.Cells(i,4) & ")"
+            With oTxt
+                .WriteLine ("INSERT INTO formation.MODULE (IdModule, Intitule, ModuleChoix, IdUE) VALUES" & v_valeurs) 'on crée une ligne dans le fichier texte
+            End With
+            v_valeuractuelle = v_nouvellevaleur
+        End If
+    Next
+
+    'REMPLIR LA TABLE MATIERE-----------------------------------------------------------------------------------------------------------------------
+    'tri par IdMatiere
+    ActiveWorkbook.Worksheets("Sheet 1").AutoFilter.Sort.SortFields.Clear
+    ActiveWorkbook.Worksheets("Sheet 1").AutoFilter.Sort.SortFields.Add Key:= _
+        Range("K1:K853"), SortOn:=xlSortOnValues, Order:=xlAscending, DataOption _
+        :=xlSortNormal
+    With ActiveWorkbook.Worksheets("Sheet 1").AutoFilter.Sort
+        .Header = xlYes
+        .MatchCase = False
+        .Orientation = xlTopToBottom
+        .SortMethod = xlPinYin
+        .Apply
+    End With
+
+    For i = 2 To v_nblignes Step 1
+        'on récupère la valeur de la cellule
+        v_nouvellevaleur = ActiveSheet.Cells(i, 11)
+        If v_nouvellevaleur <> "" AND v_valeuractuelle <> v_nouvellevaleur Then
+            v_typeheures = ActiveSheet.Cells(i, 13)
+                If v_typeheures = "TD" Then
+                    v_nbTD = ActiveSheet.Cells(i, 14)
+                    v_nbCM = "NULL"
+                    v_nbTP = "NULL"
+                ElseIf v_typeheures = "CM" Then
+                    v_nbCM = ActiveSheet.Cells(i, 14)
+                    v_nbTD = "NULL"
+                    v_nbTP = "NULL"
+                ElseIf v_typeheures = "TP" Then
+                     v_nbTP = ActiveSheet.Cells(i, 14)
+                     v_nbCM = "NULL"
+                    v_nbTD = "NULL"
+                End If
+            v_valeurs = "(" & v_nouvellevaleur & ",'" & ActiveSheet.Cells(i, 12)& "'," & v_nbCM & "," & v_nbTD & "," & v_nbTP & "," & ActiveSheet.Cells(i,8) & ")"
+            With oTxt
+                .WriteLine ("INSERT INTO formation.MATIERE (IdMatiere, Intitule, NbCM, NbTD, NbTP, IdModule) VALUES" & v_valeurs) 'on crée une ligne dans le fichier texte
+            End With
+            v_valeuractuelle = v_nouvellevaleur
+        End If
+    Next
+
+End Sub
+

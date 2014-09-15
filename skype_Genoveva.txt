@@ -1,0 +1,594 @@
+[09/07/2014 14:01:44] VIRAPINMODELY Valiani: Bonjour Genoveva Vargas Solar, je souhaiterais vous ajouter dans mes contacts.
+[09/07/2014 14:02:13] *** Genoveva Vargas Solar a partagé ses détails avec VIRAPINMODELY Valiani. ***
+[09/07/2014 14:02:14] Genoveva Vargas Solar: hi
+[09/07/2014 14:02:16] *** VIRAPINMODELY Valiani envoie erreur.png ***
+[09/07/2014 14:02:36] Genoveva Vargas Solar: par ici?
+[09/07/2014 14:03:16] VIRAPINMODELY Valiani: Le serveur n'a pas pu traiter la demande en raison d'une erreur interne. Pour plus d'informations sur l'erreur, activez IncludeExceptionDetailInFaults (depuis ServiceBehaviorAttribute ou depuis le comportement de configuration <serviceDebug>) sur le serveur pour renvoyer les informations de l'exception au client, ou activez le suivi conformément à la documentation du Kit de développement logiciel (SDK) de Microsoft .NET Framework et examinez les journaux de suivi du serveur.
+
+Server stack trace: 
+   à System.ServiceModel.Channels.ServiceChannel.ThrowIfFaultUnderstood(Message reply, MessageFault fault, String action, MessageVersion version, FaultConverter faultConverter)
+   à System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   à System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   à System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   à System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   à System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   à System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   à IMyNetDbService.getContacts()
+   à MyNetDbServiceClient.getContacts()
+[11/07/2014 09:32:48] Genoveva Vargas Solar: bonjour Valiani
+[11/07/2014 09:32:54] Genoveva Vargas Solar: ca va?
+[11/07/2014 09:33:41] Genoveva Vargas Solar: Avec nadia nous avons dit hier que je me connectais pour faire le point avec toi
+[11/07/2014 09:34:25] Genoveva Vargas Solar: Pour etre efficaces nous voulons aussi que tu prepares un mail en nous disant pour chac exo que ce que tu as fait et que ce qui reste
+[11/07/2014 09:34:36] VIRAPINMODELY Valiani: bonjour
+[11/07/2014 09:34:43] Genoveva Vargas Solar: ceci servira pour organiser ta venue
+[11/07/2014 09:34:49] VIRAPINMODELY Valiani: d'accord
+[11/07/2014 09:34:56] VIRAPINMODELY Valiani: je vous envoie un mail
+[11/07/2014 09:35:05] Genoveva Vargas Solar: ok
+[11/07/2014 09:35:13] Genoveva Vargas Solar: si non juste oourfixer les idees
+[11/07/2014 09:35:28] Genoveva Vargas Solar: concernant l'exo 3 sur polyglot persistence
+[11/07/2014 09:35:50] Genoveva Vargas Solar: as tudeja installe et preparer l'environnement?
+[11/07/2014 09:36:01] VIRAPINMODELY Valiani: j'ai essayé oui
+[11/07/2014 09:36:27] VIRAPINMODELY Valiani: mais quand j'utilise maven j'ai des erreurs
+[11/07/2014 09:37:14] Genoveva Vargas Solar: ok donc pour celuici aussi stp marque dans le mail quelles sont ces erreurs
+[11/07/2014 09:37:38] Genoveva Vargas Solar: dans la jiurnee nous pouvons essayer de voir si nous debloquins cela
+[11/07/2014 09:37:53] Genoveva Vargas Solar: de facon a pouvoir preparer au plus mardi
+[11/07/2014 09:38:27] Genoveva Vargas Solar: donc je te laisse preparer lemail et je reste connectee pour voir comment on avance ensemble
+[11/07/2014 09:38:34] Genoveva Vargas Solar: cate va?
+[11/07/2014 09:38:39] VIRAPINMODELY Valiani: oui
+[11/07/2014 09:39:38] Genoveva Vargas Solar: ok
+[11/07/2014 09:40:14] VIRAPINMODELY Valiani: il faudrait que j'arrive à Grenoble vers quelle heure ?
+[11/07/2014 09:42:49] Genoveva Vargas Solar: le matin par ex autour de 900 930
+[11/07/2014 09:42:56] Genoveva Vargas Solar: max 1000
+[11/07/2014 09:43:07] Genoveva Vargas Solar: je vais te recupere a la gare
+[11/07/2014 09:43:11] Genoveva Vargas Solar: recuperer
+[11/07/2014 09:43:19] VIRAPINMODELY Valiani: pas de souci
+[11/07/2014 09:44:19] VIRAPINMODELY Valiani: je prendrai le train pour être là vers 9h15
+[11/07/2014 09:44:25] Genoveva Vargas Solar: donc des que tu connais tes horraires stp envois un mail
+[11/07/2014 09:44:35] Genoveva Vargas Solar: comme va on s'organise
+[11/07/2014 09:44:41] VIRAPINMODELY Valiani: ok
+[11/07/2014 09:45:01] VIRAPINMODELY Valiani: je prendrai les billets de trains dès que j'aurai une réponse de Chirine
+[11/07/2014 09:45:12] Genoveva Vargas Solar: pas de pb
+[11/07/2014 10:02:47] VIRAPINMODELY Valiani: le mail est envoyé
+[11/07/2014 10:03:36] Genoveva Vargas Solar: ton mail est arrive
+[11/07/2014 10:04:07] Genoveva Vargas Solar: laisse moi regarder pourte donner des precisions
+[11/07/2014 10:08:24] Genoveva Vargas Solar: je nesuispassurmon ordi peuttu stp menvoyer le pdf avec le tuto de polyglot?
+[11/07/2014 10:11:48] VIRAPINMODELY Valiani: j'ai essayé de l'envoyer par mail
+[11/07/2014 10:12:39] Genoveva Vargas Solar: ok
+[11/07/2014 10:41:31] VIRAPINMODELY Valiani: je n'avais pas accepté les termes de téléchargements de Spring Roo
+[11/07/2014 10:41:57] Genoveva Vargas Solar: ah!
+[11/07/2014 10:42:16] Genoveva Vargas Solar: donc tu as pu avancer?
+[11/07/2014 10:43:09] VIRAPINMODELY Valiani: il faudrait que je refasse la manip à partir de la page 31
+[11/07/2014 10:43:34] Genoveva Vargas Solar: ok dinc essaye et tu me dis
+[11/07/2014 10:43:36] VIRAPINMODELY Valiani: je vais voir si avec ça, ça fonctionne
+[11/07/2014 10:44:02] VIRAPINMODELY Valiani: non
+[11/07/2014 10:44:08] VIRAPINMODELY Valiani: j'ai une erreur de buid
+[11/07/2014 10:44:09] VIRAPINMODELY Valiani: Errors occurred during the build.
+Errors running builder 'AspectJ Builder' on project 'mynetcontacts'.
+Resource '/mynetcontacts/target' does not exist.
+Resource '/mynetcontacts/target' does not exist.
+Errors running builder 'AspectJ Builder' on project 'mynetcontacts'.
+Resource '/mynetcontacts/target' does not exist.
+Resource '/mynetcontacts/target' does not exist.
+[11/07/2014 10:45:06] Genoveva Vargas Solar: je pense quil faur commencer pas a pas de zero
+[11/07/2014 10:45:16] Genoveva Vargas Solar: car tu risques d'empiler des pbs
+[11/07/2014 10:45:31] VIRAPINMODELY Valiani: oui
+[11/07/2014 10:49:04] VIRAPINMODELY Valiani: lorsque j'importe le projet depuis Git, au tout début, est-ce normal que je vois pas le fichier .gitignore
+[11/07/2014 10:49:06] VIRAPINMODELY Valiani: ?
+[11/07/2014 10:56:27] Genoveva Vargas Solar: nop je pens pas
+[11/07/2014 10:56:51] Genoveva Vargas Solar: pense*
+[11/07/2014 11:02:47] Genoveva Vargas Solar: On va se donner comme deadline 15H si tu rencontres trop des problèmes nous voyons tout cela ici a Grenoble
+[11/07/2014 11:03:01] Genoveva Vargas Solar: mais du coup nous pouvons profieter pour commencer à voir le scénario
+[11/07/2014 11:03:16] Genoveva Vargas Solar: le modèle de fournieeurs des donnees et la modélisation du SLA
+[11/07/2014 11:04:00] VIRAPINMODELY Valiani: ok :)
+[11/07/2014 12:00:43] VIRAPINMODELY Valiani: j'ai réussi à générer le code correctement
+[11/07/2014 12:00:57] Genoveva Vargas Solar: excellente nouvelle !
+[11/07/2014 12:01:02] VIRAPINMODELY Valiani: cle souci venait du fait que j'utilisais une version trop récente de Java
+[11/07/2014 12:01:29] Genoveva Vargas Solar: ufff c le pb avec java et la techno associée
+[11/07/2014 12:01:51] Genoveva Vargas Solar: donc tu as reussit à completer l'exo totalement?
+[11/07/2014 12:02:05] VIRAPINMODELY Valiani: je l'ai pas totalement fini, non
+[11/07/2014 12:02:40] Genoveva Vargas Solar: ok mais tu peux continuer super
+[11/07/2014 12:02:52] Genoveva Vargas Solar: donc je te laisse continuer essoyons de le finir aujourd'hui
+[11/07/2014 12:03:03] Genoveva Vargas Solar: comme ca mardi on attaque la bd du scénario
+[11/07/2014 12:03:17] VIRAPINMODELY Valiani: ça marche
+[11/07/2014 12:03:24] VIRAPINMODELY Valiani: je vais aller déjeuner dans peu de temps
+[11/07/2014 12:03:40] Genoveva Vargas Solar: ok je continue la
+[11/07/2014 12:03:40] VIRAPINMODELY Valiani: je vous tiens au courant si je rencontre un souci avec ce qu'il reste
+[11/07/2014 12:03:43] Genoveva Vargas Solar: yeap
+[11/07/2014 12:04:11] Genoveva Vargas Solar: bon ap
+[11/07/2014 12:04:29] VIRAPINMODELY Valiani: merci
+[11/07/2014 12:04:41] VIRAPINMODELY Valiani: à vous aussi
+[11/07/2014 12:04:48] Genoveva Vargas Solar: merci :)
+[11/07/2014 15:07:22] VIRAPINMODELY Valiani: je suis là
+[11/07/2014 15:07:32] Genoveva Vargas Solar: Salut
+[11/07/2014 15:07:35] Genoveva Vargas Solar: alors ?
+[11/07/2014 15:07:38] VIRAPINMODELY Valiani: je ne peux pas finir le tuto à cause de la partie sur AppFog
+[11/07/2014 15:07:42] Genoveva Vargas Solar: tu as pu avancer?
+[11/07/2014 15:08:00] VIRAPINMODELY Valiani: il faut payer pour pouvoir créer une application
+[11/07/2014 15:08:15] Genoveva Vargas Solar: mm avant elle était free
+[11/07/2014 15:09:16] Genoveva Vargas Solar: tu n'as pas possibilité d'avoir un access pour un mois par ex?
+[11/07/2014 15:09:29] VIRAPINMODELY Valiani: ah si !
+[11/07/2014 15:09:42] VIRAPINMODELY Valiani: au temps pour moi, je n'avais pas vu le petit bouton "free"
+[11/07/2014 15:10:14] VIRAPINMODELY Valiani: désolée d'avoir été si longue aussi, il y a quelqu'un qui quitte le bureau alors on est allé manger tous ensemble
+[11/07/2014 15:10:22] Genoveva Vargas Solar: pas de pb
+[11/07/2014 15:10:31] Genoveva Vargas Solar: l'important est que tu es la et que tu avances
+[11/07/2014 15:10:59] Genoveva Vargas Solar: c'est bien car cela implique que a partir de mardi tu seras opérationnelle pour l'app qui servira pour finir le stage
+[11/07/2014 15:11:10] Genoveva Vargas Solar: tu dois faire une soutenance à la fin?
+[11/07/2014 15:11:12] VIRAPINMODELY Valiani: non
+[11/07/2014 15:11:26] VIRAPINMODELY Valiani: à l'INSA ils ne font plus de soutenance pour raison de budget...
+[11/07/2014 15:11:37] Genoveva Vargas Solar: ah ok mais comment es tu notée?
+[11/07/2014 15:11:48] VIRAPINMODELY Valiani: par rapport à l'appréciation du tuteur de stage
+[11/07/2014 15:11:57] VIRAPINMODELY Valiani: le stage est validé ou il ne l'est pas
+[11/07/2014 15:12:09] Genoveva Vargas Solar: ok et tu ne dois pas non plus écrire un rapport?
+[11/07/2014 15:12:14] VIRAPINMODELY Valiani: non
+[11/07/2014 15:12:42] VIRAPINMODELY Valiani: mais je devrais en faire un pour qu'une personne qui travaillera sur la même chose antèrieurement puisse suivre
+[11/07/2014 15:13:02] Genoveva Vargas Solar: oui et aussi car cela peut servir aussi par la suite
+[11/07/2014 15:13:16] Genoveva Vargas Solar: tu peux montrer concrètement ce que tu sais faire
+[11/07/2014 15:13:16] VIRAPINMODELY Valiani: ah, le site demande quand même un numéro de carte bancaire pour les 30 jours gratuits
+[11/07/2014 15:13:33] Genoveva Vargas Solar: mm
+[11/07/2014 15:13:56] Genoveva Vargas Solar: essaye avec celui ci
+[11/07/2014 15:13:57] Genoveva Vargas Solar: 5256780280101996
+[11/07/2014 15:14:01] Genoveva Vargas Solar: master card
+[11/07/2014 15:14:08] Genoveva Vargas Solar: 11/14
+[11/07/2014 15:14:19] VIRAPINMODELY Valiani: d'accord
+[11/07/2014 15:14:22] Genoveva Vargas Solar: 7306
+[11/07/2014 15:14:34] VIRAPINMODELY Valiani: c'est à votre nom ?
+[11/07/2014 15:14:38] Genoveva Vargas Solar: yeap
+[11/07/2014 15:14:44] Genoveva Vargas Solar: Genoveva Vargas Solar
+[11/07/2014 15:15:20] Genoveva Vargas Solar: elle est mexicaine et parfois elle ne marche pas
+[11/07/2014 15:15:25] Genoveva Vargas Solar: mais essaie
+[11/07/2014 15:16:31] VIRAPINMODELY Valiani: il faudrait également une adresse, ville et Code postal
+[11/07/2014 15:16:47] Genoveva Vargas Solar: Exhacienda Sta Catarina Martir s/n
+[11/07/2014 15:16:51] Genoveva Vargas Solar: San Andres Cholula
+[11/07/2014 15:16:55] Genoveva Vargas Solar: 72820
+[11/07/2014 15:16:59] Genoveva Vargas Solar: Mexique
+[11/07/2014 15:18:18] VIRAPINMODELY Valiani: il ne faut pas que le code de vérification de la CB ait plus de 3 chiffres
+[11/07/2014 15:18:50] VIRAPINMODELY Valiani: c'est à 4 chiffres pour une carte mexicaine ?
+[11/07/2014 15:18:53] VIRAPINMODELY Valiani: 7306 ?
+[11/07/2014 15:19:20] Genoveva Vargas Solar: bonne question
+[11/07/2014 15:19:33] Genoveva Vargas Solar: oui 306 peut être?
+[11/07/2014 15:20:15] VIRAPINMODELY Valiani: The transaction was declined. Please use a different card or contact your bank.
+[11/07/2014 15:21:46] Genoveva Vargas Solar: mm oui je pense que le code n'est pas bon
+[11/07/2014 15:21:58] Genoveva Vargas Solar: mmmm
+[11/07/2014 15:22:21] Genoveva Vargas Solar: laisse moi voir si je trouve une alternative
+[11/07/2014 15:22:27] Genoveva Vargas Solar: par ex un compte existant
+[11/07/2014 15:26:11] Genoveva Vargas Solar: j'essaye de voir parmi mes étudiants s'il y a qqun avec un compte actif
+[11/07/2014 15:26:19] Genoveva Vargas Solar: pour que tu l'utilises
+[11/07/2014 15:26:23] VIRAPINMODELY Valiani: d'accord
+[11/07/2014 15:30:13] Genoveva Vargas Solar: essaye d'utiliser mon compte
+[11/07/2014 15:30:19] Genoveva Vargas Solar: genoveva.vargas@gmail.com
+[11/07/2014 15:30:22] Genoveva Vargas Solar: melq.5491
+[11/07/2014 15:31:35] VIRAPINMODELY Valiani: non
+[11/07/2014 15:31:36] VIRAPINMODELY Valiani: Could not log in with given credentials
+[11/07/2014 15:32:36] Genoveva Vargas Solar: je viens d'entrer
+[11/07/2014 15:32:41] Genoveva Vargas Solar: essaye à nouveau STP
+[11/07/2014 15:32:59] Genoveva Vargas Solar: https://console.appfog.com/login
+[11/07/2014 15:33:49] VIRAPINMODELY Valiani: oui
+[11/07/2014 15:34:09] Genoveva Vargas Solar: il es possible encore de creer des apps
+[11/07/2014 15:34:11] Genoveva Vargas Solar: je pense
+[11/07/2014 15:35:42] VIRAPINMODELY Valiani: non
+[11/07/2014 15:37:26] VIRAPINMODELY Valiani: je vous ai envoyé un mail
+[11/07/2014 15:38:04] Genoveva Vargas Solar: il n'est pas encore arrivé
+[11/07/2014 15:38:06] Genoveva Vargas Solar: en attendant
+[11/07/2014 15:39:14] Genoveva Vargas Solar: tu pars à quelle heure?
+[11/07/2014 15:39:50] VIRAPINMODELY Valiani: vers 16h normalement
+[11/07/2014 15:40:20] Genoveva Vargas Solar: correo: jccastrejon@gmail.com
+password: 12345678
+[11/07/2014 15:40:27] Genoveva Vargas Solar: essaye avec celle de mon étudiant STP
+[11/07/2014 15:41:25] VIRAPINMODELY Valiani: Sorry, something went wrong.
+
+We've been notified. It should be resolved shortly. Sorry for the inconvenience.
+[11/07/2014 15:41:39] Genoveva Vargas Solar: bon décidement
+[11/07/2014 15:41:46] Genoveva Vargas Solar: on verra cela mardi
+[11/07/2014 15:42:40] Genoveva Vargas Solar: pour finir cela
+[11/07/2014 15:42:54] Genoveva Vargas Solar: si tu as un espace peux tu STP faire l'UML du scénario?
+[11/07/2014 15:43:01] VIRAPINMODELY Valiani: si vous arrivez à trouver un compte, j'essaierai ce week end
+[11/07/2014 15:43:15] VIRAPINMODELY Valiani: et je me chargerai de l'UML
+[11/07/2014 15:43:18] Genoveva Vargas Solar: bon le compte de juan carlos devrait marcher
+[11/07/2014 15:43:24] Genoveva Vargas Solar: essaye pendant le weekend
+[11/07/2014 15:43:26] VIRAPINMODELY Valiani: vous avez un compte sous LucidChart ?
+[11/07/2014 15:43:51] Genoveva Vargas Solar: Non mais je peux en creenr un
+[11/07/2014 15:44:43] VIRAPINMODELY Valiani: ce n'est pas absolument nécessaire, c'est un moyen de partager des schémas, diagrammes et autres représentations graphiques
+[11/07/2014 15:45:14] VIRAPINMODELY Valiani: je vous enverrai le diagramme UML par mail dans le week end
+[11/07/2014 15:46:09] Genoveva Vargas Solar: bon j'ai un compte
+[11/07/2014 15:46:12] Genoveva Vargas Solar: je suis genoveva
+[11/07/2014 15:46:26] Genoveva Vargas Solar: et il est associé a genoveva.vargas@gmail.com
+[11/07/2014 15:46:37] Genoveva Vargas Solar: :)
+[11/07/2014 15:46:43] Genoveva Vargas Solar: j'adore tester des choses
+[11/07/2014 15:47:56] VIRAPINMODELY Valiani: il y a moyen d'obtenir un compte gratuit en tant qu'étudiant
+[11/07/2014 15:48:07] VIRAPINMODELY Valiani: il dure un an et on a accès à toutes les fonctionnalités du site
+[11/07/2014 15:48:21] Genoveva Vargas Solar: bon pour l'instant j'ai un trial
+[11/07/2014 15:48:37] Genoveva Vargas Solar: est ce que nous pouvons nous en sortir comme ça?
+[11/07/2014 15:48:52] VIRAPINMODELY Valiani: pour l'instant oui
+[11/07/2014 15:48:55] Genoveva Vargas Solar: ok
+[11/07/2014 15:49:38] VIRAPINMODELY Valiani: je vous partagerai le diagramme, ce sera plus simple pour d'éventuelles modifications ou commentaires si on ne se retrouve pas sur Skype dans le week end
+[11/07/2014 15:49:47] Genoveva Vargas Solar: oui
+[11/07/2014 15:49:50] Genoveva Vargas Solar: on fait comme ça
+[11/07/2014 15:50:06] Genoveva Vargas Solar: et tu me tiens au courant aussi des horaires d'arrivée mardi
+[11/07/2014 15:50:15] Genoveva Vargas Solar: normalement je suis en circulation tous les jours
+[11/07/2014 15:50:24] Genoveva Vargas Solar: si tu me vois n'hésites pas à cliquer
+[11/07/2014 15:50:37] Genoveva Vargas Solar: au pire je répondrai en asynchrone
+[11/07/2014 15:54:00] VIRAPINMODELY Valiani: d'accord
+[11/07/2014 15:54:18] Genoveva Vargas Solar: bon donc nous avons eu une journée productive :)
+[11/07/2014 15:54:36] VIRAPINMODELY Valiani: j'ai pu avancé un peu oui
+[11/07/2014 15:54:41] VIRAPINMODELY Valiani: merci beacoup pour l'aide
+[11/07/2014 15:54:58] Genoveva Vargas Solar: super tu veras pendant el we et ensuite à partir de mardi
+[11/07/2014 15:55:03] Genoveva Vargas Solar: tu iras plus legere
+[11/07/2014 15:55:08] VIRAPINMODELY Valiani: une petite question sur les tables avec que je parte
+[11/07/2014 15:55:17] VIRAPINMODELY Valiani: je ne vois pas de table contact
+[11/07/2014 15:55:35] Genoveva Vargas Solar: non car la table contact et la tienne
+[11/07/2014 15:55:38] Genoveva Vargas Solar: la plus complète
+[11/07/2014 15:55:44] Genoveva Vargas Solar: mais il faut l'inclure
+[11/07/2014 15:56:02] VIRAPINMODELY Valiani: la table contact est la mienne ?
+[11/07/2014 15:57:01] VIRAPINMODELY Valiani: celle du 3ème tutoriel ?
+[11/07/2014 15:58:28] Genoveva Vargas Solar: oui
+[11/07/2014 15:58:37] Genoveva Vargas Solar: elle est à toi maintenant :)
+[11/07/2014 16:01:50] VIRAPINMODELY Valiani: ok
+[11/07/2014 16:01:58] VIRAPINMODELY Valiani: merci beaucoup
+[11/07/2014 16:02:10] VIRAPINMODELY Valiani: je vous souhaie un bon week end
+[11/07/2014 16:02:26] Genoveva Vargas Solar: toi aussi passes un bon weekend
+[11/07/2014 16:02:27] VIRAPINMODELY Valiani: souhaite*
+[11/07/2014 16:02:31] VIRAPINMODELY Valiani: merci
+[11/07/2014 16:02:38] Genoveva Vargas Solar: à mardi à Grenoble :)
+[18/07/2014 10:27:21] VIRAPINMODELY Valiani: bonjour
+[21/07/2014 11:00:14] Genoveva Vargas Solar: Bonjour Valiani
+[21/07/2014 11:00:16] Genoveva Vargas Solar: je suis connecté
+[21/07/2014 11:00:29] VIRAPINMODELY Valiani: bonjour
+[21/07/2014 11:00:31] Genoveva Vargas Solar: au moins un peu avant le déjeuné
+[21/07/2014 11:00:44] Genoveva Vargas Solar: Alors pour la figure il s'agit de faire une figure ou tu représentes
+[21/07/2014 11:00:56] Genoveva Vargas Solar: les services les clouds
+[21/07/2014 11:01:12] Genoveva Vargas Solar: je vais t'envoyer une présentation que nous avons fait ou  nous avons représenter un cas pour l'énergie
+[21/07/2014 11:01:39] Genoveva Vargas Solar: il s'agit de faire "la même" figure mais pour le cas du scénario données universitaires
+[21/07/2014 11:01:47] VIRAPINMODELY Valiani: d'accord
+[21/07/2014 11:05:07] Genoveva Vargas Solar: ça vient de partir
+[21/07/2014 11:05:10] VIRAPINMODELY Valiani: je l'ai reçu
+[21/07/2014 11:05:11] VIRAPINMODELY Valiani: merci
+[21/07/2014 11:05:15] Genoveva Vargas Solar: ok
+[21/07/2014 11:05:47] Genoveva Vargas Solar: les slides 2, 3, 4
+[21/07/2014 11:06:17] Genoveva Vargas Solar: sans compter les rectangles qui font référence à la biblio
+[21/07/2014 11:08:23] VIRAPINMODELY Valiani: ok
+[21/07/2014 11:08:32] Genoveva Vargas Solar: pour te mettre en contexte en faite nous devons mettre en place un truc comme celui montré au slide sans
+[21/07/2014 11:08:56] VIRAPINMODELY Valiani: au slide sans ?
+[21/07/2014 11:09:06] Genoveva Vargas Solar: query rewriting
+[21/07/2014 11:09:11] Genoveva Vargas Solar: query evaluation
+[21/07/2014 11:09:30] Genoveva Vargas Solar: ni decision making
+[21/07/2014 11:09:55] Genoveva Vargas Solar: ni monitoring
+[21/07/2014 11:10:07] Genoveva Vargas Solar: le reste c'est nous (c-a-d toi et nous)
+[21/07/2014 11:12:06] VIRAPINMODELY Valiani: donc, un schéma (comme le slide 2) pour expliquer qu'on travaille avec des données universitaires, ensuite une explication du scénario en quelques phrases
+[21/07/2014 11:12:21] Genoveva Vargas Solar: yeap
+[21/07/2014 11:12:49] Genoveva Vargas Solar: à partir de cela nous travaillerons sur le nombre de services à consturire et déployer
+[21/07/2014 11:12:54] Genoveva Vargas Solar: les stores à utiliser
+[21/07/2014 11:13:07] Genoveva Vargas Solar: selon la façon dont nous allons dupliquer et fragmenter les données
+[21/07/2014 11:13:20] VIRAPINMODELY Valiani: ok
+[21/07/2014 11:43:58] VIRAPINMODELY Valiani: je vais déjeuner
+[21/07/2014 11:44:02] Genoveva Vargas Solar: ok
+[21/07/2014 11:44:10] Genoveva Vargas Solar: je serai par ici ...
+[21/07/2014 11:44:15] Genoveva Vargas Solar: on fera le point plus tard :)
+[21/07/2014 11:44:17] Genoveva Vargas Solar: bon ap
+[21/07/2014 11:44:22] VIRAPINMODELY Valiani: merci :)
+[21/07/2014 15:04:33] VIRAPINMODELY Valiani: tu pourrais m'expliquer les schémas des diapos 3 et 4 ?
+[21/07/2014 15:28:31] VIRAPINMODELY Valiani: (en particulier < av, TaF, 
+  <$/Kwatt, [t1,t2]>
+>
+)
+[21/07/2014 15:45:53] Genoveva Vargas Solar: je suis de retour
+[21/07/2014 15:46:02] Genoveva Vargas Solar: chaque service a associé un tag avec son sla
+[21/07/2014 15:46:11] Genoveva Vargas Solar:  av, TaF, 
+  <$/Kwatt, [t1,t2]>
+[21/07/2014 15:46:18] Genoveva Vargas Solar: représente le SLA de chaque service
+[21/07/2014 15:46:35] Genoveva Vargas Solar: un service est donc caractérisé par son interface exporté et par son tag SLA
+[21/07/2014 15:46:51] Genoveva Vargas Solar: pour l'instant sur le scénario il ne s'agit pas de parler de SLA
+[21/07/2014 15:47:14] Genoveva Vargas Solar: Le scénario en gros dit que il y a des services fourni par les clouds
+[21/07/2014 15:47:23] Genoveva Vargas Solar: les services son des types suivants:
+[21/07/2014 15:47:31] Genoveva Vargas Solar: - fournisseurs de données
+[21/07/2014 15:47:41] Genoveva Vargas Solar: - traitement de données
+[21/07/2014 15:48:07] Genoveva Vargas Solar: - fournisseurs de resources: calcul, service réseux et stockage
+[21/07/2014 15:48:49] Genoveva Vargas Solar: tout service et déployé sur un cloud
+[21/07/2014 15:49:11] Genoveva Vargas Solar: deux clouds peuvent fournir les mêmes services avec des SLA différents
+[21/07/2014 15:49:26] Genoveva Vargas Solar: donc dans notre scénario nous allons avoir 3 clouds
+[21/07/2014 15:49:47] Genoveva Vargas Solar: qui nous offrent des services de calcul et de stockage
+[21/07/2014 15:50:01] Genoveva Vargas Solar: nous supposons que le service réseaux est toujours là
+[21/07/2014 15:50:21] Genoveva Vargas Solar: nous devons construire des services de données (dans ton stage)
+[21/07/2014 15:51:35] Genoveva Vargas Solar: cela te semble plus claire?
+[21/07/2014 15:54:14] VIRAPINMODELY Valiani: le schéma doit donc représenter 3 clouds, et les différents services déployés ?
+[21/07/2014 15:54:25] Genoveva Vargas Solar: yes
+[21/07/2014 15:54:40] Genoveva Vargas Solar: pour l'instant les services de données
+[21/07/2014 15:54:52] Genoveva Vargas Solar: alors pour les données
+[21/07/2014 15:55:01] Genoveva Vargas Solar: je pense que nous allons faire la chose suivante
+[21/07/2014 15:55:09] Genoveva Vargas Solar: par rapport à l'uML version actuelle
+[21/07/2014 15:56:20] Genoveva Vargas Solar: nous allons avoir une première base relationnelle où nous allons avoir tout ce qui concerne la formation
+[21/07/2014 15:57:12] Genoveva Vargas Solar: sans les informations étudiants
+[21/07/2014 15:57:29] Genoveva Vargas Solar: ensuite une autre base existe déjà avec les contacts
+[21/07/2014 15:57:36] Genoveva Vargas Solar: avec son service associé
+[21/07/2014 15:58:16] Genoveva Vargas Solar: et nous allons avoir une base étudiants relationnelee avec les étudiants
+[21/07/2014 15:58:39] Genoveva Vargas Solar: et une base documents avec étudiants mais avec des informations que nous allons récupérer de linkedin
+[21/07/2014 15:58:58] Genoveva Vargas Solar: dans le cloud ou nous avons neo4J
+[21/07/2014 15:59:29] VIRAPINMODELY Valiani: neo4J ?
+[21/07/2014 15:59:39] Genoveva Vargas Solar: exo 3?
+[21/07/2014 15:59:49] Genoveva Vargas Solar: tu te suiviens que tu as un bd graph?
+[21/07/2014 15:59:56] Genoveva Vargas Solar: qui s'appelle Neo4 J
+[21/07/2014 15:59:58] Genoveva Vargas Solar: ?
+[21/07/2014 16:00:36] VIRAPINMODELY Valiani: oui
+[21/07/2014 16:00:41] VIRAPINMODELY Valiani: la partie avec Cypher ?
+[21/07/2014 16:00:52] Genoveva Vargas Solar: nous allons utiliser Neo4J comme serveur
+[21/07/2014 16:00:56] VIRAPINMODELY Valiani: ok
+[21/07/2014 16:00:58] Genoveva Vargas Solar: pour notre scénario
+[21/07/2014 16:01:12] Genoveva Vargas Solar: donc les infos des suivi de matière la dedans
+[21/07/2014 16:01:38] Genoveva Vargas Solar: les infos des institutions sur MongoDB sur le cloud utilisé pour déployer mongo dans l'exo 3
+[21/07/2014 16:02:17] Genoveva Vargas Solar: et aussi les infos des institutions sur relationnel sur azure
+[21/07/2014 16:02:30] Genoveva Vargas Solar: et je m'arrête la pour ne pas te perdre plus
+[21/07/2014 16:02:41] VIRAPINMODELY Valiani: ok
+[21/07/2014 16:02:42] Genoveva Vargas Solar: donc version 1 de la figure il faut spécifier tout cela
+[21/07/2014 16:02:45] VIRAPINMODELY Valiani: d'accord
+[21/07/2014 16:02:50] Genoveva Vargas Solar: cool
+[21/07/2014 16:02:53] VIRAPINMODELY Valiani: je comprends mieux
+[21/07/2014 16:02:54] VIRAPINMODELY Valiani: merci
+[21/07/2014 16:03:00] Genoveva Vargas Solar: demain je vais me connecter dès ton arrivée
+[21/07/2014 16:03:10] Genoveva Vargas Solar: pour travailler sur cette distribution de données
+[21/07/2014 16:03:20] Genoveva Vargas Solar: et la spécification des services
+[21/07/2014 16:03:50] VIRAPINMODELY Valiani: ça marche
+[21/07/2014 16:04:16] Genoveva Vargas Solar: ok donc je te laisse finir la journée et on se voit demain
+[21/07/2014 16:04:23] Genoveva Vargas Solar: je reste connectée
+[21/07/2014 16:04:25] VIRAPINMODELY Valiani: ok
+[21/07/2014 16:04:28] VIRAPINMODELY Valiani: merci
+[21/07/2014 16:04:53] VIRAPINMODELY Valiani: pour le schéma, je pense le partager sur google drive si ça te va
+[21/07/2014 16:05:02] Genoveva Vargas Solar: très bien
+[21/07/2014 16:05:13] Genoveva Vargas Solar: comme ça Nadia et Chirine peuvent suivre aussi
+[22/07/2014 09:33:26] Genoveva Vargas Solar: BonjourValiani
+[22/07/2014 09:33:41] Genoveva Vargas Solar: as tu finit le slide?
+[22/07/2014 09:34:42] VIRAPINMODELY Valiani: je suis en train de le finir
+[22/07/2014 09:34:48] VIRAPINMODELY Valiani: je le partage juste après
+[22/07/2014 10:03:05] VIRAPINMODELY Valiani: juste deux petites questions
+[22/07/2014 10:03:17] VIRAPINMODELY Valiani: hier tu m'as dit
+[22/07/2014 10:03:50] VIRAPINMODELY Valiani: [lundi 21 juillet 2014 16:00] Genoveva Vargas Solar: 
+
+<<< pour notre scénario
+donc les infos des suivi de matière la dedans
+les infos des institutions sur MongoDB sur le cloud utilisé pour déployer mongo dans l'exo 3
+et aussi les infos des institutions sur relationnel sur azure
+[22/07/2014 10:04:10] VIRAPINMODELY Valiani: les infos de suivi de matière sur Neo4J
+[22/07/2014 10:04:32] VIRAPINMODELY Valiani: et les infos des instituions seront à la fois sur mongoDB et sur Azure ?
+[22/07/2014 10:32:17] Genoveva Vargas Solar: oui
+[22/07/2014 10:32:22] Genoveva Vargas Solar: il y aura des duplications
+[22/07/2014 10:32:29] Genoveva Vargas Solar: avec des informations partielles
+[22/07/2014 10:32:42] Genoveva Vargas Solar: pour simuler des différentes qualités de données
+[22/07/2014 10:34:51] Genoveva Vargas Solar: Je vois ta figure
+[22/07/2014 10:34:59] Genoveva Vargas Solar: elle est pour l'instant trop général
+[22/07/2014 10:35:19] Genoveva Vargas Solar: il faut partir des services de données
+[22/07/2014 10:43:00] VIRAPINMODELY Valiani: que sont les services de données ?
+[22/07/2014 10:43:06] Genoveva Vargas Solar: !!
+[22/07/2014 10:43:09] Genoveva Vargas Solar: Exo 2
+[22/07/2014 10:43:13] VIRAPINMODELY Valiani: les DAAS ?
+[22/07/2014 10:43:15] Genoveva Vargas Solar: tu as implanté un service de données
+[22/07/2014 10:43:19] VIRAPINMODELY Valiani: oui
+[22/07/2014 10:43:25] Genoveva Vargas Solar: qui fourni des contacts
+[22/07/2014 10:43:26] VIRAPINMODELY Valiani: mais
+[22/07/2014 10:43:36] VIRAPINMODELY Valiani: ce seront les mêmes pour le scénario ?
+[22/07/2014 10:43:37] Genoveva Vargas Solar: DaaS c'est SQLServer
+[22/07/2014 10:43:45] Genoveva Vargas Solar: Certainement pas
+[22/07/2014 10:43:59] Genoveva Vargas Solar: Je suis en train de modifier ta figure abstraite
+[22/07/2014 10:44:05] Genoveva Vargas Solar: pour te donner plus de billes
+[22/07/2014 10:44:07] Genoveva Vargas Solar: pour que tu vois
+[22/07/2014 10:44:13] Genoveva Vargas Solar: je pense que cela sera plus clair
+[22/07/2014 10:45:29] VIRAPINMODELY Valiani: je ne sais pas quels sont les exactement les services qu'on pourra appeler dans le cas du scénario
+[22/07/2014 10:45:40] Genoveva Vargas Solar: un instant
+[22/07/2014 10:45:56] Genoveva Vargas Solar: je prépare la figure car tu n'as pas compris le scénario encore
+[22/07/2014 10:54:12] *** Genoveva Vargas Solar envoie Scenario.pptx ***
+[22/07/2014 10:54:17] Genoveva Vargas Solar: voila
+[22/07/2014 10:54:28] Genoveva Vargas Solar: tu vois mon ppt
+[22/07/2014 10:54:35] Genoveva Vargas Solar: je suis en train de te le passer par ici
+[22/07/2014 10:54:47] Genoveva Vargas Solar: je te laisse l'ouvrir pour qu'on voit ensemble
+[22/07/2014 10:54:53] VIRAPINMODELY Valiani: ok
+[22/07/2014 10:55:05] VIRAPINMODELY Valiani: je l'ai ouvert
+[22/07/2014 10:55:13] Genoveva Vargas Solar: ok donc nous avons 3 clouds
+[22/07/2014 10:55:25] Genoveva Vargas Solar: J'ai représenté les services de données (une partie)
+[22/07/2014 10:55:42] Genoveva Vargas Solar: Sur Azure notre DaaS va être un ou plusieurs SQLServer
+[22/07/2014 10:55:55] Genoveva Vargas Solar: pour l'instant j'ai mis qu'un seul
+[22/07/2014 10:56:38] Genoveva Vargas Solar: nous avons trois bases (au sens relationnel) la Base Formation, la Base Students et la Base Contacts (il manque dans ma figure)
+[22/07/2014 10:56:51] Genoveva Vargas Solar: La Base Contacts est celle que tu as implanté
+[22/07/2014 10:56:56] VIRAPINMODELY Valiani: oui
+[22/07/2014 10:57:02] Genoveva Vargas Solar: qui est accesible à travers le service myNet
+[22/07/2014 10:57:12] Genoveva Vargas Solar: qui se nourrit du service Facebook
+[22/07/2014 10:57:29] Genoveva Vargas Solar: et qui stocke les données sur le DaaS SQL Server
+[22/07/2014 10:57:38] VIRAPINMODELY Valiani: on est d'accord que Facebook ne fonctionnant plus de la même façon
+[22/07/2014 10:57:49] VIRAPINMODELY Valiani: je n epeux pas récupérer de jeton d'accès
+[22/07/2014 10:57:56] Genoveva Vargas Solar: attends valiani
+[22/07/2014 10:58:02] Genoveva Vargas Solar: nous faisons la conception
+[22/07/2014 10:58:10] Genoveva Vargas Solar: il se préocuper d'une chose à  la fois
+[22/07/2014 10:58:11] VIRAPINMODELY Valiani: ok
+[22/07/2014 10:58:53] Genoveva Vargas Solar: ensuite nous aurons la base Students avec des informations de Student que nous allons dériver et compléter à partir de l'info récupérée par le ServiceMyNet
+[22/07/2014 10:59:08] Genoveva Vargas Solar: et qui sera fournie par le Service Students
+[22/07/2014 10:59:36] Genoveva Vargas Solar: ah j'ai oublié tout ce qui est en rouge ce sont des services ou des fichiers qui vont alimenter nos bases
+[22/07/2014 11:00:00] VIRAPINMODELY Valiani: (je n'ai pas de rouge)
+[22/07/2014 11:00:12] VIRAPINMODELY Valiani: ah si
+[22/07/2014 11:00:12] Genoveva Vargas Solar: Et nous avons la base Formation qui va implanter la base
+[22/07/2014 11:00:13] VIRAPINMODELY Valiani: pardon
+[22/07/2014 11:00:15] Genoveva Vargas Solar: bordeaux
+[22/07/2014 11:00:21] Genoveva Vargas Solar: bordeau
+[22/07/2014 11:00:25] Genoveva Vargas Solar: bleu et noir
+[22/07/2014 11:00:35] Genoveva Vargas Solar: Facebook est en bordeau
+[22/07/2014 11:00:59] VIRAPINMODELY Valiani: oui, je suis désolée je ne l'ai pas vu
+[22/07/2014 11:01:03] Genoveva Vargas Solar: ok
+[22/07/2014 11:01:22] Genoveva Vargas Solar: donc la base formation sera accessible via le service MasterProgram
+[22/07/2014 11:01:38] Genoveva Vargas Solar: et la base Students sera accessible via le service Students
+[22/07/2014 11:01:56] Genoveva Vargas Solar: et tout cet écosystème sera déployé sur Azure
+[22/07/2014 11:02:21] VIRAPINMODELY Valiani: d'accord
+[22/07/2014 11:02:32] Genoveva Vargas Solar: Attention pour l'instant je n'ai pas mis les apps qui seront FrontEnd
+[22/07/2014 11:02:42] VIRAPINMODELY Valiani: ok
+[22/07/2014 11:03:24] Genoveva Vargas Solar: Ensuite dans un autre cloud nous allons implatner des services qui fourniront
+[22/07/2014 11:03:35] Genoveva Vargas Solar: des informations professionnelles des étudiants
+[22/07/2014 11:03:42] Genoveva Vargas Solar: qui seront stockées sur MongoDB
+[22/07/2014 11:03:58] Genoveva Vargas Solar: et la base Mongo sera alimentée par linkedIn
+[22/07/2014 11:04:26] Genoveva Vargas Solar: et un service d'Universités qui sera nourit par des informations récupérées de Google
+[22/07/2014 11:04:35] Genoveva Vargas Solar: sur les institutions externes à l'université
+[22/07/2014 11:04:39] Genoveva Vargas Solar: qui fournit la formation de master
+[22/07/2014 11:05:21] Genoveva Vargas Solar: La pareil il faudra constuire les apps front end
+[22/07/2014 11:05:34] VIRAPINMODELY Valiani: ok
+[22/07/2014 11:05:43] Genoveva Vargas Solar: Enfin dans un autre cloud
+[22/07/2014 11:05:58] Genoveva Vargas Solar: nous aurons la partie inscriptions
+[22/07/2014 11:06:15] Genoveva Vargas Solar: qui disent qui suit quel cours
+[22/07/2014 11:06:35] Genoveva Vargas Solar: stockées sur Neo4J
+[22/07/2014 11:06:59] Genoveva Vargas Solar: là nous aurons également ce que tu as implanté avec le réseaux de contacts
+[22/07/2014 11:07:14] Genoveva Vargas Solar: avec les services et les app front end qui vont avec
+[22/07/2014 11:08:00] VIRAPINMODELY Valiani: ok
+[22/07/2014 11:09:09] Genoveva Vargas Solar: Donc il faut compléter ma figure avec les rectangles qui représentent les bases
+[22/07/2014 11:09:29] Genoveva Vargas Solar: avec des commentaires sur le type de documents fournies par les services rouges
+[22/07/2014 11:09:52] Genoveva Vargas Solar: les noms des clour providers
+[22/07/2014 11:10:20] Genoveva Vargas Solar: tu peux partager ce ppt avec tout cela
+[22/07/2014 11:10:26] Genoveva Vargas Solar: y ensuite une fois que tu finis
+[22/07/2014 11:10:41] Genoveva Vargas Solar: on passe à spécifier de manière plus précise les bases
+[22/07/2014 11:10:46] Genoveva Vargas Solar: et les interfaces de services
+[22/07/2014 11:10:53] VIRAPINMODELY Valiani: d'accord
+[22/07/2014 11:10:59] VIRAPINMODELY Valiani: merci pour les explications
+[22/07/2014 11:11:05] Genoveva Vargas Solar: de rien
+[22/07/2014 11:11:13] Genoveva Vargas Solar: c'est normal
+[22/07/2014 11:24:21] VIRAPINMODELY Valiani: les deux autres providers seront bien OpenShift et AppFog ?
+[22/07/2014 11:24:42] Genoveva Vargas Solar: comme dans l'exo 3
+[22/07/2014 11:24:51] VIRAPINMODELY Valiani: ok
+[22/07/2014 11:41:58] VIRAPINMODELY Valiani: j'ai presque fini, il y a juste une chose que je ne sais pas
+[22/07/2014 11:42:27] VIRAPINMODELY Valiani: d'où est-ce qu'on va récupérer les infos sur qui suit quel cours ?
+[22/07/2014 11:43:56] Genoveva Vargas Solar: nous allons les invinter
+[22/07/2014 11:44:03] VIRAPINMODELY Valiani: ah
+[22/07/2014 11:49:29] *** VIRAPINMODELY Valiani envoie slide.pptx ***
+[22/07/2014 11:49:46] *** VIRAPINMODELY Valiani envoie Scenario.pptx ***
+[22/07/2014 11:51:53] VIRAPINMODELY Valiani: je l'ai mis sur le drive
+[22/07/2014 11:52:39] Genoveva Vargas Solar: je le vois
+[22/07/2014 11:52:45] Genoveva Vargas Solar: mais il faut le mettre au propre eh?
+[22/07/2014 11:52:49] VIRAPINMODELY Valiani: oui
+[22/07/2014 11:52:53] Genoveva Vargas Solar: je l'ai fait en 5 mins
+[22/07/2014 11:52:56] Genoveva Vargas Solar: il est tout moche
+[22/07/2014 11:53:01] VIRAPINMODELY Valiani: juste que je vais manger
+[22/07/2014 11:53:14] Genoveva Vargas Solar: oui
+[22/07/2014 11:53:17] Genoveva Vargas Solar: pas de pb
+[22/07/2014 11:53:23] VIRAPINMODELY Valiani: à tout à l'heure
+[22/07/2014 11:53:26] Genoveva Vargas Solar: tu continue après
+[22/07/2014 11:53:29] Genoveva Vargas Solar: yeap bon ap
+[22/07/2014 15:06:29] VIRAPINMODELY Valiani: voilà
+[22/07/2014 15:06:35] VIRAPINMODELY Valiani: c'est sur drive
+[23/07/2014 09:36:44] Genoveva Vargas Solar: Bonjour Valiani
+[23/07/2014 09:36:46] Genoveva Vargas Solar: ça va?
+[23/07/2014 09:36:49] VIRAPINMODELY Valiani: oui
+[23/07/2014 09:36:50] VIRAPINMODELY Valiani: merci :)
+[23/07/2014 09:36:54] VIRAPINMODELY Valiani: et toi ?
+[23/07/2014 09:37:05] Genoveva Vargas Solar: aussi merci
+[23/07/2014 09:37:34] Genoveva Vargas Solar: aujourd'hui nous devons commencer à spécifier les services du scénario
+[23/07/2014 09:37:48] Genoveva Vargas Solar: et nous allons commencer avec les données
+[23/07/2014 09:38:06] Genoveva Vargas Solar: et pour chaque base que nous allons construire il faut décrire les données
+[23/07/2014 09:38:25] Genoveva Vargas Solar: dans le cas relationnel eh bien tu peux faire un script
+[23/07/2014 09:39:15] Genoveva Vargas Solar: car tu as déjà l'UML, pour les autres juste voir quels sont les structures de données un UML
+[23/07/2014 09:41:52] Genoveva Vargas Solar: tu vois?
+[23/07/2014 09:42:11] Genoveva Vargas Solar: c'est pour spécifier les services
+[23/07/2014 09:42:47] Genoveva Vargas Solar: et avec les données enfin l'interface que tu vas donner aux différents services du scénario
+[23/07/2014 09:43:02] Genoveva Vargas Solar: ça va?
+[23/07/2014 09:43:17] VIRAPINMODELY Valiani: je crois oui
+[23/07/2014 09:43:41] Genoveva Vargas Solar: ok donc je suis connectée si tu as des questions pour avancer je serai là
+[23/07/2014 09:43:46] VIRAPINMODELY Valiani: d'accord
+[23/07/2014 09:43:47] VIRAPINMODELY Valiani: merci
+[23/07/2014 10:33:47] VIRAPINMODELY Valiani: du coup, pour la partie relationnelle, est ce qu'il te faut quelque chose comme ça ?
+[23/07/2014 10:33:53] *** VIRAPINMODELY Valiani envoie base_contact.sql base_formation.sql base_student.sql base_contact.sql base_formation.sql base_student.sql ***
+[23/07/2014 10:44:35] Genoveva Vargas Solar: oui mais create Contact tu l'as déjà non?
+[23/07/2014 10:44:46] VIRAPINMODELY Valiani: oui
+[23/07/2014 10:44:57] Genoveva Vargas Solar: alors pas la peine de reconstruire ce que tu as déjà
+[23/07/2014 10:45:16] Genoveva Vargas Solar: en tous cas oui c'est du SQL DDL que tu dois écrire pour le cas relationnel
+[23/07/2014 10:46:31] Genoveva Vargas Solar: ça va j'ai vu tous les fichiers
+[23/07/2014 10:46:36] Genoveva Vargas Solar: pour le cas relationnel
+[23/07/2014 10:51:24] VIRAPINMODELY Valiani: on récupèrera quelles informations de LinkedIn ?
+ Les expériences professionnelles, tous les diplômes (ou le dernier ?
+[23/07/2014 10:58:04] Genoveva Vargas Solar: les informations sur education
+[23/07/2014 10:58:06] Genoveva Vargas Solar: oui
+[23/07/2014 10:58:24] Genoveva Vargas Solar: la on peut considérer que nous recupérons tous ce que linked in nous donne
+[23/07/2014 11:45:44] VIRAPINMODELY Valiani: je vais manger
+[23/07/2014 11:45:49] VIRAPINMODELY Valiani: à tout à l'heure
+[23/07/2014 11:49:15] Genoveva Vargas Solar:       bon ap
+[23/07/2014 15:51:28] VIRAPINMODELY Valiani: pour LinkedIn, j'ai fait apparaître les langues parlées, les expériences professionelles et la formation scolaire
+[23/07/2014 15:53:27] VIRAPINMODELY Valiani: il y a beaucoup d'infos en fait comme les centres d'intérêt, les expériences de volontariat
+[23/07/2014 15:54:59] VIRAPINMODELY Valiani: il y a les relations aussi
+[23/07/2014 16:12:58] Genoveva Vargas Solar: oui mais linjked in nous allons le prendre en JSON
+[23/07/2014 16:13:12] Genoveva Vargas Solar: les relations de connections nous allons le maintenir sur NEO4J
+[24/07/2014 10:31:35] Genoveva Vargas Solar: Bonjour Valiani
+[24/07/2014 10:31:44] Genoveva Vargas Solar: C'est pour te demander si tout va bien?
+[24/07/2014 10:31:56] Genoveva Vargas Solar: Où en est tu du spéc aujourd'hui?
+[24/07/2014 10:32:24] VIRAPINMODELY Valiani: bonjour
+[24/07/2014 10:32:29] VIRAPINMODELY Valiani: pour l'instant ça va
+[24/07/2014 10:32:46] VIRAPINMODELY Valiani: j'ai trouvé ce qu'il me fallait dans la doc de LinkedIn pour finir la conception
+[24/07/2014 10:32:59] Genoveva Vargas Solar: excellent
+[24/07/2014 10:33:00] VIRAPINMODELY Valiani: (qui est sous LucidChart)
+[24/07/2014 10:33:08] Genoveva Vargas Solar: oui
+[24/07/2014 10:33:16] VIRAPINMODELY Valiani: je devrais avoir fini ce matin
+[24/07/2014 10:33:32] VIRAPINMODELY Valiani: donc pour les données ça devrait être bon
+[24/07/2014 10:33:38] Genoveva Vargas Solar: très bien
+[24/07/2014 10:33:50] Genoveva Vargas Solar: il faudra passer aux interfaces de services
+[24/07/2014 10:34:08] VIRAPINMODELY Valiani: ok
+[24/07/2014 10:34:16] VIRAPINMODELY Valiani: je les ferai avec LucidChart aussi je pense
+[24/07/2014 10:34:32] Genoveva Vargas Solar: est ce que Nadia et Chirine peuvent voir les fichiers sur GoogleDoc?
+[24/07/2014 10:34:42] Genoveva Vargas Solar: oui sur LucidChart c'est ok
+[24/07/2014 10:34:49] Genoveva Vargas Solar: elles ont accès
+[24/07/2014 10:35:12] VIRAPINMODELY Valiani: faut que je les rajoute sur GoogleDoc
+[24/07/2014 10:35:39] Genoveva Vargas Solar: ok
+[24/07/2014 10:36:15] Genoveva Vargas Solar: Je pense que tu vas finir en fin de journée avec tout cela
+[24/07/2014 10:36:41] Genoveva Vargas Solar: Peux tu nous écrire en mail pour faire le point et avec une proposition de ce que tu comptes commencer à implanter en premier,
+[24/07/2014 10:36:53] Genoveva Vargas Solar: ce qui t'occupera la semaine prochaine
+[24/07/2014 10:37:15] VIRAPINMODELY Valiani: pas de souci
+[24/07/2014 10:37:41] Genoveva Vargas Solar: ok
+[24/07/2014 10:37:47] Genoveva Vargas Solar: bon je continue connectée
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+[24/07/2014 15:03:23] VIRAPINMODELY Valiani: https://developer.linkedin.com/documents/profile-fields
+[24/07/2014 15:03:28] VIRAPINMODELY Valiani: sur cette page
+[24/07/2014 15:03:31] VIRAPINMODELY Valiani: y'a un endroit
+[24/07/2014 15:03:53] VIRAPINMODELY Valiani: où ils parlent de bound account type
+[24/07/2014 15:04:15] Rémi Domingues: oui
+[24/07/2014 15:04:23] VIRAPINMODELY Valiani: je ne comprends pas ce que c'est
+[24/07/2014 15:04:40] VIRAPINMODELY Valiani: un compte lié ?
+[24/07/2014 15:04:54] Rémi Domingues: je peux me tromper
+[24/07/2014 15:05:02] Rémi Domingues: mais un compte linkedin peut avoir plusieurs sous compte
+[24/07/2014 15:05:10] Rémi Domingues: ou profils si tu veux
+[24/07/2014 15:05:19] Rémi Domingues: par exemple, mon profil par défaut est celui en francais
+[24/07/2014 15:05:24] Rémi Domingues: et j'ai un autre profil en anglais
+[24/07/2014 15:05:32] VIRAPINMODELY Valiani: ah ?
+[24/07/2014 15:05:33] Rémi Domingues: ce sont deux pages différentes liees au meme compte
+[24/07/2014 15:05:48] Rémi Domingues: c'est peut être de ca dont ils parlent
+[24/07/2014 15:05:50] VIRAPINMODELY Valiani: oooooooooooooooooooooooooooooooooohhhhhhhh
+[24/07/2014 15:05:52] VIRAPINMODELY Valiani: je savais pas
+[24/07/2014 15:05:55] VIRAPINMODELY Valiani: merci ^^
+[24/07/2014 15:06:04] Rémi Domingues: :)
+[24/07/2014 15:06:47] VIRAPINMODELY Valiani: je vouslais te demander# ça voulait dire quoi
+[24/07/2014 15:06:51] VIRAPINMODELY Valiani: mais j'ai compris
+[24/07/2014 15:06:53] VIRAPINMODELY Valiani: c'est number
+[24/07/2014 15:07:07] VIRAPINMODELY Valiani: après
+[24/07/2014 15:07:14] VIRAPINMODELY Valiani: y'a un endrois où ils parlent de connection
+[24/07/2014 15:07:21] VIRAPINMODELY Valiani: num-connections
+[24/07/2014 15:07:57] Rémi Domingues: ce sont les contacts
+[24/07/2014 15:08:00] Rémi Domingues: les 'amis'
+[24/07/2014 15:08:00] VIRAPINMODELY Valiani: what is a connection ?
+[24/07/2014 15:08:03] VIRAPINMODELY Valiani: oh !
+[24/07/2014 15:08:09] VIRAPINMODELY Valiani: can't be !!
+[24/07/2014 15:09:32] VIRAPINMODELY Valiani: aaaaaaaaaaaaaah
+[24/07/2014 15:09:33] VIRAPINMODELY Valiani: mais si
+[24/07/2014 15:09:49] VIRAPINMODELY Valiani: je suis toute bêta
+[24/07/2014 15:16:08] VIRAPINMODELY Valiani: j'ai d'autres questions :)
+[24/07/2014 15:16:24] Rémi Domingues: oui  ?^^
+[24/07/2014 15:16:52] VIRAPINMODELY Valiani: il y a des champs
+[24/07/2014 15:17:00] VIRAPINMODELY Valiani: que linkedIn va nous renvoyer
+[24/07/2014 15:17:13] VIRAPINMODELY Valiani: et qui contiendront une chaine de caratère précise
+[24/07/2014 15:17:17] VIRAPINMODELY Valiani: par exemple
+[24/07/2014 15:17:23] VIRAPINMODELY Valiani: pour le type de numéro de téléphone
+[24/07/2014 15:17:28] VIRAPINMODELY Valiani: il peut être
+[24/07/2014 15:17:30] VIRAPINMODELY Valiani: "home"
+[24/07/2014 15:17:35] VIRAPINMODELY Valiani: "professional"
+[24/07/2014 15:17:42] Rémi Domingues: oui
+[24/07/2014 15:17:45] VIRAPINMODELY Valiani: ou un autre"
+[24/07/2014 15:17:52] VIRAPINMODELY Valiani: ça se précise en UML ?
+[24/07/2014 15:17:59] Rémi Domingues: oui
+[24/07/2014 15:18:08] Rémi Domingues: tu as plusieurs solutions
+[24/07/2014 15:18:55] Rémi Domingues: la plus claire sera surement dans la definition de la colonne de la table :
+phone: {'home', 'professional', 'autre'}
+[24/07/2014 15:19:03] VIRAPINMODELY Valiani:  ?
+[24/07/2014 15:19:14] Rémi Domingues: c'est l'equivalent de faire une classe de type enum et de dire que la colonne est de ce type
+[24/07/2014 15:19:21] VIRAPINMODELY Valiani: au lieu du type string
+[24/07/2014 15:19:25] Rémi Domingues: oui
+[24/07/2014 15:19:29] Rémi Domingues: c'est implicite
+[24/07/2014 15:19:30] VIRAPINMODELY Valiani: je décris carrément l'énum

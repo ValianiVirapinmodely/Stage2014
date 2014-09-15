@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="3dcdad8b-70c9-4362-b56f-377256310fd2" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://mynetcloudservice.cloudapp.net:8080/MyNetDbService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="MyNetDbService.disco" MetadataType="Disco" ID="110619c9-dbea-4744-8bcb-b6ba68cc390a" SourceId="1" SourceUrl="http://mynetcloudservice.cloudapp.net:8080/MyNetDbService.svc?disco" />
+    <MetadataFile FileName="MyNetDbService.xsd" MetadataType="Schema" ID="d952d1db-0363-48e0-8af7-e5b5cb0264f9" SourceId="1" SourceUrl="http://mynetcloudservice.cloudapp.net:8080/MyNetDbService.svc?xsd=xsd1" />
+    <MetadataFile FileName="MyNetDbService1.xsd" MetadataType="Schema" ID="d1590422-89a9-49fa-9a5a-4a3cf9d99f6a" SourceId="1" SourceUrl="http://mynetcloudservice.cloudapp.net:8080/MyNetDbService.svc?xsd=xsd0" />
+    <MetadataFile FileName="MyNetDbService2.xsd" MetadataType="Schema" ID="e7a28cc8-7fc1-473f-8e86-1e2970aa38fe" SourceId="1" SourceUrl="http://mynetcloudservice.cloudapp.net:8080/MyNetDbService.svc?xsd=xsd2" />
+    <MetadataFile FileName="MyNetDbService.wsdl" MetadataType="Wsdl" ID="fd9ec256-7e03-4d70-97a9-d12d26ae5011" SourceId="1" SourceUrl="http://mynetcloudservice.cloudapp.net:8080/MyNetDbService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
