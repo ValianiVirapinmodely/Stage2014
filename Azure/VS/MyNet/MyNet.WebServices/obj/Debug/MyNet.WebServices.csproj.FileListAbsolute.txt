@@ -25,3 +25,12 @@ C:\Users\J\Desktop\cdm\Ex3\MyNet.WebServices\bin\Microsoft.WindowsAzure.Configur
 C:\Users\J\Desktop\cdm\Ex3\MyNet.WebServices\bin\Microsoft.WindowsAzure.StorageClient.dll
 C:\Users\J\Desktop\cdm\Ex3\MyNet.WebServices\bin\Newtonsoft.Json.dll
 C:\Users\J\Desktop\cdm\Ex3\MyNet.WebServices\bin\Newtonsoft.Json.xml
+C:\Users\nbennani1\Documents\stageValiani\Code\Azure\VS\MyNet\MyNet.WebServices\bin\MyNet.WebServices.dll
+C:\Users\nbennani1\Documents\stageValiani\Code\Azure\VS\MyNet\MyNet.WebServices\bin\MyNet.WebServices.pdb
+C:\Users\nbennani1\Documents\stageValiani\Code\Azure\VS\MyNet\MyNet.WebServices\bin\Microsoft.WindowsAzure.Configuration.dll
+C:\Users\nbennani1\Documents\stageValiani\Code\Azure\VS\MyNet\MyNet.WebServices\bin\Microsoft.WindowsAzure.StorageClient.dll
+C:\Users\nbennani1\Documents\stageValiani\Code\Azure\VS\MyNet\MyNet.WebServices\bin\Newtonsoft.Json.dll
+C:\Users\nbennani1\Documents\stageValiani\Code\Azure\VS\MyNet\MyNet.WebServices\bin\Newtonsoft.Json.xml
+C:\Users\nbennani1\Documents\stageValiani\Code\Azure\VS\MyNet\MyNet.WebServices\obj\Debug\MyNet.WebServices.csprojResolveAssemblyReference.cache
+C:\Users\nbennani1\Documents\stageValiani\Code\Azure\VS\MyNet\MyNet.WebServices\obj\Debug\MyNet.WebServices.dll
+C:\Users\nbennani1\Documents\stageValiani\Code\Azure\VS\MyNet\MyNet.WebServices\obj\Debug\MyNet.WebServices.pdb
