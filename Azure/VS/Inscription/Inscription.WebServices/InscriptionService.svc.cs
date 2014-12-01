@@ -19,7 +19,7 @@ namespace Inscription.WebServices
 
         static String InscriptionConnectionString;
 
-        public void InscriptionService( )
+        public InscriptionService( )
         {
             // Create DB connection string
             var connectionString = new SqlConnectionStringBuilder
@@ -100,6 +100,163 @@ namespace Inscription.WebServices
             } // dbConnection
 
             return matieresSuivies;
+
+        } // Method
+
+        public List<SuitMatiere> getMSByEtudiant(int idEtudiant)
+        {
+            List<SuitMatiere> matieresSuivies = null;
+
+            // Connect to DB
+            using (var dbConnection = new SqlConnection(InscriptionConnectionString))
+            {
+                dbConnection.Open();
+
+                // Execute SQL Statements
+                using (SqlCommand sqlCommand = dbConnection.CreateCommand())
+                {
+                    // Select ALL matieres suivies
+                    var sqlStatementTemplate = "SELECT * FROM inscription.SuitMatiere WHERE IdEtudiant = N'{0}'";
+                    var sqlStatement = String.Format(sqlStatementTemplate, idEtudiant);
+
+                    sqlCommand.CommandText = sqlStatement;
+                    SqlDataReader reader = sqlCommand.ExecuteReader();
+
+                    // crée la liste des matières
+                    matieresSuivies = new List<SuitMatiere>();
+
+                    while (reader.Read())
+                    {
+                        var matiere = new SuitMatiere
+                        {
+                            Annee = (String)reader["Annee"],
+                            IdEtudiant = (int)reader["IdEtudiant"],
+                            IdMatiere = (int)reader["IdMatiere"]
+                        };
+
+                        matieresSuivies.Add(matiere);
+                    } // While reader
+
+                } // SQL Command
+
+                dbConnection.Close();
+
+            } // dbConnection
+
+            return matieresSuivies;
+
+        } // Method
+
+        public List<SuitMatiere> getMSByMatiere(int idMatiere)
+        {
+            List<SuitMatiere> matieresSuivies = null;
+
+            // Connect to DB
+            using (var dbConnection = new SqlConnection(InscriptionConnectionString))
+            {
+                dbConnection.Open();
+
+                // Execute SQL Statements
+                using (SqlCommand sqlCommand = dbConnection.CreateCommand())
+                {
+                    // Select ALL matieres suivies
+                    var sqlStatementTemplate = "SELECT * FROM inscription.SuitMatiere WHERE IdMatiere = N'{0}'";
+                    var sqlStatement = String.Format(sqlStatementTemplate, idMatiere);
+
+                    sqlCommand.CommandText = sqlStatement;
+                    SqlDataReader reader = sqlCommand.ExecuteReader();
+
+                    // crée la liste des matières
+                    matieresSuivies = new List<SuitMatiere>();
+
+                    while (reader.Read())
+                    {
+                        var matiere = new SuitMatiere
+                        {
+                            Annee = (String)reader["Annee"],
+                            IdEtudiant = (int)reader["IdEtudiant"],
+                            IdMatiere = (int)reader["IdMatiere"]
+                        };
+
+                        matieresSuivies.Add(matiere);
+                    } // While reader
+
+                } // SQL Command
+
+                dbConnection.Close();
+
+            } // dbConnection
+
+            return matieresSuivies;
+
+        } // Method
+
+        public void deleteMS(int idEtudiant, int idMatiere)
+        {
+            // Connect to DB
+            using (var dbConnection = new SqlConnection(InscriptionConnectionString))
+            {
+                dbConnection.Open();
+
+                // Execute SQL Statements
+                using (SqlCommand sqlCommand = dbConnection.CreateCommand())
+                {
+                    // Select ALL matieres suivies
+                    var sqlStatementTemplate = "DELETE FROM inscription.SuitMatiere WHERE IdEtudiant = N'{0}' AND IdMatiere = N'{1}'";
+                    var sqlStatement = String.Format(sqlStatementTemplate, idEtudiant, idMatiere);
+                    
+                    sqlCommand.CommandText = sqlStatement;
+                    sqlCommand.ExecuteNonQuery();
+                } // SQL Command
+
+                dbConnection.Close();
+            }
+
+        } // Method
+
+        public void deleteMSByEtudiant(int idEtudiant)
+        {
+            // Connect to DB
+            using (var dbConnection = new SqlConnection(InscriptionConnectionString))
+            {
+                dbConnection.Open();
+
+                // Execute SQL Statements
+                using (SqlCommand sqlCommand = dbConnection.CreateCommand())
+                {
+                    // Select ALL matieres suivies
+                    var sqlStatementTemplate = "DELETE FROM inscription.SuitMatiere WHERE IdEtudiant = N'{0}'";
+                    var sqlStatement = String.Format(sqlStatementTemplate, idEtudiant);
+
+                    sqlCommand.CommandText = sqlStatement;
+                    sqlCommand.ExecuteNonQuery();
+                } // SQL Command
+
+                dbConnection.Close();
+            }
+
+        } // Method
+
+        public void deleteMSByMatiere(int idMatiere)
+        {
+            // Connect to DB
+            using (var dbConnection = new SqlConnection(InscriptionConnectionString))
+            {
+                dbConnection.Open();
+
+                // Execute SQL Statements
+                using (SqlCommand sqlCommand = dbConnection.CreateCommand())
+                {
+                    // Select ALL matieres suivies
+                    var sqlStatementTemplate = "DELETE FROM inscription.SuitMatiere WHERE IdMatiere = N'{0}'";
+                    var sqlStatement = String.Format(sqlStatementTemplate, idMatiere);
+
+                    sqlCommand.CommandText = sqlStatement;
+                    sqlCommand.ExecuteNonQuery();
+                } // SQL Command
+
+                dbConnection.Close();
+            }
 
         } // Method
 
