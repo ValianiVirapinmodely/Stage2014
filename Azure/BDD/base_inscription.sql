@@ -1,10 +1,11 @@
 CREATE SCHEMA inscription; 
+GO
 
-CREATE TABLE SuitMatiere
+CREATE TABLE inscription.SuitMatiere
 ( 
-    Annee date,
-    IdEtudiant integer REFERENCES Etudiant(IdEtudiant),
-    IdMatiere integer REFERENCES Matiere(IdMatiere),
-    constraint primaryKey PRIMARY KEY (IdEtudiant,IdMatiere),
-
+    Annee NVARCHAR(4),
+    IdEtudiant INT NOT NULL,
+    IdMatiere INT NOT NULL,
+    CONSTRAINT primaryKey PRIMARY KEY (IdEtudiant,IdMatiere)
 );
+GO
