@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Inscription.WebServices.DataModel" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Inscription.WebServices.DataModel" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="SuitMatiere">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Annee" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdEtudiant" type="xs:int" />
+      <xs:element minOccurs="0" name="IdMatiere" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SuitMatiere" nillable="true" type="tns:SuitMatiere" />
+  <xs:complexType name="ArrayOfSuitMatiere">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SuitMatiere" nillable="true" type="tns:SuitMatiere" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSuitMatiere" nillable="true" type="tns:ArrayOfSuitMatiere" />
+</xs:schema>

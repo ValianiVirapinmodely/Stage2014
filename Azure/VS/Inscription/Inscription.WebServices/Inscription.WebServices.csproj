@@ -93,7 +93,9 @@
   <ItemGroup>
     <Content Include="base_inscription.sql" />
     <Content Include="InscriptionService.svc" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataModel\SuitMatiere.cs" />

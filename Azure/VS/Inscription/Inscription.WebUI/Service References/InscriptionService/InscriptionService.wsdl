@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="InscriptionService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://inscriptionproject.cloudapp.net:8080/InscriptionService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://inscriptionproject.cloudapp.net:8080/InscriptionService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://inscriptionproject.cloudapp.net:8080/InscriptionService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Inscription.WebServices.DataModel" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IInscriptionService_addMS_InputMessage">
+    <wsdl:part name="parameters" element="tns:addMS" />
+  </wsdl:message>
+  <wsdl:message name="IInscriptionService_addMS_OutputMessage">
+    <wsdl:part name="parameters" element="tns:addMSResponse" />
+  </wsdl:message>
+  <wsdl:message name="IInscriptionService_getMS_InputMessage">
+    <wsdl:part name="parameters" element="tns:getMS" />
+  </wsdl:message>
+  <wsdl:message name="IInscriptionService_getMS_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getMSResponse" />
+  </wsdl:message>
+  <wsdl:message name="IInscriptionService_getMSByEtudiant_InputMessage">
+    <wsdl:part name="parameters" element="tns:getMSByEtudiant" />
+  </wsdl:message>
+  <wsdl:message name="IInscriptionService_getMSByEtudiant_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getMSByEtudiantResponse" />
+  </wsdl:message>
+  <wsdl:message name="IInscriptionService_getMSByMatiere_InputMessage">
+    <wsdl:part name="parameters" element="tns:getMSByMatiere" />
+  </wsdl:message>
+  <wsdl:message name="IInscriptionService_getMSByMatiere_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getMSByMatiereResponse" />
+  </wsdl:message>
+  <wsdl:message name="IInscriptionService_deleteMS_InputMessage">
+    <wsdl:part name="parameters" element="tns:deleteMS" />
+  </wsdl:message>
+  <wsdl:message name="IInscriptionService_deleteMS_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deleteMSResponse" />
+  </wsdl:message>
+  <wsdl:message name="IInscriptionService_deleteMSByEtudiant_InputMessage">
+    <wsdl:part name="parameters" element="tns:deleteMSByEtudiant" />
+  </wsdl:message>
+  <wsdl:message name="IInscriptionService_deleteMSByEtudiant_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deleteMSByEtudiantResponse" />
+  </wsdl:message>
+  <wsdl:message name="IInscriptionService_deleteMSByMatiere_InputMessage">
+    <wsdl:part name="parameters" element="tns:deleteMSByMatiere" />
+  </wsdl:message>
+  <wsdl:message name="IInscriptionService_deleteMSByMatiere_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deleteMSByMatiereResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IInscriptionService">
+    <wsdl:operation name="addMS">
+      <wsdl:input wsaw:Action="http://tempuri.org/IInscriptionService/addMS" message="tns:IInscriptionService_addMS_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IInscriptionService/addMSResponse" message="tns:IInscriptionService_addMS_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getMS">
+      <wsdl:input wsaw:Action="http://tempuri.org/IInscriptionService/getMS" message="tns:IInscriptionService_getMS_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IInscriptionService/getMSResponse" message="tns:IInscriptionService_getMS_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getMSByEtudiant">
+      <wsdl:input wsaw:Action="http://tempuri.org/IInscriptionService/getMSByEtudiant" message="tns:IInscriptionService_getMSByEtudiant_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IInscriptionService/getMSByEtudiantResponse" message="tns:IInscriptionService_getMSByEtudiant_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getMSByMatiere">
+      <wsdl:input wsaw:Action="http://tempuri.org/IInscriptionService/getMSByMatiere" message="tns:IInscriptionService_getMSByMatiere_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IInscriptionService/getMSByMatiereResponse" message="tns:IInscriptionService_getMSByMatiere_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteMS">
+      <wsdl:input wsaw:Action="http://tempuri.org/IInscriptionService/deleteMS" message="tns:IInscriptionService_deleteMS_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IInscriptionService/deleteMSResponse" message="tns:IInscriptionService_deleteMS_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteMSByEtudiant">
+      <wsdl:input wsaw:Action="http://tempuri.org/IInscriptionService/deleteMSByEtudiant" message="tns:IInscriptionService_deleteMSByEtudiant_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IInscriptionService/deleteMSByEtudiantResponse" message="tns:IInscriptionService_deleteMSByEtudiant_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteMSByMatiere">
+      <wsdl:input wsaw:Action="http://tempuri.org/IInscriptionService/deleteMSByMatiere" message="tns:IInscriptionService_deleteMSByMatiere_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IInscriptionService/deleteMSByMatiereResponse" message="tns:IInscriptionService_deleteMSByMatiere_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IInscriptionService" type="tns:IInscriptionService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="addMS">
+      <soap:operation soapAction="http://tempuri.org/IInscriptionService/addMS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMS">
+      <soap:operation soapAction="http://tempuri.org/IInscriptionService/getMS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMSByEtudiant">
+      <soap:operation soapAction="http://tempuri.org/IInscriptionService/getMSByEtudiant" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMSByMatiere">
+      <soap:operation soapAction="http://tempuri.org/IInscriptionService/getMSByMatiere" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteMS">
+      <soap:operation soapAction="http://tempuri.org/IInscriptionService/deleteMS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteMSByEtudiant">
+      <soap:operation soapAction="http://tempuri.org/IInscriptionService/deleteMSByEtudiant" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteMSByMatiere">
+      <soap:operation soapAction="http://tempuri.org/IInscriptionService/deleteMSByMatiere" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="InscriptionService">
+    <wsdl:port name="BasicHttpBinding_IInscriptionService" binding="tns:BasicHttpBinding_IInscriptionService">
+      <soap:address location="http://inscriptionproject.cloudapp.net:8080/InscriptionService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

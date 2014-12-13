@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="1470d935-c216-4d73-9683-a658b8fc086e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://inscriptionproject.cloudapp.net:8080/InscriptionService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="InscriptionService.xsd" MetadataType="Schema" ID="38fc6fde-2e40-4684-ac05-1f650f6b8f48" SourceId="1" SourceUrl="http://inscriptionproject.cloudapp.net:8080/InscriptionService.svc?xsd=xsd1" />
+    <MetadataFile FileName="InscriptionService1.xsd" MetadataType="Schema" ID="6990ea2d-de33-4198-926c-43161200b51b" SourceId="1" SourceUrl="http://inscriptionproject.cloudapp.net:8080/InscriptionService.svc?xsd=xsd0" />
+    <MetadataFile FileName="InscriptionService2.xsd" MetadataType="Schema" ID="377322b0-63bd-4a04-b476-a26ed3bd6775" SourceId="1" SourceUrl="http://inscriptionproject.cloudapp.net:8080/InscriptionService.svc?xsd=xsd2" />
+    <MetadataFile FileName="InscriptionService.wsdl" MetadataType="Wsdl" ID="61c7fa54-12b0-4f9d-8b7f-0fdabd763864" SourceId="1" SourceUrl="http://inscriptionproject.cloudapp.net:8080/InscriptionService.svc?wsdl" />
+    <MetadataFile FileName="InscriptionService.disco" MetadataType="Disco" ID="29cac793-b843-4f1c-b4af-e37bc90954df" SourceId="1" SourceUrl="http://inscriptionproject.cloudapp.net:8080/InscriptionService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
