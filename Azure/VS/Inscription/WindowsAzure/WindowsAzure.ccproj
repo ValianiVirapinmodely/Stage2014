@@ -58,10 +58,12 @@
     <Folder Include="Inscription.WebServicesContent\" />
     <Folder Include="Inscription.WebUIContent\" />
     <Folder Include="Profiles" />
+    <Folder Include="Student.WebServicesContent\" />
   </ItemGroup>
   <ItemGroup>
     <DiagnosticsConfiguration Include="Inscription.WebServicesContent\diagnostics.wadcfgx" />
     <DiagnosticsConfiguration Include="Inscription.WebUIContent\diagnostics.wadcfgx" />
+    <DiagnosticsConfiguration Include="Student.WebServicesContent\diagnostics.wadcfgx" />
   </ItemGroup>
   <ItemGroup>
     <PublishProfile Include="Profiles\InscriptionProduction.azurePubxml" />

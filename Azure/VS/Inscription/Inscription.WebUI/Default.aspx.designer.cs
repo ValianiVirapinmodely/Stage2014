@@ -40,6 +40,33 @@ namespace Inscription.WebUI {
         protected global::System.Web.UI.WebControls.TextBox AnneeTextBox;
         
         /// <summary>
+        /// Contrôle CV1.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator CV1;
+        
+        /// <summary>
+        /// Contrôle RFV1.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV1;
+        
+        /// <summary>
+        /// Contrôle RV1.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RangeValidator RV1;
+        
+        /// <summary>
         /// Contrôle IdEtudiantTextBox.
         /// </summary>
         /// <remarks>
@@ -49,6 +76,24 @@ namespace Inscription.WebUI {
         protected global::System.Web.UI.WebControls.TextBox IdEtudiantTextBox;
         
         /// <summary>
+        /// Contrôle RFV2.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV2;
+        
+        /// <summary>
+        /// Contrôle CV2.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator CV2;
+        
+        /// <summary>
         /// Contrôle IdMatiereTextBox.
         /// </summary>
         /// <remarks>
@@ -56,6 +101,24 @@ namespace Inscription.WebUI {
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox IdMatiereTextBox;
+        
+        /// <summary>
+        /// Contrôle RFV3.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV3;
+        
+        /// <summary>
+        /// Contrôle CV3.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator CV3;
         
         /// <summary>
         /// Contrôle AddEtudiantButton.
@@ -76,6 +139,24 @@ namespace Inscription.WebUI {
         protected global::System.Web.UI.WebControls.TextBox DeleteEtudiantTextBox;
         
         /// <summary>
+        /// Contrôle RFV4.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV4;
+        
+        /// <summary>
+        /// Contrôle CV4.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator CV4;
+        
+        /// <summary>
         /// Contrôle DeleteMatiereTextBox.
         /// </summary>
         /// <remarks>
@@ -83,6 +164,24 @@ namespace Inscription.WebUI {
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox DeleteMatiereTextBox;
+        
+        /// <summary>
+        /// Contrôle RFV5.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV5;
+        
+        /// <summary>
+        /// Contrôle CV5.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator CV5;
         
         /// <summary>
         /// Contrôle DeleteEtudiantButton.
@@ -103,6 +202,24 @@ namespace Inscription.WebUI {
         protected global::System.Web.UI.WebControls.TextBox DeleteByEtudiantTextBox;
         
         /// <summary>
+        /// Contrôle RFV6.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV6;
+        
+        /// <summary>
+        /// Contrôle CV6.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator CV6;
+        
+        /// <summary>
         /// Contrôle DeleteByEtudiantButton.
         /// </summary>
         /// <remarks>
@@ -121,6 +238,24 @@ namespace Inscription.WebUI {
         protected global::System.Web.UI.WebControls.TextBox DeleteByMatiereTextBox;
         
         /// <summary>
+        /// Contrôle RFV7.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV7;
+        
+        /// <summary>
+        /// Contrôle CV7.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator CV7;
+        
+        /// <summary>
         /// Contrôle DeleteByMatiereButton.
         /// </summary>
         /// <remarks>
@@ -128,5 +263,23 @@ namespace Inscription.WebUI {
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button DeleteByMatiereButton;
+        
+        /// <summary>
+        /// Contrôle MultipleFileUpload.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.FileUpload MultipleFileUpload;
+        
+        /// <summary>
+        /// Contrôle AddMultipleButton.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button AddMultipleButton;
     }
 }

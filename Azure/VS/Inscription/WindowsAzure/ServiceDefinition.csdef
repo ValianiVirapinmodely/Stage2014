@@ -4,24 +4,24 @@
     <Sites>
       <Site name="Web">
         <Bindings>
-          <Binding name="Endpoint1" endpointName="Endpoint1" />
+          <Binding name="Endpoint1" endpointName="Endpoint3" />
         </Bindings>
       </Site>
     </Sites>
     <Endpoints>
-      <InputEndpoint name="Endpoint1" protocol="http" port="8080" />
+      <InputEndpoint name="Endpoint3" protocol="http" port="8080" />
     </Endpoints>
   </WebRole>
   <WebRole name="Inscription.WebUI" vmsize="Small">
     <Sites>
       <Site name="Web">
         <Bindings>
-          <Binding name="Endpoint1" endpointName="Endpoint1" />
+          <Binding name="Endpoint1" endpointName="Endpoint2" />
         </Bindings>
       </Site>
     </Sites>
     <Endpoints>
-      <InputEndpoint name="Endpoint1" protocol="http" port="80" />
+      <InputEndpoint name="Endpoint2" protocol="http" port="80" />
     </Endpoints>
   </WebRole>
 </ServiceDefinition>
