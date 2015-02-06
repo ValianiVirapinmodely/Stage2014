@@ -27,7 +27,9 @@ Sub creationscript()
         :=xlByRows, MatchCase:=False, SearchFormat:=False, ReplaceFormat:=False
     Cells.Replace What:="è", Replacement:="e", LookAt:=xlPart, SearchOrder _
         :=xlByRows, MatchCase:=False, SearchFormat:=False, ReplaceFormat:=False
-
+    Cells.Replace What:="ô", Replacement:="o", LookAt:=xlPart, SearchOrder _
+        :=xlByRows, MatchCase:=False, SearchFormat:=False, ReplaceFormat:=False
+        
     'REMPLIR LA TABLE CONSTITUTION_DIPLOME--------------------------------------------------------------------------------------------------------------
 
     'Cells.Select
@@ -52,7 +54,7 @@ Sub creationscript()
                 'on récupère la valeur de la cellule
                 v_nouvauidue = ActiveSheet.Cells(j, 4)
                 If v_idue <> v_nouvauidue And ActiveSheet.Cells(j, 2) = v_nouveauiddiplome Then
-                    v_valeurs = "('" & v_nouveauiddiplome & "'" & "," & v_nouvauidue & ")"
+                    v_valeurs = "('" & v_nouveauiddiplome & "'" & ",'" & v_nouvauidue & "')"
                     With oTxt
                         .WriteLine ("INSERT INTO formation.CONSTITUTION_DIPLOME (IdDiplome, IdUE) VALUES" & v_valeurs) 'on crée une ligne dans le fichier texte
                     End With
@@ -112,7 +114,7 @@ Sub creationscript()
         'on récupère la valeur de la cellule
         v_nouvellevaleur = ActiveSheet.Cells(i, 4)
         If v_valeuractuelle <> v_nouvellevaleur Then
-            v_valeurs = "(" & v_nouvellevaleur & ",'" & ActiveSheet.Cells(i, 5) & "', NULL, NULL" & ")"
+            v_valeurs = "('" & v_nouvellevaleur & "','" & ActiveSheet.Cells(i, 5) & "', NULL, NULL" & ")"
             With oTxt
                 .WriteLine ("INSERT INTO formation.UE (IdUE, Intitule, Descriptif, Semestre) VALUES" & v_valeurs) 'on crée une ligne dans le fichier texte
             End With
@@ -142,7 +144,7 @@ Sub creationscript()
             If (v_nouvellevaleur >= 38551 And v_nouvellevaleur <= 38553) Or v_nouvellevaleur = 40076 Or v_nouvellevaleur = 40077 Or v_nouvellevaleur = 40082 Or (v_nouvellevaleur >= 40085 And v_nouvellevaleur <= 40087) Or (v_nouvellevaleur >= 39245 And v_nouvellevaleur <= 39256) Or (v_nouvellevaleur >= 39271 And v_nouvellevaleur <= 39280) Then
                 v_choix = "true"
             End If
-            v_valeurs = "(" & v_nouvellevaleur & ",'" & ActiveSheet.Cells(i, 9) & "'," & v_choix & "," &  ActiveSheet.Cells(i,4) & ")"
+            v_valeurs = "('" & v_nouvellevaleur & "','" & ActiveSheet.Cells(i, 9) & "'," & v_choix & ",'" &  ActiveSheet.Cells(i,4) & "')"
             With oTxt
                 .WriteLine ("INSERT INTO formation.MODULE (IdModule, Intitule, ModuleChoix, IdUE) VALUES" & v_valeurs) 'on crée une ligne dans le fichier texte
             End With
@@ -182,7 +184,7 @@ Sub creationscript()
                      v_nbCM = "NULL"
                     v_nbTD = "NULL"
                 End If
-            v_valeurs = "(" & v_nouvellevaleur & ",'" & ActiveSheet.Cells(i, 12)& "'," & v_nbCM & "," & v_nbTD & "," & v_nbTP & "," & ActiveSheet.Cells(i,8) & ")"
+            v_valeurs = "('" & v_nouvellevaleur & "','" & ActiveSheet.Cells(i, 12)& "'," & v_nbCM & "," & v_nbTD & "," & v_nbTP & ",'" & ActiveSheet.Cells(i,8) & "')"
             With oTxt
                 .WriteLine ("INSERT INTO formation.MATIERE (IdMatiere, Intitule, NbCM, NbTD, NbTP, IdModule) VALUES" & v_valeurs) 'on crée une ligne dans le fichier texte
             End With

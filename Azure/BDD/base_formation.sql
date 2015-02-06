@@ -4,40 +4,46 @@ GO
 CREATE TABLE formation.DIPLOME
 (
 	IdDiplome NVARCHAR(20) PRIMARY KEY, 
-    Intitule NVARCHAR(150) NOT NULL
+    Intitule NVARCHAR(150)
 );	
 
 CREATE TABLE formation.UE
 (
-	IdUE integer PRIMARY KEY, 
-    Intitule NVARCHAR(150) NOT NULL,
+	IdUE NVARCHAR(20) PRIMARY KEY, 
+    Intitule NVARCHAR(150),
     Descriptif NVARCHAR(150) NULL,
     Semestre integer NULL
 );	
 
-CREATE TABLE formation.MODULE
+CREATE TABLE formation.MODULES
 (
-    IdModule integer PRIMARY KEY, 
-    Intitule NVARCHAR(150) NOT NULL, 
-	ModuleChoix BIT NOT NULL,
-    IdUE integer REFERENCES formation.UE (IdUE) ON DELETE CASCADE
+    IdModules NVARCHAR(20) PRIMARY KEY, 
+    Intitule NVARCHAR(150), 
+	ModuleChoix BIT,
+    IdUE NVARCHAR(20) REFERENCES formation.UE (IdUE)
     
 );
 
 CREATE TABLE formation.MATIERE
 (
-	IdMatiere integer PRIMARY KEY,
-	Intitule NVARCHAR(150) NOT NULL,
-    NbCM integer NULL,
-	NbTD integer NULL,
-    NbTP integer NULL,
-    IdModule integer REFERENCES formation.MODULE(IdModule) ON DELETE CASCADE
+	IdMatiere NVARCHAR(20) PRIMARY KEY,
+	Intitule NVARCHAR(150)
 );
 
 CREATE TABLE formation.CONSTITUTION_DIPLOME
 (
-    IdDiplome NVARCHAR(20) REFERENCES formation.DIPLOME(IdDiplome) ON DELETE CASCADE,
-    IdUE integer REFERENCES formation.UE(IdUE) ON DELETE CASCADE,
+    IdDiplome NVARCHAR(20) REFERENCES formation.DIPLOME(IdDiplome),
+    IdUE NVARCHAR(20) REFERENCES formation.UE(IdUE),
     PRIMARY KEY (IdDiplome,IdUE)
+);
+
+CREATE TABLE formation.CONSTITUTION_MODULES
+(
+    IdModules NVARCHAR(20) REFERENCES formation.MODULES(IdModules),
+    IdMatiere NVARCHAR(20) REFERENCES formation.MATIERE(IdMatiere),
+    NbCM integer,
+	NbTD integer,
+    NbTP integer, 
+    PRIMARY KEY (IdModules,IdMatiere)
 );
 GO
