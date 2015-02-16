@@ -1,5 +1,4 @@
 Partie connexion à LinkedIn : ssh://54c68c114382ec6b4a0000ec@mynetsocial-professionalinfo.rhcloud.com/~/git/mynetsocial.git/
 
 
-Partie base de données : ssh://54c80008fcf9334ab900008a@professionalinfo-professionalinfo.rhcloud.com/~/git/professionalinfo.git/
-Rappel : cette partie n'a pas été testée puisque OpenShift était en maintenance critique. Cette partie est fonctionnelle sous JElastic.
+Partie base de données : cette partie n'a pas été testée puisque OpenShift était en maintenance critique elle est fonctionelle sous JElastic.
