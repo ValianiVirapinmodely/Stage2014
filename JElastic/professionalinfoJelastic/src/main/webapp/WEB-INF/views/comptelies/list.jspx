@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_fr_imag_professionalinfo_domain_CompteLie" items="${comptelies}" z="cjyJNcYVlYqI+AW/O0cK/UatVV4=">
+        <table:table data="${comptelies}" id="l_fr_imag_professionalinfo_domain_CompteLie" path="/comptelies" z="PdZNj6tHcmv+Jl9whUR5lxtRqN4=">
+            <table:column id="c_fr_imag_professionalinfo_domain_CompteLie_Type" property="type" z="um7TY4BNM6AxL6qHuu7oMO2FuuA="/>
+            <table:column id="c_fr_imag_professionalinfo_domain_CompteLie_Property1" property="property1" z="DQPRsQwRMVbiTdClCIx88onLPuw="/>
+            <table:column id="c_fr_imag_professionalinfo_domain_CompteLie_EstPrimaire" property="estPrimaire" z="0mkT5cXZ3jL/lc/OnhxEN+sR7sY="/>
+            <table:column id="c_fr_imag_professionalinfo_domain_CompteLie_BindingStatus" property="bindingStatus" z="3FDzig44yl9oOjsGCENAjnTEpys="/>
+            <table:column id="c_fr_imag_professionalinfo_domain_CompteLie_Membre" property="membre" z="g8GUQf/6njOHGE5ulg22aoEjJRo="/>
+            <table:column id="c_fr_imag_professionalinfo_domain_CompteLie_CompteFournisseur" property="compteFournisseur" z="DfLKo6cq//o3ez/Vto7oEzTzmqw="/>
+        </table:table>
+    </page:list>
+</div>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_fr_imag_professionalinfo_domain_Publication" items="${publications}" z="q21qmecXc/MXz4RHrlUqCcYlNJ4=">
+        <table:table data="${publications}" id="l_fr_imag_professionalinfo_domain_Publication" path="/publications" z="WpreDcuqjtkL2nJuF2h4CSOpYWo=">
+            <table:column date="true" dateTimePattern="${publication_datepublication_date_format}" id="c_fr_imag_professionalinfo_domain_Publication_DatePublication" property="datePublication" z="5IvI1oxM/ewY80+JYpeQ7Ny502g="/>
+            <table:column id="c_fr_imag_professionalinfo_domain_Publication_Titre" property="titre" z="Q6346s5FfXEy6bTx2JB3Rzh/aKo="/>
+            <table:column id="c_fr_imag_professionalinfo_domain_Publication_Resume" property="resume" z="XQOkOGfBRho7NY5i9f1tBqbN/Vk="/>
+            <table:column id="c_fr_imag_professionalinfo_domain_Publication_Editeur" property="editeur" z="4X+dpxRgfEcTESfF8pxUya+x/Ag="/>
+            <table:column id="c_fr_imag_professionalinfo_domain_Publication_Id2" property="id2" z="v7yJ6fq4leG6OnPLUwabpEgWqI8="/>
+            <table:column id="c_fr_imag_professionalinfo_domain_Publication_URL" property="URL" z="jgZ+8lxWEb9ZOZ+hDBfGYuNYdzM="/>
+        </table:table>
+    </page:list>
+</div>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_fr_imag_professionalinfo_domain_Inventeur" object="${inventeur}" path="/inventeurs" z="WWcgjfP2gXLAUCM6Q3OCkXuYKtI=">
+        <field:display field="id2" id="s_fr_imag_professionalinfo_domain_Inventeur_Id2" object="${inventeur}" z="8F6KrjUtz8kwrJwgiNJYnsqefr8="/>
+        <field:display field="nom" id="s_fr_imag_professionalinfo_domain_Inventeur_Nom" object="${inventeur}" z="LbT/HnZkUwLw7jOVIDoiR5/qh0A="/>
+        <field:display field="inventeurProfil" id="s_fr_imag_professionalinfo_domain_Inventeur_InventeurProfil" object="${inventeur}" z="eKQQbJtI6TvelbKRlR7NOXxJ8HM="/>
+    </page:show>
+</div>

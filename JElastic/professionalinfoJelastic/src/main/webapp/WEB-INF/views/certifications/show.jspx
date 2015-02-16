@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_fr_imag_professionalinfo_domain_Certification" object="${certification}" path="/certifications" z="pdcNEggvt+Guvo5fG/xAOk4TY5M=">
+        <field:display field="numeroDeLicence" id="s_fr_imag_professionalinfo_domain_Certification_NumeroDeLicence" object="${certification}" z="Z1lrvyyp87SqpFxhYXFGC+540UI="/>
+        <field:display field="autoriteDeCertification" id="s_fr_imag_professionalinfo_domain_Certification_AutoriteDeCertification" object="${certification}" z="m5jsKMcnKsyuKtQKFvOtFC0JsLQ="/>
+        <field:display field="id2" id="s_fr_imag_professionalinfo_domain_Certification_Id2" object="${certification}" z="nX+rnYGIOWaSGS/RQ2mOzL0l8Pc="/>
+        <field:display date="true" dateTimePattern="${certification_expiration_date_format}" field="expiration" id="s_fr_imag_professionalinfo_domain_Certification_Expiration" object="${certification}" z="EsQkGoxsQi/3o7le0Re3IZut4Fk="/>
+        <field:display date="true" dateTimePattern="${certification_obtention_date_format}" field="obtention" id="s_fr_imag_professionalinfo_domain_Certification_Obtention" object="${certification}" z="NZflGpC92ZPGbmYlSf09pIsSmpo="/>
+        <field:display field="nom" id="s_fr_imag_professionalinfo_domain_Certification_Nom" object="${certification}" z="Ir05JvTrwlYKklFCkXsJCkZME4o="/>
+    </page:show>
+</div>

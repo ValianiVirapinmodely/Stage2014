@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_fr_imag_professionalinfo_domain_Recommandation" items="${recommandations}" z="/rFzSQaBXT1PfVHBE4dkGQJ3tQI=">
+        <table:table data="${recommandations}" id="l_fr_imag_professionalinfo_domain_Recommandation" path="/recommandations" z="Tr75d8mIOxO/b2dWlUEVvrzvJy0=">
+            <table:column id="c_fr_imag_professionalinfo_domain_Recommandation_Type" property="type" z="6qCm8jJSEFXErskc46vYgDUbyd0="/>
+            <table:column id="c_fr_imag_professionalinfo_domain_Recommandation_Id2" property="id2" z="lVPrHPrKcl2XMDomF0Z0IgotbYk="/>
+            <table:column id="c_fr_imag_professionalinfo_domain_Recommandation_RecommandationRecue" property="recommandationRecue" z="ylNWEvkx6ztQeLXsK/bL6ZvKa/w="/>
+            <table:column id="c_fr_imag_professionalinfo_domain_Recommandation_Recommandeur" property="recommandeur" z="RR+3EGd0Db2bZ2Oe/RnMEKmDagU="/>
+        </table:table>
+    </page:list>
+</div>

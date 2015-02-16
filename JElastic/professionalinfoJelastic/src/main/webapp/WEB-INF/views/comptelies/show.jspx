@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_fr_imag_professionalinfo_domain_CompteLie" object="${comptelie}" path="/comptelies" z="Mzi4SkAF65avhaPMxy7uXiiUILU=">
+        <field:display field="type" id="s_fr_imag_professionalinfo_domain_CompteLie_Type" object="${comptelie}" z="aZUHQQzmnwzJjhf+OcUb6mOhwf8="/>
+        <field:display field="property1" id="s_fr_imag_professionalinfo_domain_CompteLie_Property1" object="${comptelie}" z="eHgZvxM9MnMh7+gV7hmhiMM62bo="/>
+        <field:display field="estPrimaire" id="s_fr_imag_professionalinfo_domain_CompteLie_EstPrimaire" object="${comptelie}" z="RlRg7AHApigrwBqxEbn1cVGbkNI="/>
+        <field:display field="bindingStatus" id="s_fr_imag_professionalinfo_domain_CompteLie_BindingStatus" object="${comptelie}" z="UUO+qZd+0wOEb7uEoGURBX2rtTE="/>
+        <field:display field="membre" id="s_fr_imag_professionalinfo_domain_CompteLie_Membre" object="${comptelie}" z="v86Tk5Ur1Gs62VcbYDAy8lpO7+U="/>
+        <field:display field="compteFournisseur" id="s_fr_imag_professionalinfo_domain_CompteLie_CompteFournisseur" object="${comptelie}" z="+ouDSA0jEpfZruoTvhtp/YAkewg="/>
+    </page:show>
+</div>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_fr_imag_professionalinfo_domain_Education" items="${educations}" z="9mDCIJWvymyfWpsIH/BCqmoPjVo=">
+        <table:table data="${educations}" id="l_fr_imag_professionalinfo_domain_Education" path="/educations" z="eZTraGQPQtNq0OhbHQln5QdX9BI=">
+            <table:column id="c_fr_imag_professionalinfo_domain_Education_AutresDetails" property="autresDetails" z="yTGb4/S/WAqa6K1FZvHev0HnWDs="/>
+            <table:column date="true" dateTimePattern="${education_datedebut_date_format}" id="c_fr_imag_professionalinfo_domain_Education_DateDebut" property="dateDebut" z="fs03kJnkiaVxNA5ZKax0wutywao="/>
+            <table:column id="c_fr_imag_professionalinfo_domain_Education_Diplome" property="diplome" z="aAtv4rEfjpxTnBxXDq9z+d7QLXc="/>
+            <table:column id="c_fr_imag_professionalinfo_domain_Education_Secteur" property="secteur" z="tuu48ayeySq8qWCGe22imc9NLhU="/>
+            <table:column id="c_fr_imag_professionalinfo_domain_Education_NomEcole" property="nomEcole" z="nN9UcSRj8LKBzmsF8HGbg/QZ+KA="/>
+            <table:column id="c_fr_imag_professionalinfo_domain_Education_Id2" property="id2" z="Qpd4D2UDzm62kZJKV2KNKD8zq6w="/>
+        </table:table>
+    </page:list>
+</div>

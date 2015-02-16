@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_fr_imag_professionalinfo_domain_Personne" items="${personnes}" z="yzmdbYisTV5IXaHM48lhDTG5tyg=">
+        <table:table data="${personnes}" id="l_fr_imag_professionalinfo_domain_Personne" path="/personnes" z="Gaxwupho4CjrMQOmgroMvno0OKU=">
+            <table:column id="c_fr_imag_professionalinfo_domain_Personne_RecompensesDonnees" property="recompensesDonnees" z="FSkwuL+FvyIE4sgY1mNE8b49GJ0="/>
+            <table:column id="c_fr_imag_professionalinfo_domain_Personne_Lieu" property="lieu" z="nXkCifXZD66gn9XzpBsPfUaO03E="/>
+            <table:column id="c_fr_imag_professionalinfo_domain_Personne_Property1" property="property1" z="QtrroOTOHFUVNhs/agVICo4Hx1o="/>
+            <table:column id="c_fr_imag_professionalinfo_domain_Personne_NombreTotalPositionsCourantes" property="nombreTotalPositionsCourantes" z="ec8LeibTYG+BjqaSMX/NCcttVvI="/>
+            <table:column id="c_fr_imag_professionalinfo_domain_Personne_URLComplete" property="URLComplete" z="e5upIm+i9Nev163KJggWMvo/ZoQ="/>
+            <table:column id="c_fr_imag_professionalinfo_domain_Personne_NombreConnexionsPlafonne" property="nombreConnexionsPlafonne" z="IMGXV5ocRA6FoGNGixy+V4UDVHE="/>
+        </table:table>
+    </page:list>
+</div>

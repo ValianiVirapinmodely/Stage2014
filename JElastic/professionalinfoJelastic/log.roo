@@ -1,0 +1,1157 @@
+
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2015-01-27 11:07:47
+project --topLevelPackage fr.imag.professionalinfo
+jpa setup --provider HIBERNATE --database MYSQL
+entity jpa --class ~.domain.Organisme
+entity jpa --class ~.domain.Publication
+entity jpa --class ~.domain.Secteur
+entity jpa --class ~.domain.Auteur
+entity jpa --class ~.domain.Personne
+entity jpa --class ~.domain.Certification
+entity jpa --class ~.domain.FournisseurDuCompte
+entity jpa --class ~.domain.Recommandation
+entity jpa --class ~.domain.MessagerieInstantaneeLiee
+entity jpa --class ~.domain.CompteLie
+entity jpa --class ~.domain.Entreprise
+entity jpa --class ~.domain.Brevet
+entity jpa --class ~.domain.Education
+entity jpa --class ~.domain.Inventeur
+entity jpa --class ~.domain.CompteTwitter
+entity jpa --class ~.domain.Position_
+entity jpa --class ~.domain.Cours
+entity jpa --class ~.domain.Telephone
+entity jpa --class ~.domain.Langage
+entity jpa --class ~.domain.ExperienceVolontaire
+entity jpa --class ~.domain.Competence
+field string --fieldName Nom  --sizeMin 0                            --sizeMax 0 --class ~.domain.Organisme
+field string --fieldName Code  --sizeMin 0                            --sizeMax 0 --class ~.domain.Organisme
+field date --type java.util.Date --fieldName DatePublication --class ~.domain.Publication
+field string --fieldName Editeur  --sizeMin 0                            --sizeMax 0 --class ~.domain.Publication
+field string --fieldName Resume  --sizeMin 0                            --sizeMax 0 --class ~.domain.Publication
+field string --fieldName URL  --sizeMin 0                            --sizeMax 0 --class ~.domain.Publication
+field string --fieldName Titre  --sizeMin 0                            --sizeMax 0 --class ~.domain.Publication
+field string --fieldName Id --class ~.domain.Publication
+field string --fieldName Nom  --sizeMin 0                            --sizeMax 0 --class ~.domain.Secteur
+field string --fieldName Id --class ~.domain.Secteur
+field string --fieldName Id --class ~.domain.Auteur
+field string --fieldName Nom  --sizeMin 0                            --sizeMax 0 --class ~.domain.Auteur
+field date --type java.util.Date --fieldName DateDeNaissance --class ~.domain.Personne
+field string --fieldName TempsDerniereModifProfil --class ~.domain.Personne
+field string --fieldName NombreTotalPositionsPassees --class ~.domain.Personne
+field string --fieldName URLLinkedInPublic  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName URLComplete  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName RecompensesDonnees --class ~.domain.Personne
+field string --fieldName URLNom  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Property2 --class ~.domain.Personne
+field string --fieldName Email  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Id --class ~.domain.Personne
+field string --fieldName Property3 --class ~.domain.Personne
+field string --fieldName Property1 --class ~.domain.Personne
+field string --fieldName Interets  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName TitreAPINom --class ~.domain.Personne
+field string --fieldName URLLinkedInAuth  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Associations  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName NombreTotalExperiencesVolontariat --class ~.domain.Personne
+field string --fieldName NomPhonetiqueFormate  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName URLPhoto  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName JobsSuivis --class ~.domain.Personne
+field string --fieldName Nom  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName NombreTotalPositionsCourantes --class ~.domain.Personne
+field string --fieldName NombreTotalPositions --class ~.domain.Personne
+field string --fieldName RelationVisiteurConnexion  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName NomFormate  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName NombreTotalConnexions --class ~.domain.Personne
+field string --fieldName SuggestionsSuivis --class ~.domain.Personne
+field string --fieldName URLPartagees --class ~.domain.Personne
+field string --fieldName NombreRecommandations --class ~.domain.Personne
+field string --fieldName NombreTotalCours --class ~.domain.Personne
+field string --fieldName Etablissement  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName ReactionAuxOffres  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName RelationVisiteurLien  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Adresse  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName NombreTotalEtablissementsFormation --class ~.domain.Personne
+field string --fieldName Titre  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Groupes --class ~.domain.Personne
+field string --fieldName TitreAPIValeur --class ~.domain.Personne
+field string --fieldName Reseau  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName RelationVisiteurDistance  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Connexions --class ~.domain.Personne
+field string --fieldName Distance --class ~.domain.Personne
+field string --fieldName PrenomPhonetique  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName NombreConnexionsPlafonne --class ~.domain.Personne
+field string --fieldName CodeLieu  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName NomPhonetique  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName URLAPI  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName PartageCourant  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Lieu  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Prenom  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Property4 --class ~.domain.Personne
+field string --fieldName EntitesSuivies --class ~.domain.Personne
+field string --fieldName NomDeJeuneFille  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName NombreConnexions --class ~.domain.Personne
+field date --type java.util.Date --fieldName Expiration --class ~.domain.Certification
+field string --fieldName Id --class ~.domain.Certification
+field string --fieldName AutoriteDeCertification  --sizeMin 0                            --sizeMax 0 --class ~.domain.Certification
+field string --fieldName Nom  --sizeMin 0                            --sizeMax 0 --class ~.domain.Certification
+field string --fieldName NumeroDeLicence  --sizeMin 0                            --sizeMax 0 --class ~.domain.Certification
+field date --type java.util.Date --fieldName Obtention --class ~.domain.Certification
+field string --fieldName Nom  --sizeMin 0                            --sizeMax 0 --class ~.domain.FournisseurDuCompte
+field string --fieldName Id --class ~.domain.FournisseurDuCompte
+field string --fieldName RecommandationRecue  --sizeMin 0                            --sizeMax 0 --class ~.domain.Recommandation
+field string --fieldName Type  --sizeMin 0                            --sizeMax 0 --class ~.domain.Recommandation
+field string --fieldName Id --class ~.domain.Recommandation
+field string --fieldName Type  --sizeMin 0                            --sizeMax 0 --class ~.domain.MessagerieInstantaneeLiee
+field string --fieldName Id --class ~.domain.MessagerieInstantaneeLiee
+field string --fieldName EstPrimaire --class ~.domain.CompteLie
+field string --fieldName Property1 --class ~.domain.CompteLie
+field string --fieldName Type  --sizeMin 0                            --sizeMax 0 --class ~.domain.CompteLie
+field string --fieldName BindingStatus  --sizeMin 0                            --sizeMax 0 --class ~.domain.CompteLie
+field string --fieldName NomOfficiel  --sizeMin 0                            --sizeMax 0 --class ~.domain.Entreprise
+field string --fieldName NombreEmployes --class ~.domain.Entreprise
+field string --fieldName Id --class ~.domain.Entreprise
+field string --fieldName Type  --sizeMin 0                            --sizeMax 0 --class ~.domain.Entreprise
+field string --fieldName Secteur  --sizeMin 0                            --sizeMax 0 --class ~.domain.Entreprise
+field string --fieldName NomBourse  --sizeMin 0                            --sizeMax 0 --class ~.domain.Entreprise
+field string --fieldName URLBrevet  --sizeMin 0                            --sizeMax 0 --class ~.domain.Brevet
+field date --type java.util.Date --fieldName DateAttribution --class ~.domain.Brevet
+field string --fieldName Statut --class ~.domain.Brevet
+field string --fieldName Id --class ~.domain.Brevet
+field string --fieldName Numero  --sizeMin 0                            --sizeMax 0 --class ~.domain.Brevet
+field string --fieldName IntituleStatut --class ~.domain.Brevet
+field string --fieldName Resume  --sizeMin 0                            --sizeMax 0 --class ~.domain.Brevet
+field string --fieldName Titre  --sizeMin 0                            --sizeMax 0 --class ~.domain.Brevet
+field string --fieldName Secteur  --sizeMin 0                            --sizeMax 0 --class ~.domain.Education
+field string --fieldName Diplome  --sizeMin 0                            --sizeMax 0 --class ~.domain.Education
+field date --type java.util.Date --fieldName DateFin --class ~.domain.Education
+field string --fieldName NomEcole  --sizeMin 0                            --sizeMax 0 --class ~.domain.Education
+field string --fieldName Id --class ~.domain.Education
+field string --fieldName AutresDetails  --sizeMin 0                            --sizeMax 0 --class ~.domain.Education
+field string --fieldName Activites  --sizeMin 0                            --sizeMax 0 --class ~.domain.Education
+field date --type java.util.Date --fieldName DateDebut --class ~.domain.Education
+field string --fieldName Id --class ~.domain.Inventeur
+field string --fieldName Nom  --sizeMin 0                            --sizeMax 0 --class ~.domain.Inventeur
+field string --fieldName EstPrimaire --class ~.domain.CompteTwitter
+field string --fieldName Id --class ~.domain.CompteTwitter
+field date --type java.util.Date --fieldName DateFin --class ~.domain.Position_
+field string --fieldName PositionActuelle --class ~.domain.Position_
+field string --fieldName Id --class ~.domain.Position_
+field string --fieldName Resume  --sizeMin 0                            --sizeMax 0 --class ~.domain.Position_
+field date --type java.util.Date --fieldName DateDebut --class ~.domain.Position_
+field string --fieldName Titre  --sizeMin 0                            --sizeMax 0 --class ~.domain.Position_
+field string --fieldName Nom  --sizeMin 0                            --sizeMax 0 --class ~.domain.Cours
+field string --fieldName Nombre --class ~.domain.Cours
+field string --fieldName Id --class ~.domain.Cours
+field string --fieldName Type --class ~.domain.Telephone
+field string --fieldName Numero  --sizeMin 0                            --sizeMax 0 --class ~.domain.Telephone
+field string --fieldName Niveau  --sizeMin 0                            --sizeMax 0 --class ~.domain.Langage
+field string --fieldName Id --class ~.domain.Langage
+field string --fieldName Nom  --sizeMin 0                            --sizeMax 0 --class ~.domain.Langage
+field string --fieldName Fonction  --sizeMin 0                            --sizeMax 0 --class ~.domain.ExperienceVolontaire
+field string --fieldName Organisation  --sizeMin 0                            --sizeMax 0 --class ~.domain.ExperienceVolontaire
+field string --fieldName Cause  --sizeMin 0                            --sizeMax 0 --class ~.domain.ExperienceVolontaire
+field string --fieldName Id --class ~.domain.ExperienceVolontaire
+field string --fieldName Nom --class ~.domain.Competence
+field string --fieldName Id --class ~.domain.Competence
+field reference --type ~.domain.Cours --fieldName NiveauCours  --class ~.domain.Personne
+field reference --type ~.domain.Education --fieldName NiveauEducation  --class ~.domain.Personne
+field reference --type ~.domain.Personne --fieldName InventeurProfil  --class ~.domain.Inventeur
+field reference --type ~.domain.Langage --fieldName LanguesParlees  --class ~.domain.Personne
+field reference --type ~.domain.FournisseurDuCompte --fieldName CompteFournisseur  --class ~.domain.CompteLie
+field reference --type ~.domain.MessagerieInstantaneeLiee --fieldName MessageriePersonnelle  --class ~.domain.Personne
+field reference --type ~.domain.Telephone --fieldName TelephoneLie  --class ~.domain.Personne
+field reference --type ~.domain.Organisme --fieldName BrevetOrganisme  --class ~.domain.Brevet
+field reference --type ~.domain.Certification --fieldName NiveauCertification  --class ~.domain.Personne
+field reference --type ~.domain.Auteur --fieldName PublicationDeAuteur  --class ~.domain.Publication
+field reference --type ~.domain.Personne --fieldName Recommandeur  --class ~.domain.Recommandation
+field reference --type ~.domain.Competence --fieldName CompetencePersonne  --class ~.domain.Personne
+field reference --type ~.domain.Publication --fieldName PublicationPersonne  --class ~.domain.Personne
+field reference --type ~.domain.Inventeur --fieldName BrevetInventeur  --class ~.domain.Brevet
+field reference --type ~.domain.Personne --fieldName Membre  --class ~.domain.CompteLie
+field reference --type ~.domain.ExperienceVolontaire --fieldName ExperiencePersonne  --class ~.domain.Personne
+field reference --type ~.domain.Secteur --fieldName SecteurEntreprise  --class ~.domain.Entreprise
+field reference --type ~.domain.Brevet --fieldName BrevetsObtenus  --class ~.domain.Personne
+field reference --type ~.domain.CompteTwitter --fieldName CompteTwitterAssocie  --class ~.domain.Personne
+field reference --type ~.domain.Personne --fieldName AuteurPersonne  --class ~.domain.Auteur
+field reference --type ~.domain.FournisseurDuCompte --fieldName TwitterFournisseur  --class ~.domain.CompteTwitter
+field reference --type ~.domain.Entreprise --fieldName SituationHierarchique  --class ~.domain.Position_
+field reference --type ~.domain.Personne --fieldName AutresProfilsVisites  --class ~.domain.Personne
+field reference --type ~.domain.FournisseurDuCompte --fieldName MessagerieFournisseur  --class ~.domain.MessagerieInstantaneeLiee
+field reference --type ~.domain.Position_ --fieldName PositionEntreprise  --class ~.domain.Personne
+web mvc setup
+polyglot rest setup
+web mvc all --package ~.web
+web mvc finder all
+
+// script --file professionalInfo.roo
+quit
+
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2015-01-27 11:08:23
+
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2015-01-27 11:13:05
+project --topLevelPackage fr.imag.professionalinfo
+jpa setup --provider HIBERNATE --database HYPERSONIC_IN_MEMORY
+entity jpa --class ~.domain.Langage
+entity jpa --class ~.domain.Competence
+entity jpa --class ~.domain.Position_
+entity jpa --class ~.domain.Inventeur
+entity jpa --class ~.domain.Personne
+entity jpa --class ~.domain.ExperienceVolontaire
+entity jpa --class ~.domain.Publication
+entity jpa --class ~.domain.Certification
+entity jpa --class ~.domain.Education
+entity jpa --class ~.domain.Cours
+entity jpa --class ~.domain.CompteTwitter
+entity jpa --class ~.domain.Auteur
+entity jpa --class ~.domain.FournisseurDuCompte
+entity jpa --class ~.domain.Recommandation
+entity jpa --class ~.domain.CompteLie
+entity jpa --class ~.domain.Telephone
+entity jpa --class ~.domain.Entreprise
+entity jpa --class ~.domain.Organisme
+entity jpa --class ~.domain.Brevet
+entity jpa --class ~.domain.Secteur
+entity jpa --class ~.domain.MessagerieInstantaneeLiee
+field string --fieldName Nom  --sizeMin 0                            --sizeMax 0 --class ~.domain.Langage
+field string --fieldName Niveau  --sizeMin 0                            --sizeMax 0 --class ~.domain.Langage
+field string --fieldName Id --class ~.domain.Langage
+field string --fieldName Nom --class ~.domain.Competence
+field string --fieldName Id --class ~.domain.Competence
+field string --fieldName Titre  --sizeMin 0                            --sizeMax 0 --class ~.domain.Position_
+field string --fieldName PositionActuelle --class ~.domain.Position_
+field date --type java.util.Date --fieldName DateFin --class ~.domain.Position_
+field string --fieldName Id --class ~.domain.Position_
+field date --type java.util.Date --fieldName DateDebut --class ~.domain.Position_
+field string --fieldName Resume  --sizeMin 0                            --sizeMax 0 --class ~.domain.Position_
+field string --fieldName Nom  --sizeMin 0                            --sizeMax 0 --class ~.domain.Inventeur
+field string --fieldName Id --class ~.domain.Inventeur
+field string --fieldName EntitesSuivies --class ~.domain.Personne
+field string --fieldName Etablissement  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Connexions --class ~.domain.Personne
+field date --type java.util.Date --fieldName DateDeNaissance --class ~.domain.Personne
+field string --fieldName URLLinkedInAuth  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Prenom  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName URLPhoto  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Id --class ~.domain.Personne
+field string --fieldName URLNom  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Adresse  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Email  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName NombreConnexions --class ~.domain.Personne
+field string --fieldName RelationVisiteurDistance  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName URLPartagees --class ~.domain.Personne
+field string --fieldName Associations  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName NomDeJeuneFille  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName NomPhonetique  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName URLAPI  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName CodeLieu  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName NombreTotalPositions --class ~.domain.Personne
+field string --fieldName RelationVisiteurLien  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName NombreTotalExperiencesVolontariat --class ~.domain.Personne
+field string --fieldName PartageCourant  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Interets  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Nom  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName NombreTotalCours --class ~.domain.Personne
+field string --fieldName Property2 --class ~.domain.Personne
+field string --fieldName NombreTotalEtablissementsFormation --class ~.domain.Personne
+field string --fieldName TitreAPIValeur --class ~.domain.Personne
+field string --fieldName TitreAPINom --class ~.domain.Personne
+field string --fieldName TempsDerniereModifProfil --class ~.domain.Personne
+field string --fieldName NombreRecommandations --class ~.domain.Personne
+field string --fieldName Groupes --class ~.domain.Personne
+field string --fieldName Property1 --class ~.domain.Personne
+field string --fieldName Distance --class ~.domain.Personne
+field string --fieldName Lieu  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Titre  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName RelationVisiteurConnexion  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName URLLinkedInPublic  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName NombreConnexionsPlafonne --class ~.domain.Personne
+field string --fieldName NomFormate  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName SuggestionsSuivis --class ~.domain.Personne
+field string --fieldName NombreTotalPositionsPassees --class ~.domain.Personne
+field string --fieldName NombreTotalConnexions --class ~.domain.Personne
+field string --fieldName Reseau  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Property4 --class ~.domain.Personne
+field string --fieldName NomPhonetiqueFormate  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName RecompensesDonnees --class ~.domain.Personne
+field string --fieldName Property3 --class ~.domain.Personne
+field string --fieldName JobsSuivis --class ~.domain.Personne
+field string --fieldName NombreTotalPositionsCourantes --class ~.domain.Personne
+field string --fieldName PrenomPhonetique  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName URLComplete  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName ReactionAuxOffres  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Cause  --sizeMin 0                            --sizeMax 0 --class ~.domain.ExperienceVolontaire
+field string --fieldName Organisation  --sizeMin 0                            --sizeMax 0 --class ~.domain.ExperienceVolontaire
+field string --fieldName Fonction  --sizeMin 0                            --sizeMax 0 --class ~.domain.ExperienceVolontaire
+field string --fieldName Id --class ~.domain.ExperienceVolontaire
+field string --fieldName URL  --sizeMin 0                            --sizeMax 0 --class ~.domain.Publication
+field string --fieldName Editeur  --sizeMin 0                            --sizeMax 0 --class ~.domain.Publication
+field date --type java.util.Date --fieldName DatePublication --class ~.domain.Publication
+field string --fieldName Resume  --sizeMin 0                            --sizeMax 0 --class ~.domain.Publication
+field string --fieldName Titre  --sizeMin 0                            --sizeMax 0 --class ~.domain.Publication
+field string --fieldName Id --class ~.domain.Publication
+field string --fieldName NumeroDeLicence  --sizeMin 0                            --sizeMax 0 --class ~.domain.Certification
+field string --fieldName Id --class ~.domain.Certification
+field date --type java.util.Date --fieldName Expiration --class ~.domain.Certification
+field date --type java.util.Date --fieldName Obtention --class ~.domain.Certification
+field string --fieldName AutoriteDeCertification  --sizeMin 0                            --sizeMax 0 --class ~.domain.Certification
+field string --fieldName Nom  --sizeMin 0                            --sizeMax 0 --class ~.domain.Certification
+field date --type java.util.Date --fieldName DateDebut --class ~.domain.Education
+field string --fieldName Diplome  --sizeMin 0                            --sizeMax 0 --class ~.domain.Education
+field string --fieldName AutresDetails  --sizeMin 0                            --sizeMax 0 --class ~.domain.Education
+field string --fieldName Id --class ~.domain.Education
+field date --type java.util.Date --fieldName DateFin --class ~.domain.Education
+field string --fieldName Secteur  --sizeMin 0                            --sizeMax 0 --class ~.domain.Education
+field string --fieldName Activites  --sizeMin 0                            --sizeMax 0 --class ~.domain.Education
+field string --fieldName NomEcole  --sizeMin 0                            --sizeMax 0 --class ~.domain.Education
+field string --fieldName Nom  --sizeMin 0                            --sizeMax 0 --class ~.domain.Cours
+field string --fieldName Nombre --class ~.domain.Cours
+field string --fieldName Id --class ~.domain.Cours
+field string --fieldName EstPrimaire --class ~.domain.CompteTwitter
+field string --fieldName Id --class ~.domain.CompteTwitter
+field string --fieldName Id --class ~.domain.Auteur
+field string --fieldName Nom  --sizeMin 0                            --sizeMax 0 --class ~.domain.Auteur
+field string --fieldName Nom  --sizeMin 0                            --sizeMax 0 --class ~.domain.FournisseurDuCompte
+field string --fieldName Id --class ~.domain.FournisseurDuCompte
+field string --fieldName Type  --sizeMin 0                            --sizeMax 0 --class ~.domain.Recommandation
+field string --fieldName RecommandationRecue  --sizeMin 0                            --sizeMax 0 --class ~.domain.Recommandation
+field string --fieldName Id --class ~.domain.Recommandation
+field string --fieldName EstPrimaire --class ~.domain.CompteLie
+field string --fieldName Property1 --class ~.domain.CompteLie
+field string --fieldName Type  --sizeMin 0                            --sizeMax 0 --class ~.domain.CompteLie
+field string --fieldName BindingStatus  --sizeMin 0                            --sizeMax 0 --class ~.domain.CompteLie
+field string --fieldName Type --class ~.domain.Telephone
+field string --fieldName Numero  --sizeMin 0                            --sizeMax 0 --class ~.domain.Telephone
+field string --fieldName Id --class ~.domain.Entreprise
+field string --fieldName NombreEmployes --class ~.domain.Entreprise
+field string --fieldName NomOfficiel  --sizeMin 0                            --sizeMax 0 --class ~.domain.Entreprise
+field string --fieldName Secteur  --sizeMin 0                            --sizeMax 0 --class ~.domain.Entreprise
+field string --fieldName Type  --sizeMin 0                            --sizeMax 0 --class ~.domain.Entreprise
+field string --fieldName NomBourse  --sizeMin 0                            --sizeMax 0 --class ~.domain.Entreprise
+field string --fieldName Code  --sizeMin 0                            --sizeMax 0 --class ~.domain.Organisme
+field string --fieldName Nom  --sizeMin 0                            --sizeMax 0 --class ~.domain.Organisme
+field date --type java.util.Date --fieldName DateAttribution --class ~.domain.Brevet
+field string --fieldName IntituleStatut --class ~.domain.Brevet
+field string --fieldName Titre  --sizeMin 0                            --sizeMax 0 --class ~.domain.Brevet
+field string --fieldName Statut --class ~.domain.Brevet
+field string --fieldName Resume  --sizeMin 0                            --sizeMax 0 --class ~.domain.Brevet
+field string --fieldName Id --class ~.domain.Brevet
+field string --fieldName URLBrevet  --sizeMin 0                            --sizeMax 0 --class ~.domain.Brevet
+field string --fieldName Numero  --sizeMin 0                            --sizeMax 0 --class ~.domain.Brevet
+field string --fieldName Id --class ~.domain.Secteur
+field string --fieldName Nom  --sizeMin 0                            --sizeMax 0 --class ~.domain.Secteur
+field string --fieldName Type  --sizeMin 0                            --sizeMax 0 --class ~.domain.MessagerieInstantaneeLiee
+field string --fieldName Id --class ~.domain.MessagerieInstantaneeLiee
+field reference --type ~.domain.ExperienceVolontaire --fieldName ExperiencePersonne  --class ~.domain.Personne
+field reference --type ~.domain.Personne --fieldName AutresProfilsVisites  --class ~.domain.Personne
+field reference --type ~.domain.Personne --fieldName AuteurPersonne  --class ~.domain.Auteur
+field reference --type ~.domain.Personne --fieldName Membre  --class ~.domain.CompteLie
+field reference --type ~.domain.FournisseurDuCompte --fieldName MessagerieFournisseur  --class ~.domain.MessagerieInstantaneeLiee
+field reference --type ~.domain.FournisseurDuCompte --fieldName CompteFournisseur  --class ~.domain.CompteLie
+field reference --type ~.domain.Publication --fieldName PublicationPersonne  --class ~.domain.Personne
+field reference --type ~.domain.MessagerieInstantaneeLiee --fieldName MessageriePersonnelle  --class ~.domain.Personne
+field reference --type ~.domain.Position_ --fieldName PositionEntreprise  --class ~.domain.Personne
+field reference --type ~.domain.Organisme --fieldName BrevetOrganisme  --class ~.domain.Brevet
+field reference --type ~.domain.Telephone --fieldName TelephoneLie  --class ~.domain.Personne
+field reference --type ~.domain.Brevet --fieldName BrevetsObtenus  --class ~.domain.Personne
+field reference --type ~.domain.Certification --fieldName NiveauCertification  --class ~.domain.Personne
+field reference --type ~.domain.CompteTwitter --fieldName CompteTwitterAssocie  --class ~.domain.Personne
+field reference --type ~.domain.Entreprise --fieldName SituationHierarchique  --class ~.domain.Position_
+field reference --type ~.domain.FournisseurDuCompte --fieldName TwitterFournisseur  --class ~.domain.CompteTwitter
+field reference --type ~.domain.Competence --fieldName CompetencePersonne  --class ~.domain.Personne
+field reference --type ~.domain.Secteur --fieldName SecteurEntreprise  --class ~.domain.Entreprise
+field reference --type ~.domain.Cours --fieldName NiveauCours  --class ~.domain.Personne
+field reference --type ~.domain.Personne --fieldName Recommandeur  --class ~.domain.Recommandation
+field reference --type ~.domain.Personne --fieldName InventeurProfil  --class ~.domain.Inventeur
+field reference --type ~.domain.Langage --fieldName LanguesParlees  --class ~.domain.Personne
+field reference --type ~.domain.Inventeur --fieldName BrevetInventeur  --class ~.domain.Brevet
+field reference --type ~.domain.Auteur --fieldName PublicationDeAuteur  --class ~.domain.Publication
+field reference --type ~.domain.Education --fieldName NiveauEducation  --class ~.domain.Personne
+web mvc setup
+polyglot rest setup
+web mvc all --package ~.web
+web mvc finder all
+
+// script --file professionalInfo.roo
+quit
+
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2015-01-27 11:14:07
+
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2015-01-27 11:23:32
+project --topLevelPackage fr.imag.professionalinfo
+jpa setup --provider HIBERNATE --database HYPERSONIC_IN_MEMORY
+entity jpa --class ~.domain.Recommandation
+entity jpa --class ~.domain.Secteur
+entity jpa --class ~.domain.CompteTwitter
+entity jpa --class ~.domain.Organisme
+entity jpa --class ~.domain.Inventeur
+entity jpa --class ~.domain.Cours
+entity jpa --class ~.domain.Personne
+entity jpa --class ~.domain.Publication
+entity jpa --class ~.domain.Education
+entity jpa --class ~.domain.Competence
+entity jpa --class ~.domain.MessagerieInstantaneeLiee
+entity jpa --class ~.domain.Auteur
+entity jpa --class ~.domain.CompteLie
+entity jpa --class ~.domain.Position_
+entity jpa --class ~.domain.ExperienceVolontaire
+entity jpa --class ~.domain.Brevet
+entity jpa --class ~.domain.FournisseurDuCompte
+entity jpa --class ~.domain.Telephone
+entity jpa --class ~.domain.Certification
+entity jpa --class ~.domain.Langage
+entity jpa --class ~.domain.Entreprise
+field string --fieldName Type  --sizeMin 0                            --sizeMax 0 --class ~.domain.Recommandation
+field string --fieldName RecommandationRecue  --sizeMin 0                            --sizeMax 0 --class ~.domain.Recommandation
+
+// [failed] script --file professionalInfo.roo
+quit
+
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2015-01-27 11:23:53
+
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2015-01-27 11:33:40
+project --topLevelPackage fr.imag.professionalinfo
+jpa setup --provider HIBERNATE --database MYSQL
+entity jpa --class ~.domain.FournisseurDuCompte
+entity jpa --class ~.domain.Certification
+entity jpa --class ~.domain.CompteTwitter
+entity jpa --class ~.domain.Personne
+entity jpa --class ~.domain.Education
+entity jpa --class ~.domain.MessagerieInstantaneeLiee
+entity jpa --class ~.domain.Recommandation
+entity jpa --class ~.domain.Cours
+entity jpa --class ~.domain.Position_
+entity jpa --class ~.domain.Langage
+entity jpa --class ~.domain.Auteur
+entity jpa --class ~.domain.Telephone
+entity jpa --class ~.domain.CompteLie
+entity jpa --class ~.domain.Secteur
+entity jpa --class ~.domain.Brevet
+entity jpa --class ~.domain.Competence
+entity jpa --class ~.domain.Organisme
+entity jpa --class ~.domain.Entreprise
+entity jpa --class ~.domain.Inventeur
+entity jpa --class ~.domain.ExperienceVolontaire
+entity jpa --class ~.domain.Publication
+field string --fieldName Nom  --sizeMin 0                            --sizeMax 0 --class ~.domain.FournisseurDuCompte
+field string --fieldName Id2 --class ~.domain.FournisseurDuCompte
+field date --type java.util.Date --fieldName Expiration --class ~.domain.Certification
+field date --type java.util.Date --fieldName Obtention --class ~.domain.Certification
+field string --fieldName Nom  --sizeMin 0                            --sizeMax 0 --class ~.domain.Certification
+field string --fieldName AutoriteDeCertification  --sizeMin 0                            --sizeMax 0 --class ~.domain.Certification
+field string --fieldName Id2 --class ~.domain.Certification
+field string --fieldName NumeroDeLicence  --sizeMin 0                            --sizeMax 0 --class ~.domain.Certification
+field string --fieldName EstPrimaire --class ~.domain.CompteTwitter
+field string --fieldName Id2 --class ~.domain.CompteTwitter
+field string --fieldName NombreTotalPositionsCourantes --class ~.domain.Personne
+field string --fieldName JobsSuivis --class ~.domain.Personne
+field string --fieldName EntitesSuivies --class ~.domain.Personne
+field string --fieldName NombreTotalPositions --class ~.domain.Personne
+field string --fieldName RecompensesDonnees --class ~.domain.Personne
+field string --fieldName Interets  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName NombreTotalConnexions --class ~.domain.Personne
+field string --fieldName Property3 --class ~.domain.Personne
+field date --type java.util.Date --fieldName DateDeNaissance --class ~.domain.Personne
+field string --fieldName Distance --class ~.domain.Personne
+field string --fieldName Groupes --class ~.domain.Personne
+field string --fieldName NombreRecommandations --class ~.domain.Personne
+field string --fieldName NombreTotalExperiencesVolontariat --class ~.domain.Personne
+field string --fieldName Nom  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName NombreTotalCours --class ~.domain.Personne
+field string --fieldName Associations  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Titre  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName TitreAPIValeur --class ~.domain.Personne
+field string --fieldName ReactionAuxOffres  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Etablissement  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Connexions --class ~.domain.Personne
+field string --fieldName NomPhonetiqueFormate  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName RelationVisiteurLien  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Id2 --class ~.domain.Personne
+field string --fieldName NombreConnexionsPlafonne --class ~.domain.Personne
+field string --fieldName NomDeJeuneFille  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Email  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Property2 --class ~.domain.Personne
+field string --fieldName Adresse  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Lieu  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName URLPhoto  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Prenom  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName PartageCourant  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName RelationVisiteurConnexion  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName SuggestionsSuivis --class ~.domain.Personne
+field string --fieldName TitreAPINom --class ~.domain.Personne
+field string --fieldName Reseau  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName NomFormate  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName URLNom  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName NombreTotalEtablissementsFormation --class ~.domain.Personne
+field string --fieldName NombreConnexions --class ~.domain.Personne
+field string --fieldName RelationVisiteurDistance  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName PrenomPhonetique  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Property4 --class ~.domain.Personne
+field string --fieldName TempsDerniereModifProfil --class ~.domain.Personne
+field string --fieldName Property1 --class ~.domain.Personne
+field string --fieldName URLPartagees --class ~.domain.Personne
+field string --fieldName NombreTotalPositionsPassees --class ~.domain.Personne
+field string --fieldName URLAPI  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName NomPhonetique  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName URLLinkedInPublic  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName URLComplete  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName URLLinkedInAuth  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName CodeLieu  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName AutresDetails  --sizeMin 0                            --sizeMax 0 --class ~.domain.Education
+field string --fieldName NomEcole  --sizeMin 0                            --sizeMax 0 --class ~.domain.Education
+field string --fieldName Activites  --sizeMin 0                            --sizeMax 0 --class ~.domain.Education
+field date --type java.util.Date --fieldName DateDebut --class ~.domain.Education
+field string --fieldName Secteur  --sizeMin 0                            --sizeMax 0 --class ~.domain.Education
+field date --type java.util.Date --fieldName DateFin --class ~.domain.Education
+field string --fieldName Diplome  --sizeMin 0                            --sizeMax 0 --class ~.domain.Education
+field string --fieldName Id2 --class ~.domain.Education
+field string --fieldName Id --class ~.domain.MessagerieInstantaneeLiee
+field string --fieldName Type  --sizeMin 0                            --sizeMax 0 --class ~.domain.MessagerieInstantaneeLiee
+field string --fieldName RecommandationRecue  --sizeMin 0                            --sizeMax 0 --class ~.domain.Recommandation
+field string --fieldName Id2 --class ~.domain.Recommandation
+field string --fieldName Type  --sizeMin 0                            --sizeMax 0 --class ~.domain.Recommandation
+field string --fieldName Id2 --class ~.domain.Cours
+field string --fieldName Nombre --class ~.domain.Cours
+field string --fieldName Nom  --sizeMin 0                            --sizeMax 0 --class ~.domain.Cours
+field string --fieldName PositionActuelle --class ~.domain.Position_
+field string --fieldName Titre  --sizeMin 0                            --sizeMax 0 --class ~.domain.Position_
+field string --fieldName Id2 --class ~.domain.Position_
+field string --fieldName Resume  --sizeMin 0                            --sizeMax 0 --class ~.domain.Position_
+field date --type java.util.Date --fieldName DateDebut --class ~.domain.Position_
+field date --type java.util.Date --fieldName DateFin --class ~.domain.Position_
+field string --fieldName Niveau  --sizeMin 0                            --sizeMax 0 --class ~.domain.Langage
+field string --fieldName Id2 --class ~.domain.Langage
+field string --fieldName Nom  --sizeMin 0                            --sizeMax 0 --class ~.domain.Langage
+field string --fieldName Nom  --sizeMin 0                            --sizeMax 0 --class ~.domain.Auteur
+field string --fieldName Id2 --class ~.domain.Auteur
+field string --fieldName Type --class ~.domain.Telephone
+field string --fieldName Numero  --sizeMin 0                            --sizeMax 0 --class ~.domain.Telephone
+field string --fieldName BindingStatus  --sizeMin 0                            --sizeMax 0 --class ~.domain.CompteLie
+field string --fieldName Type  --sizeMin 0                            --sizeMax 0 --class ~.domain.CompteLie
+field string --fieldName Property1 --class ~.domain.CompteLie
+field string --fieldName EstPrimaire --class ~.domain.CompteLie
+field string --fieldName Nom  --sizeMin 0                            --sizeMax 0 --class ~.domain.Secteur
+field string --fieldName Id --class ~.domain.Secteur
+field string --fieldName URLBrevet  --sizeMin 0                            --sizeMax 0 --class ~.domain.Brevet
+field string --fieldName Id2 --class ~.domain.Brevet
+field date --type java.util.Date --fieldName DateAttribution --class ~.domain.Brevet
+field string --fieldName Statut --class ~.domain.Brevet
+field string --fieldName Numero  --sizeMin 0                            --sizeMax 0 --class ~.domain.Brevet
+field string --fieldName IntituleStatut --class ~.domain.Brevet
+field string --fieldName Resume  --sizeMin 0                            --sizeMax 0 --class ~.domain.Brevet
+field string --fieldName Titre  --sizeMin 0                            --sizeMax 0 --class ~.domain.Brevet
+field string --fieldName Id --class ~.domain.Competence
+field string --fieldName Nom --class ~.domain.Competence
+field string --fieldName Nom  --sizeMin 0                            --sizeMax 0 --class ~.domain.Organisme
+field string --fieldName Code  --sizeMin 0                            --sizeMax 0 --class ~.domain.Organisme
+field string --fieldName Secteur  --sizeMin 0                            --sizeMax 0 --class ~.domain.Entreprise
+field string --fieldName Type  --sizeMin 0                            --sizeMax 0 --class ~.domain.Entreprise
+field string --fieldName NomOfficiel  --sizeMin 0                            --sizeMax 0 --class ~.domain.Entreprise
+field string --fieldName NomBourse  --sizeMin 0                            --sizeMax 0 --class ~.domain.Entreprise
+field string --fieldName NombreEmployes --class ~.domain.Entreprise
+field string --fieldName Id2 --class ~.domain.Entreprise
+field string --fieldName Id2 --class ~.domain.Inventeur
+field string --fieldName Nom  --sizeMin 0                            --sizeMax 0 --class ~.domain.Inventeur
+field string --fieldName Organisation  --sizeMin 0                            --sizeMax 0 --class ~.domain.ExperienceVolontaire
+field string --fieldName Fonction  --sizeMin 0                            --sizeMax 0 --class ~.domain.ExperienceVolontaire
+field string --fieldName Cause  --sizeMin 0                            --sizeMax 0 --class ~.domain.ExperienceVolontaire
+field string --fieldName Id2 --class ~.domain.ExperienceVolontaire
+field string --fieldName Resume  --sizeMin 0                            --sizeMax 0 --class ~.domain.Publication
+field string --fieldName Editeur  --sizeMin 0                            --sizeMax 0 --class ~.domain.Publication
+field string --fieldName Id2 --class ~.domain.Publication
+field string --fieldName Titre  --sizeMin 0                            --sizeMax 0 --class ~.domain.Publication
+field string --fieldName URL  --sizeMin 0                            --sizeMax 0 --class ~.domain.Publication
+field date --type java.util.Date --fieldName DatePublication --class ~.domain.Publication
+field reference --type ~.domain.Personne --fieldName Recommandeur  --class ~.domain.Recommandation
+field reference --type ~.domain.FournisseurDuCompte --fieldName MessagerieFournisseur  --class ~.domain.MessagerieInstantaneeLiee
+field reference --type ~.domain.Competence --fieldName CompetencePersonne  --class ~.domain.Personne
+field reference --type ~.domain.CompteTwitter --fieldName CompteTwitterAssocie  --class ~.domain.Personne
+field reference --type ~.domain.Organisme --fieldName BrevetOrganisme  --class ~.domain.Brevet
+field reference --type ~.domain.Secteur --fieldName SecteurEntreprise  --class ~.domain.Entreprise
+field reference --type ~.domain.ExperienceVolontaire --fieldName ExperiencePersonne  --class ~.domain.Personne
+field reference --type ~.domain.Cours --fieldName NiveauCours  --class ~.domain.Personne
+field reference --type ~.domain.FournisseurDuCompte --fieldName CompteFournisseur  --class ~.domain.CompteLie
+field reference --type ~.domain.Inventeur --fieldName BrevetInventeur  --class ~.domain.Brevet
+field reference --type ~.domain.Education --fieldName NiveauEducation  --class ~.domain.Personne
+field reference --type ~.domain.Auteur --fieldName PublicationDeAuteur  --class ~.domain.Publication
+field reference --type ~.domain.Publication --fieldName PublicationPersonne  --class ~.domain.Personne
+field reference --type ~.domain.Entreprise --fieldName SituationHierarchique  --class ~.domain.Position_
+field reference --type ~.domain.Position_ --fieldName PositionEntreprise  --class ~.domain.Personne
+field reference --type ~.domain.Certification --fieldName NiveauCertification  --class ~.domain.Personne
+field reference --type ~.domain.Personne --fieldName Membre  --class ~.domain.CompteLie
+field reference --type ~.domain.Personne --fieldName AutresProfilsVisites  --class ~.domain.Personne
+field reference --type ~.domain.MessagerieInstantaneeLiee --fieldName MessageriePersonnelle  --class ~.domain.Personne
+field reference --type ~.domain.FournisseurDuCompte --fieldName TwitterFournisseur  --class ~.domain.CompteTwitter
+field reference --type ~.domain.Brevet --fieldName BrevetsObtenus  --class ~.domain.Personne
+field reference --type ~.domain.Langage --fieldName LanguesParlees  --class ~.domain.Personne
+field reference --type ~.domain.Personne --fieldName AuteurPersonne  --class ~.domain.Auteur
+field reference --type ~.domain.Personne --fieldName InventeurProfil  --class ~.domain.Inventeur
+field reference --type ~.domain.Telephone --fieldName TelephoneLie  --class ~.domain.Personne
+web mvc setup
+polyglot rest setup
+web mvc all --package ~.web
+web mvc finder all
+
+// script --file professionalInfo.roo
+quit
+
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2015-01-27 11:34:34
+
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2015-01-27 11:39:32
+project --topLevelPackage fr.imag.professionalinfo
+jpa setup --provider HIBERNATE --database MYSQL
+entity jpa --class ~.domain.MessagerieInstantaneeLiee
+entity jpa --class ~.domain.FournisseurDuCompte
+entity jpa --class ~.domain.Inventeur
+entity jpa --class ~.domain.Auteur
+entity jpa --class ~.domain.Recommandation
+entity jpa --class ~.domain.Education
+entity jpa --class ~.domain.Cours
+entity jpa --class ~.domain.CompteLie
+entity jpa --class ~.domain.ExperienceVolontaire
+entity jpa --class ~.domain.Competence
+entity jpa --class ~.domain.CompteTwitter
+entity jpa --class ~.domain.Certification
+entity jpa --class ~.domain.Publication
+entity jpa --class ~.domain.Telephone
+entity jpa --class ~.domain.Brevet
+entity jpa --class ~.domain.Entreprise
+entity jpa --class ~.domain.Personne
+entity jpa --class ~.domain.Organisme
+entity jpa --class ~.domain.Langage
+entity jpa --class ~.domain.Secteur
+entity jpa --class ~.domain.Position_
+field string --fieldName Type  --sizeMin 0                            --sizeMax 0 --class ~.domain.MessagerieInstantaneeLiee
+field string --fieldName Id2 --class ~.domain.MessagerieInstantaneeLiee
+field string --fieldName Nom  --sizeMin 0                            --sizeMax 0 --class ~.domain.FournisseurDuCompte
+field string --fieldName Id2 --class ~.domain.FournisseurDuCompte
+field string --fieldName Nom  --sizeMin 0                            --sizeMax 0 --class ~.domain.Inventeur
+field string --fieldName Id2 --class ~.domain.Inventeur
+field string --fieldName Nom  --sizeMin 0                            --sizeMax 0 --class ~.domain.Auteur
+field string --fieldName Id2 --class ~.domain.Auteur
+field string --fieldName Type  --sizeMin 0                            --sizeMax 0 --class ~.domain.Recommandation
+field string --fieldName Id2 --class ~.domain.Recommandation
+field string --fieldName RecommandationRecue  --sizeMin 0                            --sizeMax 0 --class ~.domain.Recommandation
+field string --fieldName Diplome  --sizeMin 0                            --sizeMax 0 --class ~.domain.Education
+field string --fieldName NomEcole  --sizeMin 0                            --sizeMax 0 --class ~.domain.Education
+field string --fieldName Id2 --class ~.domain.Education
+field string --fieldName Activites  --sizeMin 0                            --sizeMax 0 --class ~.domain.Education
+field date --type java.util.Date --fieldName DateFin --class ~.domain.Education
+field date --type java.util.Date --fieldName DateDebut --class ~.domain.Education
+field string --fieldName Secteur  --sizeMin 0                            --sizeMax 0 --class ~.domain.Education
+field string --fieldName AutresDetails  --sizeMin 0                            --sizeMax 0 --class ~.domain.Education
+field string --fieldName Nombre --class ~.domain.Cours
+field string --fieldName Nom  --sizeMin 0                            --sizeMax 0 --class ~.domain.Cours
+field string --fieldName Id2 --class ~.domain.Cours
+field string --fieldName BindingStatus  --sizeMin 0                            --sizeMax 0 --class ~.domain.CompteLie
+field string --fieldName Property1 --class ~.domain.CompteLie
+field string --fieldName EstPrimaire --class ~.domain.CompteLie
+field string --fieldName Type  --sizeMin 0                            --sizeMax 0 --class ~.domain.CompteLie
+field string --fieldName Organisation  --sizeMin 0                            --sizeMax 0 --class ~.domain.ExperienceVolontaire
+field string --fieldName Id2 --class ~.domain.ExperienceVolontaire
+field string --fieldName Fonction  --sizeMin 0                            --sizeMax 0 --class ~.domain.ExperienceVolontaire
+field string --fieldName Cause  --sizeMin 0                            --sizeMax 0 --class ~.domain.ExperienceVolontaire
+field string --fieldName Nom --class ~.domain.Competence
+field string --fieldName Id2 --class ~.domain.Competence
+field string --fieldName EstPrimaire --class ~.domain.CompteTwitter
+field string --fieldName Id2 --class ~.domain.CompteTwitter
+field string --fieldName NumeroDeLicence  --sizeMin 0                            --sizeMax 0 --class ~.domain.Certification
+field date --type java.util.Date --fieldName Obtention --class ~.domain.Certification
+field date --type java.util.Date --fieldName Expiration --class ~.domain.Certification
+field string --fieldName Id2 --class ~.domain.Certification
+field string --fieldName Nom  --sizeMin 0                            --sizeMax 0 --class ~.domain.Certification
+field string --fieldName AutoriteDeCertification  --sizeMin 0                            --sizeMax 0 --class ~.domain.Certification
+field string --fieldName Titre  --sizeMin 0                            --sizeMax 0 --class ~.domain.Publication
+field string --fieldName URL  --sizeMin 0                            --sizeMax 0 --class ~.domain.Publication
+field string --fieldName Editeur  --sizeMin 0                            --sizeMax 0 --class ~.domain.Publication
+field date --type java.util.Date --fieldName DatePublication --class ~.domain.Publication
+field string --fieldName Resume  --sizeMin 0                            --sizeMax 0 --class ~.domain.Publication
+field string --fieldName Id2 --class ~.domain.Publication
+field string --fieldName Type --class ~.domain.Telephone
+field string --fieldName Numero  --sizeMin 0                            --sizeMax 0 --class ~.domain.Telephone
+field string --fieldName Resume  --sizeMin 0                            --sizeMax 0 --class ~.domain.Brevet
+field string --fieldName Titre  --sizeMin 0                            --sizeMax 0 --class ~.domain.Brevet
+field string --fieldName URLBrevet  --sizeMin 0                            --sizeMax 0 --class ~.domain.Brevet
+field string --fieldName IntituleStatut --class ~.domain.Brevet
+field string --fieldName Id2 --class ~.domain.Brevet
+field string --fieldName Numero  --sizeMin 0                            --sizeMax 0 --class ~.domain.Brevet
+field string --fieldName Statut --class ~.domain.Brevet
+field date --type java.util.Date --fieldName DateAttribution --class ~.domain.Brevet
+field string --fieldName Type  --sizeMin 0                            --sizeMax 0 --class ~.domain.Entreprise
+field string --fieldName Secteur  --sizeMin 0                            --sizeMax 0 --class ~.domain.Entreprise
+field string --fieldName NombreEmployes --class ~.domain.Entreprise
+field string --fieldName NomBourse  --sizeMin 0                            --sizeMax 0 --class ~.domain.Entreprise
+field string --fieldName Id2 --class ~.domain.Entreprise
+field string --fieldName NomOfficiel  --sizeMin 0                            --sizeMax 0 --class ~.domain.Entreprise
+field string --fieldName TitreAPINom --class ~.domain.Personne
+field string --fieldName CodeLieu  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName NombreConnexions --class ~.domain.Personne
+field string --fieldName Email  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName NombreTotalPositions --class ~.domain.Personne
+field string --fieldName Interets  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName URLPartagees --class ~.domain.Personne
+field string --fieldName Property4 --class ~.domain.Personne
+field string --fieldName URLLinkedInAuth  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Property3 --class ~.domain.Personne
+field string --fieldName NomFormate  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName SuggestionsSuivis --class ~.domain.Personne
+field string --fieldName URLAPI  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName NombreTotalExperiencesVolontariat --class ~.domain.Personne
+field string --fieldName JobsSuivis --class ~.domain.Personne
+field string --fieldName NomDeJeuneFille  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName RecompensesDonnees --class ~.domain.Personne
+field string --fieldName PartageCourant  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Distance --class ~.domain.Personne
+field string --fieldName NombreTotalPositionsPassees --class ~.domain.Personne
+field string --fieldName Reseau  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Prenom  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName RelationVisiteurDistance  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName NombreConnexionsPlafonne --class ~.domain.Personne
+field string --fieldName URLPhoto  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName PrenomPhonetique  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName URLComplete  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field date --type java.util.Date --fieldName DateDeNaissance --class ~.domain.Personne
+field string --fieldName NombreTotalCours --class ~.domain.Personne
+field string --fieldName ReactionAuxOffres  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Groupes --class ~.domain.Personne
+field string --fieldName NomPhonetiqueFormate  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Etablissement  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName URLLinkedInPublic  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Property1 --class ~.domain.Personne
+field string --fieldName NombreTotalConnexions --class ~.domain.Personne
+field string --fieldName Id2 --class ~.domain.Personne
+field string --fieldName EntitesSuivies --class ~.domain.Personne
+field string --fieldName URLNom  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Associations  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName NomPhonetique  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Connexions --class ~.domain.Personne
+field string --fieldName RelationVisiteurConnexion  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName TempsDerniereModifProfil --class ~.domain.Personne
+field string --fieldName NombreTotalPositionsCourantes --class ~.domain.Personne
+field string --fieldName NombreRecommandations --class ~.domain.Personne
+field string --fieldName Nom  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Titre  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName RelationVisiteurLien  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Adresse  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Property2 --class ~.domain.Personne
+field string --fieldName NombreTotalEtablissementsFormation --class ~.domain.Personne
+field string --fieldName Lieu  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName TitreAPIValeur --class ~.domain.Personne
+field string --fieldName Code  --sizeMin 0                            --sizeMax 0 --class ~.domain.Organisme
+field string --fieldName Nom  --sizeMin 0                            --sizeMax 0 --class ~.domain.Organisme
+field string --fieldName Id2 --class ~.domain.Langage
+field string --fieldName Nom  --sizeMin 0                            --sizeMax 0 --class ~.domain.Langage
+field string --fieldName Niveau  --sizeMin 0                            --sizeMax 0 --class ~.domain.Langage
+field string --fieldName Nom  --sizeMin 0                            --sizeMax 0 --class ~.domain.Secteur
+field string --fieldName Id2 --class ~.domain.Secteur
+field string --fieldName Titre  --sizeMin 0                            --sizeMax 0 --class ~.domain.Position_
+field string --fieldName Resume  --sizeMin 0                            --sizeMax 0 --class ~.domain.Position_
+field string --fieldName Id2 --class ~.domain.Position_
+field string --fieldName PositionActuelle --class ~.domain.Position_
+field date --type java.util.Date --fieldName DateFin --class ~.domain.Position_
+field date --type java.util.Date --fieldName DateDebut --class ~.domain.Position_
+field reference --type ~.domain.FournisseurDuCompte --fieldName CompteFournisseur  --class ~.domain.CompteLie
+field reference --type ~.domain.Competence --fieldName CompetencePersonne  --class ~.domain.Personne
+field reference --type ~.domain.Cours --fieldName NiveauCours  --class ~.domain.Personne
+field reference --type ~.domain.Personne --fieldName AutresProfilsVisites  --class ~.domain.Personne
+field reference --type ~.domain.FournisseurDuCompte --fieldName TwitterFournisseur  --class ~.domain.CompteTwitter
+field reference --type ~.domain.Inventeur --fieldName BrevetInventeur  --class ~.domain.Brevet
+field reference --type ~.domain.ExperienceVolontaire --fieldName ExperiencePersonne  --class ~.domain.Personne
+field reference --type ~.domain.Brevet --fieldName BrevetsObtenus  --class ~.domain.Personne
+field reference --type ~.domain.Entreprise --fieldName SituationHierarchique  --class ~.domain.Position_
+field reference --type ~.domain.Secteur --fieldName SecteurEntreprise  --class ~.domain.Entreprise
+field reference --type ~.domain.Publication --fieldName PublicationPersonne  --class ~.domain.Personne
+field reference --type ~.domain.Organisme --fieldName BrevetOrganisme  --class ~.domain.Brevet
+field reference --type ~.domain.Personne --fieldName AuteurPersonne  --class ~.domain.Auteur
+field reference --type ~.domain.Personne --fieldName Recommandeur  --class ~.domain.Recommandation
+field reference --type ~.domain.MessagerieInstantaneeLiee --fieldName MessageriePersonnelle  --class ~.domain.Personne
+field reference --type ~.domain.Telephone --fieldName TelephoneLie  --class ~.domain.Personne
+field reference --type ~.domain.CompteTwitter --fieldName CompteTwitterAssocie  --class ~.domain.Personne
+field reference --type ~.domain.Personne --fieldName InventeurProfil  --class ~.domain.Inventeur
+field reference --type ~.domain.Auteur --fieldName PublicationDeAuteur  --class ~.domain.Publication
+field reference --type ~.domain.Personne --fieldName Membre  --class ~.domain.CompteLie
+field reference --type ~.domain.Position_ --fieldName PositionEntreprise  --class ~.domain.Personne
+field reference --type ~.domain.Education --fieldName NiveauEducation  --class ~.domain.Personne
+field reference --type ~.domain.Certification --fieldName NiveauCertification  --class ~.domain.Personne
+field reference --type ~.domain.Langage --fieldName LanguesParlees  --class ~.domain.Personne
+field reference --type ~.domain.FournisseurDuCompte --fieldName MessagerieFournisseur  --class ~.domain.MessagerieInstantaneeLiee
+web mvc setup
+polyglot rest setup
+web mvc all --package ~.web
+web mvc finder all
+
+// script --file professionalInfo.roo
+quit
+
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2015-01-27 11:40:19
+
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2015-01-27 11:46:44
+project --topLevelPackage fr.imag.professionalinfo
+jpa setup --provider HIBERNATE --database HYPERSONIC_IN_MEMORY
+entity jpa --class ~.domain.FournisseurDuCompte
+entity jpa --class ~.domain.Education
+entity jpa --class ~.domain.Brevet
+entity jpa --class ~.domain.Position_
+entity jpa --class ~.domain.MessagerieInstantaneeLiee
+entity jpa --class ~.domain.Entreprise
+entity jpa --class ~.domain.Recommandation
+entity jpa --class ~.domain.Secteur
+entity jpa --class ~.domain.Organisme
+entity jpa --class ~.domain.CompteLie
+entity jpa --class ~.domain.CompteTwitter
+entity jpa --class ~.domain.Competence
+entity jpa --class ~.domain.Publication
+entity jpa --class ~.domain.Personne
+entity jpa --class ~.domain.Langage
+entity jpa --class ~.domain.ExperienceVolontaire
+entity jpa --class ~.domain.Cours
+entity jpa --class ~.domain.Inventeur
+entity jpa --class ~.domain.Certification
+entity jpa --class ~.domain.Telephone
+entity jpa --class ~.domain.Auteur
+field string --fieldName Nom  --sizeMin 0                            --sizeMax 0 --class ~.domain.FournisseurDuCompte
+field string --fieldName Id2 --class ~.domain.FournisseurDuCompte
+field string --fieldName AutresDetails  --sizeMin 0                            --sizeMax 0 --class ~.domain.Education
+field string --fieldName Activites  --sizeMin 0                            --sizeMax 0 --class ~.domain.Education
+field string --fieldName NomEcole  --sizeMin 0                            --sizeMax 0 --class ~.domain.Education
+field date --type java.util.Date --fieldName DateDebut --class ~.domain.Education
+field string --fieldName Secteur  --sizeMin 0                            --sizeMax 0 --class ~.domain.Education
+field string --fieldName Diplome  --sizeMin 0                            --sizeMax 0 --class ~.domain.Education
+field string --fieldName Id2 --class ~.domain.Education
+field date --type java.util.Date --fieldName DateFin --class ~.domain.Education
+field string --fieldName URLBrevet  --sizeMin 0                            --sizeMax 0 --class ~.domain.Brevet
+field string --fieldName IntituleStatut --class ~.domain.Brevet
+field date --type java.util.Date --fieldName DateAttribution --class ~.domain.Brevet
+field string --fieldName Resume  --sizeMin 0                            --sizeMax 0 --class ~.domain.Brevet
+field string --fieldName Statut --class ~.domain.Brevet
+field string --fieldName Numero  --sizeMin 0                            --sizeMax 0 --class ~.domain.Brevet
+field string --fieldName Id2 --class ~.domain.Brevet
+field string --fieldName Titre  --sizeMin 0                            --sizeMax 0 --class ~.domain.Brevet
+field string --fieldName Id2 --class ~.domain.Position_
+field string --fieldName Resume  --sizeMin 0                            --sizeMax 0 --class ~.domain.Position_
+field string --fieldName Titre  --sizeMin 0                            --sizeMax 0 --class ~.domain.Position_
+field date --type java.util.Date --fieldName DateFin --class ~.domain.Position_
+field date --type java.util.Date --fieldName DateDebut --class ~.domain.Position_
+field string --fieldName PositionActuelle --class ~.domain.Position_
+field string --fieldName Id2 --class ~.domain.MessagerieInstantaneeLiee
+field string --fieldName Type  --sizeMin 0                            --sizeMax 0 --class ~.domain.MessagerieInstantaneeLiee
+field string --fieldName Secteur  --sizeMin 0                            --sizeMax 0 --class ~.domain.Entreprise
+field string --fieldName Type  --sizeMin 0                            --sizeMax 0 --class ~.domain.Entreprise
+field string --fieldName NomBourse  --sizeMin 0                            --sizeMax 0 --class ~.domain.Entreprise
+field string --fieldName NomOfficiel  --sizeMin 0                            --sizeMax 0 --class ~.domain.Entreprise
+field string --fieldName Id2 --class ~.domain.Entreprise
+field string --fieldName NombreEmployes --class ~.domain.Entreprise
+field string --fieldName RecommandationRecue  --sizeMin 0                            --sizeMax 0 --class ~.domain.Recommandation
+field string --fieldName Type  --sizeMin 0                            --sizeMax 0 --class ~.domain.Recommandation
+field string --fieldName Id2 --class ~.domain.Recommandation
+field string --fieldName Nom  --sizeMin 0                            --sizeMax 0 --class ~.domain.Secteur
+field string --fieldName Id2 --class ~.domain.Secteur
+field string --fieldName Code  --sizeMin 0                            --sizeMax 0 --class ~.domain.Organisme
+field string --fieldName Nom  --sizeMin 0                            --sizeMax 0 --class ~.domain.Organisme
+field string --fieldName Property1 --class ~.domain.CompteLie
+field string --fieldName BindingStatus  --sizeMin 0                            --sizeMax 0 --class ~.domain.CompteLie
+field string --fieldName EstPrimaire --class ~.domain.CompteLie
+field string --fieldName Type  --sizeMin 0                            --sizeMax 0 --class ~.domain.CompteLie
+field string --fieldName Id2 --class ~.domain.CompteTwitter
+field string --fieldName EstPrimaire --class ~.domain.CompteTwitter
+field string --fieldName Nom --class ~.domain.Competence
+field string --fieldName Id2 --class ~.domain.Competence
+field date --type java.util.Date --fieldName DatePublication --class ~.domain.Publication
+field string --fieldName Editeur  --sizeMin 0                            --sizeMax 0 --class ~.domain.Publication
+field string --fieldName Titre  --sizeMin 0                            --sizeMax 0 --class ~.domain.Publication
+field string --fieldName Resume  --sizeMin 0                            --sizeMax 0 --class ~.domain.Publication
+field string --fieldName Id2 --class ~.domain.Publication
+field string --fieldName URL  --sizeMin 0                            --sizeMax 0 --class ~.domain.Publication
+field string --fieldName URLLinkedInPublic  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Property4 --class ~.domain.Personne
+field string --fieldName JobsSuivis --class ~.domain.Personne
+field string --fieldName NombreTotalPositionsPassees --class ~.domain.Personne
+field string --fieldName TempsDerniereModifProfil --class ~.domain.Personne
+field string --fieldName NombreRecommandations --class ~.domain.Personne
+field string --fieldName URLAPI  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Associations  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName NombreTotalPositions --class ~.domain.Personne
+field string --fieldName Interets  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Property1 --class ~.domain.Personne
+field string --fieldName RelationVisiteurDistance  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName URLPartagees --class ~.domain.Personne
+field string --fieldName NombreConnexionsPlafonne --class ~.domain.Personne
+field string --fieldName NombreTotalExperiencesVolontariat --class ~.domain.Personne
+field string --fieldName TitreAPIValeur --class ~.domain.Personne
+field string --fieldName NombreTotalCours --class ~.domain.Personne
+field string --fieldName URLLinkedInAuth  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName RecompensesDonnees --class ~.domain.Personne
+field string --fieldName Distance --class ~.domain.Personne
+field string --fieldName ReactionAuxOffres  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName CodeLieu  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName TitreAPINom --class ~.domain.Personne
+field string --fieldName Property3 --class ~.domain.Personne
+field string --fieldName Lieu  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName NombreTotalEtablissementsFormation --class ~.domain.Personne
+field string --fieldName URLNom  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Reseau  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Etablissement  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName EntitesSuivies --class ~.domain.Personne
+field string --fieldName URLPhoto  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName NomFormate  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName NombreTotalConnexions --class ~.domain.Personne
+field string --fieldName Titre  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Email  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName RelationVisiteurConnexion  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Prenom  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName RelationVisiteurLien  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName NombreConnexions --class ~.domain.Personne
+field string --fieldName NomDeJeuneFille  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Groupes --class ~.domain.Personne
+field string --fieldName Adresse  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName NombreTotalPositionsCourantes --class ~.domain.Personne
+field string --fieldName PartageCourant  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName URLComplete  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Id2 --class ~.domain.Personne
+field string --fieldName Property2 --class ~.domain.Personne
+field date --type java.util.Date --fieldName DateDeNaissance --class ~.domain.Personne
+field string --fieldName NomPhonetiqueFormate  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Connexions --class ~.domain.Personne
+field string --fieldName PrenomPhonetique  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName SuggestionsSuivis --class ~.domain.Personne
+field string --fieldName NomPhonetique  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Nom  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Nom  --sizeMin 0                            --sizeMax 0 --class ~.domain.Langage
+field string --fieldName Niveau  --sizeMin 0                            --sizeMax 0 --class ~.domain.Langage
+field string --fieldName Id2 --class ~.domain.Langage
+field string --fieldName Id2 --class ~.domain.ExperienceVolontaire
+field string --fieldName Fonction  --sizeMin 0                            --sizeMax 0 --class ~.domain.ExperienceVolontaire
+field string --fieldName Organisation  --sizeMin 0                            --sizeMax 0 --class ~.domain.ExperienceVolontaire
+field string --fieldName Cause  --sizeMin 0                            --sizeMax 0 --class ~.domain.ExperienceVolontaire
+field string --fieldName Nombre --class ~.domain.Cours
+field string --fieldName Id2 --class ~.domain.Cours
+field string --fieldName Nom  --sizeMin 0                            --sizeMax 0 --class ~.domain.Cours
+field string --fieldName Nom  --sizeMin 0                            --sizeMax 0 --class ~.domain.Inventeur
+field string --fieldName Id2 --class ~.domain.Inventeur
+field string --fieldName NumeroDeLicence  --sizeMin 0                            --sizeMax 0 --class ~.domain.Certification
+field date --type java.util.Date --fieldName Expiration --class ~.domain.Certification
+field string --fieldName Nom  --sizeMin 0                            --sizeMax 0 --class ~.domain.Certification
+field string --fieldName Id2 --class ~.domain.Certification
+field string --fieldName AutoriteDeCertification  --sizeMin 0                            --sizeMax 0 --class ~.domain.Certification
+field date --type java.util.Date --fieldName Obtention --class ~.domain.Certification
+field string --fieldName Numero  --sizeMin 0                            --sizeMax 0 --class ~.domain.Telephone
+field string --fieldName Type --class ~.domain.Telephone
+field string --fieldName Nom  --sizeMin 0                            --sizeMax 0 --class ~.domain.Auteur
+field string --fieldName Id2 --class ~.domain.Auteur
+field reference --type ~.domain.Position_ --fieldName PositionEntreprise  --class ~.domain.Personne
+field reference --type ~.domain.Education --fieldName NiveauEducation  --class ~.domain.Personne
+field reference --type ~.domain.Personne --fieldName Recommandeur  --class ~.domain.Recommandation
+field reference --type ~.domain.FournisseurDuCompte --fieldName TwitterFournisseur  --class ~.domain.CompteTwitter
+field reference --type ~.domain.Competence --fieldName CompetencePersonne  --class ~.domain.Personne
+field reference --type ~.domain.Entreprise --fieldName SituationHierarchique  --class ~.domain.Position_
+field reference --type ~.domain.Certification --fieldName NiveauCertification  --class ~.domain.Personne
+field reference --type ~.domain.Brevet --fieldName BrevetsObtenus  --class ~.domain.Personne
+field reference --type ~.domain.Telephone --fieldName TelephoneLie  --class ~.domain.Personne
+field reference --type ~.domain.Personne --fieldName AutresProfilsVisites  --class ~.domain.Personne
+field reference --type ~.domain.Secteur --fieldName SecteurEntreprise  --class ~.domain.Entreprise
+field reference --type ~.domain.Cours --fieldName NiveauCours  --class ~.domain.Personne
+field reference --type ~.domain.Personne --fieldName AuteurPersonne  --class ~.domain.Auteur
+field reference --type ~.domain.Personne --fieldName Membre  --class ~.domain.CompteLie
+field reference --type ~.domain.CompteTwitter --fieldName CompteTwitterAssocie  --class ~.domain.Personne
+field reference --type ~.domain.FournisseurDuCompte --fieldName CompteFournisseur  --class ~.domain.CompteLie
+field reference --type ~.domain.Inventeur --fieldName BrevetInventeur  --class ~.domain.Brevet
+field reference --type ~.domain.FournisseurDuCompte --fieldName MessagerieFournisseur  --class ~.domain.MessagerieInstantaneeLiee
+field reference --type ~.domain.ExperienceVolontaire --fieldName ExperiencePersonne  --class ~.domain.Personne
+field reference --type ~.domain.Langage --fieldName LanguesParlees  --class ~.domain.Personne
+field reference --type ~.domain.Auteur --fieldName PublicationDeAuteur  --class ~.domain.Publication
+field reference --type ~.domain.Publication --fieldName PublicationPersonne  --class ~.domain.Personne
+field reference --type ~.domain.MessagerieInstantaneeLiee --fieldName MessageriePersonnelle  --class ~.domain.Personne
+field reference --type ~.domain.Personne --fieldName InventeurProfil  --class ~.domain.Inventeur
+field reference --type ~.domain.Organisme --fieldName BrevetOrganisme  --class ~.domain.Brevet
+web mvc setup
+polyglot rest setup
+web mvc all --package ~.web
+web mvc finder all
+
+// script --file professionalInfo.roo
+quit
+
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2015-01-27 11:47:34
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2015-01-27 12:08:25
+project --topLevelPackage fr.imag.professionalinfo
+jpa setup --provider HIBERNATE --database MYSQL
+entity jpa --class ~.domain.Organisme
+entity jpa --class ~.domain.Auteur
+entity jpa --class ~.domain.Publication
+entity jpa --class ~.domain.Entreprise
+entity jpa --class ~.domain.CompteTwitter
+entity jpa --class ~.domain.Competence
+entity jpa --class ~.domain.Recommandation
+entity jpa --class ~.domain.Education
+entity jpa --class ~.domain.FournisseurDuCompte
+entity jpa --class ~.domain.Telephone
+entity jpa --class ~.domain.Brevet
+entity jpa --class ~.domain.Inventeur
+entity jpa --class ~.domain.Langage
+entity jpa --class ~.domain.Position_
+entity jpa --class ~.domain.Secteur
+entity jpa --class ~.domain.ExperienceVolontaire
+entity jpa --class ~.domain.Personne
+entity jpa --class ~.domain.Certification
+entity jpa --class ~.domain.CompteLie
+entity jpa --class ~.domain.Cours
+entity jpa --class ~.domain.MessagerieInstantaneeLiee
+field string --fieldName Nom  --sizeMin 0                            --sizeMax 0 --class ~.domain.Organisme
+field string --fieldName Code  --sizeMin 0                            --sizeMax 0 --class ~.domain.Organisme
+field string --fieldName Nom  --sizeMin 0                            --sizeMax 0 --class ~.domain.Auteur
+field string --fieldName Id2 --class ~.domain.Auteur
+field date --type java.util.Date --fieldName DatePublication --class ~.domain.Publication
+field string --fieldName Titre  --sizeMin 0                            --sizeMax 0 --class ~.domain.Publication
+field string --fieldName Resume  --sizeMin 0                            --sizeMax 0 --class ~.domain.Publication
+field string --fieldName Editeur  --sizeMin 0                            --sizeMax 0 --class ~.domain.Publication
+field string --fieldName Id2 --class ~.domain.Publication
+field string --fieldName URL  --sizeMin 0                            --sizeMax 0 --class ~.domain.Publication
+field string --fieldName Type  --sizeMin 0                            --sizeMax 0 --class ~.domain.Entreprise
+field string --fieldName Secteur  --sizeMin 0                            --sizeMax 0 --class ~.domain.Entreprise
+field string --fieldName NomBourse  --sizeMin 0                            --sizeMax 0 --class ~.domain.Entreprise
+field string --fieldName Id2 --class ~.domain.Entreprise
+field string --fieldName NombreEmployes --class ~.domain.Entreprise
+field string --fieldName NomOfficiel  --sizeMin 0                            --sizeMax 0 --class ~.domain.Entreprise
+field string --fieldName Id2 --class ~.domain.CompteTwitter
+field string --fieldName EstPrimaire --class ~.domain.CompteTwitter
+field string --fieldName Nom --class ~.domain.Competence
+field string --fieldName Id2 --class ~.domain.Competence
+field string --fieldName Type  --sizeMin 0                            --sizeMax 0 --class ~.domain.Recommandation
+field string --fieldName Id2 --class ~.domain.Recommandation
+field string --fieldName RecommandationRecue  --sizeMin 0                            --sizeMax 0 --class ~.domain.Recommandation
+field string --fieldName AutresDetails  --sizeMin 0                            --sizeMax 0 --class ~.domain.Education
+field date --type java.util.Date --fieldName DateDebut --class ~.domain.Education
+field string --fieldName Diplome  --sizeMin 0                            --sizeMax 0 --class ~.domain.Education
+field string --fieldName Secteur  --sizeMin 0                            --sizeMax 0 --class ~.domain.Education
+field string --fieldName NomEcole  --sizeMin 0                            --sizeMax 0 --class ~.domain.Education
+field string --fieldName Id2 --class ~.domain.Education
+field date --type java.util.Date --fieldName DateFin --class ~.domain.Education
+field string --fieldName Activites  --sizeMin 0                            --sizeMax 0 --class ~.domain.Education
+field string --fieldName Nom  --sizeMin 0                            --sizeMax 0 --class ~.domain.FournisseurDuCompte
+field string --fieldName Id2 --class ~.domain.FournisseurDuCompte
+field string --fieldName Type --class ~.domain.Telephone
+field string --fieldName Numero  --sizeMin 0                            --sizeMax 0 --class ~.domain.Telephone
+field date --type java.util.Date --fieldName DateAttribution --class ~.domain.Brevet
+field string --fieldName Titre  --sizeMin 0                            --sizeMax 0 --class ~.domain.Brevet
+field string --fieldName Numero  --sizeMin 0                            --sizeMax 0 --class ~.domain.Brevet
+field string --fieldName Id2 --class ~.domain.Brevet
+field string --fieldName URLBrevet  --sizeMin 0                            --sizeMax 0 --class ~.domain.Brevet
+field string --fieldName IntituleStatut --class ~.domain.Brevet
+field string --fieldName Statut --class ~.domain.Brevet
+field string --fieldName Resume  --sizeMin 0                            --sizeMax 0 --class ~.domain.Brevet
+field string --fieldName Id2 --class ~.domain.Inventeur
+field string --fieldName Nom  --sizeMin 0                            --sizeMax 0 --class ~.domain.Inventeur
+field string --fieldName Nom  --sizeMin 0                            --sizeMax 0 --class ~.domain.Langage
+field string --fieldName Id2 --class ~.domain.Langage
+field string --fieldName Niveau  --sizeMin 0                            --sizeMax 0 --class ~.domain.Langage
+field string --fieldName Resume  --sizeMin 0                            --sizeMax 0 --class ~.domain.Position_
+field date --type java.util.Date --fieldName DateFin --class ~.domain.Position_
+field string --fieldName PositionActuelle --class ~.domain.Position_
+field date --type java.util.Date --fieldName DateDebut --class ~.domain.Position_
+field string --fieldName Id2 --class ~.domain.Position_
+field string --fieldName Titre  --sizeMin 0                            --sizeMax 0 --class ~.domain.Position_
+field string --fieldName Id2 --class ~.domain.Secteur
+field string --fieldName Nom  --sizeMin 0                            --sizeMax 0 --class ~.domain.Secteur
+field string --fieldName Organisation  --sizeMin 0                            --sizeMax 0 --class ~.domain.ExperienceVolontaire
+field string --fieldName Cause  --sizeMin 0                            --sizeMax 0 --class ~.domain.ExperienceVolontaire
+field string --fieldName Id2 --class ~.domain.ExperienceVolontaire
+field string --fieldName Fonction  --sizeMin 0                            --sizeMax 0 --class ~.domain.ExperienceVolontaire
+field string --fieldName RecompensesDonnees --class ~.domain.Personne
+field string --fieldName Lieu  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Property1 --class ~.domain.Personne
+field string --fieldName NombreTotalPositionsCourantes --class ~.domain.Personne
+field string --fieldName URLComplete  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName NombreConnexionsPlafonne --class ~.domain.Personne
+field string --fieldName NomDeJeuneFille  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName CodeLieu  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName TitreAPIValeur --class ~.domain.Personne
+field string --fieldName ReactionAuxOffres  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName URLAPI  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName EntitesSuivies --class ~.domain.Personne
+field string --fieldName URLLinkedInAuth  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Adresse  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Property2 --class ~.domain.Personne
+field string --fieldName Id2 --class ~.domain.Personne
+field string --fieldName Reseau  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Titre  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName RelationVisiteurDistance  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Prenom  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName NombreTotalConnexions --class ~.domain.Personne
+field string --fieldName NombreTotalEtablissementsFormation --class ~.domain.Personne
+field string --fieldName NombreTotalPositions --class ~.domain.Personne
+field string --fieldName Associations  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName NomFormate  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName TitreAPINom --class ~.domain.Personne
+field string --fieldName PrenomPhonetique  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName NomPhonetiqueFormate  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Property3 --class ~.domain.Personne
+field string --fieldName Groupes --class ~.domain.Personne
+field string --fieldName RelationVisiteurConnexion  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field date --type java.util.Date --fieldName DateDeNaissance --class ~.domain.Personne
+field string --fieldName NombreRecommandations --class ~.domain.Personne
+field string --fieldName NombreTotalPositionsPassees --class ~.domain.Personne
+field string --fieldName TempsDerniereModifProfil --class ~.domain.Personne
+field string --fieldName PartageCourant  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName URLNom  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Nom  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Distance --class ~.domain.Personne
+field string --fieldName RelationVisiteurLien  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName URLLinkedInPublic  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Etablissement  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Connexions --class ~.domain.Personne
+field string --fieldName NombreTotalExperiencesVolontariat --class ~.domain.Personne
+field string --fieldName Property4 --class ~.domain.Personne
+field string --fieldName JobsSuivis --class ~.domain.Personne
+field string --fieldName SuggestionsSuivis --class ~.domain.Personne
+field string --fieldName URLPartagees --class ~.domain.Personne
+field string --fieldName URLPhoto  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName Email  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName NomPhonetique  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName NombreTotalCours --class ~.domain.Personne
+field string --fieldName NombreConnexions --class ~.domain.Personne
+field string --fieldName Interets  --sizeMin 0                            --sizeMax 0 --class ~.domain.Personne
+field string --fieldName NumeroDeLicence  --sizeMin 0                            --sizeMax 0 --class ~.domain.Certification
+field string --fieldName AutoriteDeCertification  --sizeMin 0                            --sizeMax 0 --class ~.domain.Certification
+field string --fieldName Id2 --class ~.domain.Certification
+field date --type java.util.Date --fieldName Expiration --class ~.domain.Certification
+field date --type java.util.Date --fieldName Obtention --class ~.domain.Certification
+field string --fieldName Nom  --sizeMin 0                            --sizeMax 0 --class ~.domain.Certification
+field string --fieldName Type  --sizeMin 0                            --sizeMax 0 --class ~.domain.CompteLie
+field string --fieldName Property1 --class ~.domain.CompteLie
+field string --fieldName EstPrimaire --class ~.domain.CompteLie
+field string --fieldName BindingStatus  --sizeMin 0                            --sizeMax 0 --class ~.domain.CompteLie
+field string --fieldName Nombre --class ~.domain.Cours
+field string --fieldName Nom  --sizeMin 0                            --sizeMax 0 --class ~.domain.Cours
+field string --fieldName Id2 --class ~.domain.Cours
+field string --fieldName Type  --sizeMin 0                            --sizeMax 0 --class ~.domain.MessagerieInstantaneeLiee
+field string --fieldName Id2 --class ~.domain.MessagerieInstantaneeLiee
+field reference --type ~.domain.ExperienceVolontaire --fieldName ExperiencePersonne  --class ~.domain.Personne
+field reference --type ~.domain.Position_ --fieldName PositionEntreprise  --class ~.domain.Personne
+field reference --type ~.domain.Personne --fieldName AutresProfilsVisites  --class ~.domain.Personne
+field reference --type ~.domain.Cours --fieldName NiveauCours  --class ~.domain.Personne
+field reference --type ~.domain.Entreprise --fieldName SituationHierarchique  --class ~.domain.Position_
+field reference --type ~.domain.Telephone --fieldName TelephoneLie  --class ~.domain.Personne
+field reference --type ~.domain.Publication --fieldName PublicationPersonne  --class ~.domain.Personne
+field reference --type ~.domain.Competence --fieldName CompetencePersonne  --class ~.domain.Personne
+field reference --type ~.domain.Certification --fieldName NiveauCertification  --class ~.domain.Personne
+field reference --type ~.domain.Organisme --fieldName BrevetOrganisme  --class ~.domain.Brevet
+field reference --type ~.domain.Personne --fieldName AuteurPersonne  --class ~.domain.Auteur
+field reference --type ~.domain.Personne --fieldName Recommandeur  --class ~.domain.Recommandation
+field reference --type ~.domain.CompteTwitter --fieldName CompteTwitterAssocie  --class ~.domain.Personne
+field reference --type ~.domain.Personne --fieldName Membre  --class ~.domain.CompteLie
+field reference --type ~.domain.Auteur --fieldName PublicationDeAuteur  --class ~.domain.Publication
+field reference --type ~.domain.Personne --fieldName InventeurProfil  --class ~.domain.Inventeur
+field reference --type ~.domain.FournisseurDuCompte --fieldName CompteFournisseur  --class ~.domain.CompteLie
+field reference --type ~.domain.Inventeur --fieldName BrevetInventeur  --class ~.domain.Brevet
+field reference --type ~.domain.FournisseurDuCompte --fieldName TwitterFournisseur  --class ~.domain.CompteTwitter
+field reference --type ~.domain.MessagerieInstantaneeLiee --fieldName MessageriePersonnelle  --class ~.domain.Personne
+field reference --type ~.domain.FournisseurDuCompte --fieldName MessagerieFournisseur  --class ~.domain.MessagerieInstantaneeLiee
+field reference --type ~.domain.Langage --fieldName LanguesParlees  --class ~.domain.Personne
+field reference --type ~.domain.Brevet --fieldName BrevetsObtenus  --class ~.domain.Personne
+field reference --type ~.domain.Education --fieldName NiveauEducation  --class ~.domain.Personne
+field reference --type ~.domain.Secteur --fieldName SecteurEntreprise  --class ~.domain.Entreprise
+web mvc setup
+polyglot rest setup
+web mvc all --package ~.web
+web mvc finder all
+// script --file professionalInfo.roo
+quit
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2015-01-27 12:09:01

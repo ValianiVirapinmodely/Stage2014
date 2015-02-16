@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_fr_imag_professionalinfo_domain_Brevet" items="${brevets}" z="KSt8Tai91eruJq39zt9TQOyQ3AQ=">
+        <table:table data="${brevets}" id="l_fr_imag_professionalinfo_domain_Brevet" path="/brevets" z="K6jLYHU3YJnNJqiS+hxmp768x7U=">
+            <table:column date="true" dateTimePattern="${brevet_dateattribution_date_format}" id="c_fr_imag_professionalinfo_domain_Brevet_DateAttribution" property="dateAttribution" z="Kt5OqsvV37pSfjDy2YGlfGejyYA="/>
+            <table:column id="c_fr_imag_professionalinfo_domain_Brevet_Titre" property="titre" z="vbY5XVTufGmSAdBwWiqOW/B5LPU="/>
+            <table:column id="c_fr_imag_professionalinfo_domain_Brevet_Numero" property="numero" z="QGmqe2KoCzMx/nRoBXcC4j1VDng="/>
+            <table:column id="c_fr_imag_professionalinfo_domain_Brevet_Id2" property="id2" z="9/vJVTtr1lexxwdkrfSJKXNn2nA="/>
+            <table:column id="c_fr_imag_professionalinfo_domain_Brevet_URLBrevet" property="URLBrevet" z="qlLlNRYieoXukK5pAVU8qswVLFU="/>
+            <table:column id="c_fr_imag_professionalinfo_domain_Brevet_IntituleStatut" property="intituleStatut" z="WFUy/xunwm/8AjpwnId2cUBzLSw="/>
+        </table:table>
+    </page:list>
+</div>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_fr_imag_professionalinfo_domain_Education" object="${education}" path="/educations" z="9rycrqfe0zbfQtT1gWAusy/zpYA=">
+        <field:display field="autresDetails" id="s_fr_imag_professionalinfo_domain_Education_AutresDetails" object="${education}" z="C/X7Hn88krXky4GAjyxh5mUY3mc="/>
+        <field:display date="true" dateTimePattern="${education_datedebut_date_format}" field="dateDebut" id="s_fr_imag_professionalinfo_domain_Education_DateDebut" object="${education}" z="zgSHLI4uxWa4AQthWCB4tytB/ck="/>
+        <field:display field="diplome" id="s_fr_imag_professionalinfo_domain_Education_Diplome" object="${education}" z="ieA/8mJj8kB9v3WJhVWwbCyXgfg="/>
+        <field:display field="secteur" id="s_fr_imag_professionalinfo_domain_Education_Secteur" object="${education}" z="36/tRR1484Z9uBpDlT0RX4QQVv4="/>
+        <field:display field="nomEcole" id="s_fr_imag_professionalinfo_domain_Education_NomEcole" object="${education}" z="wORuNm8qvxJ9/Jt7VLxXoBbIO48="/>
+        <field:display field="id2" id="s_fr_imag_professionalinfo_domain_Education_Id2" object="${education}" z="7xtZ23nQb8nR0RKJJdLoRWjwUeI="/>
+        <field:display date="true" dateTimePattern="${education_datefin_date_format}" field="dateFin" id="s_fr_imag_professionalinfo_domain_Education_DateFin" object="${education}" z="vjnWIAE7/b6wTXK0krEGdG73TPM="/>
+        <field:display field="activites" id="s_fr_imag_professionalinfo_domain_Education_Activites" object="${education}" z="5Jr207YAjEHHZAa9OjfGJ8zNfrc="/>
+    </page:show>
+</div>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_fr_imag_professionalinfo_domain_Recommandation" object="${recommandation}" path="/recommandations" z="NEijITX9w2r37CFWoReQcvxwFfE=">
+        <field:display field="type" id="s_fr_imag_professionalinfo_domain_Recommandation_Type" object="${recommandation}" z="U+i5M3R4n8JpL73pkchs8K+7A7A="/>
+        <field:display field="id2" id="s_fr_imag_professionalinfo_domain_Recommandation_Id2" object="${recommandation}" z="/aKRT9vFkHHYzAnJMnoCyL7W49A="/>
+        <field:display field="recommandationRecue" id="s_fr_imag_professionalinfo_domain_Recommandation_RecommandationRecue" object="${recommandation}" z="YZ28oLUYMongDwy6cWoCy+sS7lA="/>
+        <field:display field="recommandeur" id="s_fr_imag_professionalinfo_domain_Recommandation_Recommandeur" object="${recommandation}" z="4dCzint/iA6sgFY5ogiVE15aNd0="/>
+    </page:show>
+</div>

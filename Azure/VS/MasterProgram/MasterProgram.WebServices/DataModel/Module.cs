@@ -7,7 +7,7 @@ namespace MasterProgram.WebServices.DataModel
 {
     public class Module
     {
-        public int IdModule;
+        public String IdModule;
         public String Intitule;
         public bool ModuleChoix;
         public UniteEnseignement UE;

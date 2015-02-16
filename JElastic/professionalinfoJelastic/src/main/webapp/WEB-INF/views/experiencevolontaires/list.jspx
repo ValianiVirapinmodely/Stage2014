@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_fr_imag_professionalinfo_domain_ExperienceVolontaire" items="${experiencevolontaires}" z="/vtNKdqim3sYbHQ+Ke+9mPEPnS8=">
+        <table:table data="${experiencevolontaires}" id="l_fr_imag_professionalinfo_domain_ExperienceVolontaire" path="/experiencevolontaires" z="isn1UDmm0ikMwXSWZ5bvGVZawa4=">
+            <table:column id="c_fr_imag_professionalinfo_domain_ExperienceVolontaire_Organisation" property="organisation" z="hJWj63986oZ7gclwq+WNk+QpjRs="/>
+            <table:column id="c_fr_imag_professionalinfo_domain_ExperienceVolontaire_Cause" property="cause" z="VuOwvMk0X5Abyo7472Ydjq4SuIw="/>
+            <table:column id="c_fr_imag_professionalinfo_domain_ExperienceVolontaire_Id2" property="id2" z="5IlYYu/Xj/qhv0vHygxRDYTsa0I="/>
+            <table:column id="c_fr_imag_professionalinfo_domain_ExperienceVolontaire_Fonction" property="fonction" z="LN89neHyFxZQPl/IfjDPfM9n8+8="/>
+        </table:table>
+    </page:list>
+</div>

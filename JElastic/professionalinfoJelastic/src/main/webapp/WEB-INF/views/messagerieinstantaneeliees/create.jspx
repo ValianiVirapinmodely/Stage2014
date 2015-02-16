@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_fr_imag_professionalinfo_domain_MessagerieInstantaneeLiee" modelAttribute="messagerieInstantaneeLiee" path="/messagerieinstantaneeliees" render="${empty dependencies}" z="1dlF4Uxadna8aeFEDqFcqi+dSdg=">
+        <field:input field="Type" id="c_fr_imag_professionalinfo_domain_MessagerieInstantaneeLiee_Type" max="0" min="0" required="true" z="g0bspBDNKH+KVBMwpxxT4GNC2TA="/>
+        <field:input field="Id2" id="c_fr_imag_professionalinfo_domain_MessagerieInstantaneeLiee_Id2" z="okBgymqMXGWwwPksezdN8EglKD4="/>
+        <field:select field="MessagerieFournisseur" id="c_fr_imag_professionalinfo_domain_MessagerieInstantaneeLiee_MessagerieFournisseur" itemValue="id" items="${fournisseurducomptes}" path="/fournisseurducomptes" z="0MHYOO1GnqSHumsPZLruMOXSeIA="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_fr_imag_professionalinfo_domain_MessagerieInstantaneeLiee" render="${not empty dependencies}" z="0yzA5Gkk7xrhoUpt758V913X25o="/>
+</div>

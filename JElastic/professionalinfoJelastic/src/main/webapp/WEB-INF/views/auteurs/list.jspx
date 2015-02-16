@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_fr_imag_professionalinfo_domain_Auteur" items="${auteurs}" z="nPB9uW5H1XwKNe7pShwrn1sFu/4=">
+        <table:table data="${auteurs}" id="l_fr_imag_professionalinfo_domain_Auteur" path="/auteurs" z="nn4ppuVdEs8JaA6N7/LUa7vnEoo=">
+            <table:column id="c_fr_imag_professionalinfo_domain_Auteur_Nom" property="nom" z="q/hOi4cUNaRLRQrzlIMjpZpzv+A="/>
+            <table:column id="c_fr_imag_professionalinfo_domain_Auteur_Id2" property="id2" z="7rBvQbUBMeMoyHFMM/la7saALL0="/>
+            <table:column id="c_fr_imag_professionalinfo_domain_Auteur_AuteurPersonne" property="auteurPersonne" z="zyzB65t0bkMc/wWaWnee/mpSwj4="/>
+        </table:table>
+    </page:list>
+</div>

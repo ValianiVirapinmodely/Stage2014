@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_fr_imag_professionalinfo_domain_Langage" object="${langage}" path="/langages" z="sZjubBiTkX303sH1uG9KduXMrzA=">
+        <field:display field="nom" id="s_fr_imag_professionalinfo_domain_Langage_Nom" object="${langage}" z="K92cUJHBS009pSCVoAO4BjFHQfc="/>
+        <field:display field="id2" id="s_fr_imag_professionalinfo_domain_Langage_Id2" object="${langage}" z="dQzNueQq5Pdxg8AvVt1JTOw2vkw="/>
+        <field:display field="niveau" id="s_fr_imag_professionalinfo_domain_Langage_Niveau" object="${langage}" z="D0r5IYOL8x7l8ve3oU+JikH2MOw="/>
+    </page:show>
+</div>

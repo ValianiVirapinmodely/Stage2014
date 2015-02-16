@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_fr_imag_professionalinfo_domain_Entreprise" items="${entreprises}" z="q9BP5wtGup1wBYp4DxJKCFq1wJs=">
+        <table:table data="${entreprises}" id="l_fr_imag_professionalinfo_domain_Entreprise" path="/entreprises" z="PePm6eUzoj+bhPzwGtHk9pgRnyk=">
+            <table:column id="c_fr_imag_professionalinfo_domain_Entreprise_Type" property="type" z="8wrMeliAGHgZbsho9Argk7Ozz7Y="/>
+            <table:column id="c_fr_imag_professionalinfo_domain_Entreprise_Secteur" property="secteur" z="Y8ms/9dEPbRIoqQ05iFsT5UbKyY="/>
+            <table:column id="c_fr_imag_professionalinfo_domain_Entreprise_NomBourse" property="nomBourse" z="MW0LoitgMZLjlgtBg+Ge84+DevI="/>
+            <table:column id="c_fr_imag_professionalinfo_domain_Entreprise_Id2" property="id2" z="eeOjnnvAzrsJNYBC71UIxgStSqk="/>
+            <table:column id="c_fr_imag_professionalinfo_domain_Entreprise_NombreEmployes" property="nombreEmployes" z="MB6GqPKJaETqFaLvczCWqRN5VpE="/>
+            <table:column id="c_fr_imag_professionalinfo_domain_Entreprise_NomOfficiel" property="nomOfficiel" z="ZXcf2YS/+tR3xfsUT5aBBtz/m4I="/>
+        </table:table>
+    </page:list>
+</div>

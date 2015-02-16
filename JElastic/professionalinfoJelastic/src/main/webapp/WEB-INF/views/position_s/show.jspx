@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_fr_imag_professionalinfo_domain_Position_" object="${position_}" path="/position_s" z="pcvHCLpUARkxDUChmFtP0VPRGqU=">
+        <field:display field="resume" id="s_fr_imag_professionalinfo_domain_Position__Resume" object="${position_}" z="nLXBC3I51U29RZbPpDJK/qaSqnY="/>
+        <field:display date="true" dateTimePattern="${position__datefin_date_format}" field="dateFin" id="s_fr_imag_professionalinfo_domain_Position__DateFin" object="${position_}" z="oB38nFhllUfun9i167Dib1QMVPA="/>
+        <field:display field="positionActuelle" id="s_fr_imag_professionalinfo_domain_Position__PositionActuelle" object="${position_}" z="Z5qGiOCOWzcv7XIYNgdyGDmNsNE="/>
+        <field:display date="true" dateTimePattern="${position__datedebut_date_format}" field="dateDebut" id="s_fr_imag_professionalinfo_domain_Position__DateDebut" object="${position_}" z="J+4z2qsSNJZrGEGh5dIiC3bGJoY="/>
+        <field:display field="id2" id="s_fr_imag_professionalinfo_domain_Position__Id2" object="${position_}" z="LuKkmFMThqtK+ZGKpWcOb5geJIo="/>
+        <field:display field="titre" id="s_fr_imag_professionalinfo_domain_Position__Titre" object="${position_}" z="HFu9uxC5drjEswezcLklq3SqzDI="/>
+        <field:display field="situationHierarchique" id="s_fr_imag_professionalinfo_domain_Position__SituationHierarchique" object="${position_}" z="lE+jLJNtZnZMaWlwu7v6ymFXkh8="/>
+    </page:show>
+</div>

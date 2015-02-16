@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_fr_imag_professionalinfo_domain_Personne" object="${personne}" path="/personnes" z="UGMhrvQGuLwxmkrKkE0BBQjhZqI=">
+        <field:display field="recompensesDonnees" id="s_fr_imag_professionalinfo_domain_Personne_RecompensesDonnees" object="${personne}" z="RD5cvVYawr2kp4aBxqveje0F5XI="/>
+        <field:display field="lieu" id="s_fr_imag_professionalinfo_domain_Personne_Lieu" object="${personne}" z="hxCsRRL1Ovd/ghVMXiW3+czkvJw="/>
+        <field:display field="property1" id="s_fr_imag_professionalinfo_domain_Personne_Property1" object="${personne}" z="azZWzWiojM4Chq+s7OecfcZ/k0k="/>
+        <field:display field="nombreTotalPositionsCourantes" id="s_fr_imag_professionalinfo_domain_Personne_NombreTotalPositionsCourantes" object="${personne}" z="BjWIsV5MWrZRJFdw9aWJcz6YLr8="/>
+        <field:display field="URLComplete" id="s_fr_imag_professionalinfo_domain_Personne_URLComplete" object="${personne}" z="GoX0oy+ylo3azqwo2uhxFJvK6as="/>
+        <field:display field="nombreConnexionsPlafonne" id="s_fr_imag_professionalinfo_domain_Personne_NombreConnexionsPlafonne" object="${personne}" z="wXFpyUWtJNNS/isPTgSmj7LoATo="/>
+        <field:display field="nomDeJeuneFille" id="s_fr_imag_professionalinfo_domain_Personne_NomDeJeuneFille" object="${personne}" z="BL0upfpsRErLgSI6r+7f4Hx8bOs="/>
+        <field:display field="codeLieu" id="s_fr_imag_professionalinfo_domain_Personne_CodeLieu" object="${personne}" z="iQi9FxDq8mPn7FdgdVKXSBS6i8s="/>
+        <field:display field="titreAPIValeur" id="s_fr_imag_professionalinfo_domain_Personne_TitreAPIValeur" object="${personne}" z="lfW2NsL6dT8TGtoSD7hBoY+BHpg="/>
+        <field:display field="reactionAuxOffres" id="s_fr_imag_professionalinfo_domain_Personne_ReactionAuxOffres" object="${personne}" z="VmdaWVBsZGDQJ7caP6DcTnlt1rU="/>
+        <field:display field="URLAPI" id="s_fr_imag_professionalinfo_domain_Personne_URLAPI" object="${personne}" z="yBLD8Unw6H+mWKK4Ng1Lf4C7/bI="/>
+        <field:display field="entitesSuivies" id="s_fr_imag_professionalinfo_domain_Personne_EntitesSuivies" object="${personne}" z="cYWX4LUIJAUSfpNPTMIIJf8XhhA="/>
+        <field:display field="URLLinkedInAuth" id="s_fr_imag_professionalinfo_domain_Personne_URLLinkedInAuth" object="${personne}" z="PLKPxPncDyjsqOE/p/a/9RUOvw8="/>
+        <field:display field="adresse" id="s_fr_imag_professionalinfo_domain_Personne_Adresse" object="${personne}" z="QV2RYJnhXjqZzS0+OAdu0TkPIYE="/>
+        <field:display field="property2" id="s_fr_imag_professionalinfo_domain_Personne_Property2" object="${personne}" z="wT/zXde2U70v7IItHPgEr94OXGc="/>
+        <field:display field="id2" id="s_fr_imag_professionalinfo_domain_Personne_Id2" object="${personne}" z="fY+8Bg8QOZUQsRju8b7ZyBdSNAs="/>
+        <field:display field="reseau" id="s_fr_imag_professionalinfo_domain_Personne_Reseau" object="${personne}" z="7Es8X2DPwRAffrXk9bY0JAlYgKQ="/>
+        <field:display field="titre" id="s_fr_imag_professionalinfo_domain_Personne_Titre" object="${personne}" z="UeZvnVjBtVpOHHqrpapwBSI60ig="/>
+        <field:display field="relationVisiteurDistance" id="s_fr_imag_professionalinfo_domain_Personne_RelationVisiteurDistance" object="${personne}" z="4ozOATMxsRDsS61wF92+o+5xKhc="/>
+        <field:display field="prenom" id="s_fr_imag_professionalinfo_domain_Personne_Prenom" object="${personne}" z="2n9tUe/takVIxpXXfauodSm4nbU="/>
+        <field:display field="nombreTotalConnexions" id="s_fr_imag_professionalinfo_domain_Personne_NombreTotalConnexions" object="${personne}" z="gkWufHxA0+lMBt6QdoSdTDPZU6Q="/>
+        <field:display field="nombreTotalEtablissementsFormation" id="s_fr_imag_professionalinfo_domain_Personne_NombreTotalEtablissementsFormation" object="${personne}" z="RsAyaZtpe7/1R/6lep111utfee0="/>
+        <field:display field="nombreTotalPositions" id="s_fr_imag_professionalinfo_domain_Personne_NombreTotalPositions" object="${personne}" z="BnI90LhJy1bNgO0skl62P9MSdw4="/>
+        <field:display field="associations" id="s_fr_imag_professionalinfo_domain_Personne_Associations" object="${personne}" z="GEog/XKN63V9QIL662qCabsXBLQ="/>
+        <field:display field="nomFormate" id="s_fr_imag_professionalinfo_domain_Personne_NomFormate" object="${personne}" z="HH6EHg/aY+4pH5DsLHs9LPldAqw="/>
+        <field:display field="titreAPINom" id="s_fr_imag_professionalinfo_domain_Personne_TitreAPINom" object="${personne}" z="v3riss5poodVnF1YmU7h+7ljZco="/>
+        <field:display field="prenomPhonetique" id="s_fr_imag_professionalinfo_domain_Personne_PrenomPhonetique" object="${personne}" z="rvzckKXlxnBpIpigWKAx+bsFzm0="/>
+        <field:display field="nomPhonetiqueFormate" id="s_fr_imag_professionalinfo_domain_Personne_NomPhonetiqueFormate" object="${personne}" z="IqH78uoN49ZNDer1to4Mdosy8rY="/>
+        <field:display field="property3" id="s_fr_imag_professionalinfo_domain_Personne_Property3" object="${personne}" z="CoVsDzbt1InUl1ORdEqHcOx0sqE="/>
+        <field:display field="groupes" id="s_fr_imag_professionalinfo_domain_Personne_Groupes" object="${personne}" z="j7MxLmeviO8us45A2c4J+/gGPEM="/>
+        <field:display field="relationVisiteurConnexion" id="s_fr_imag_professionalinfo_domain_Personne_RelationVisiteurConnexion" object="${personne}" z="m3Y6zmJm7KRhtF/udO3/Eixa6+0="/>
+        <field:display date="true" dateTimePattern="${personne_datedenaissance_date_format}" field="dateDeNaissance" id="s_fr_imag_professionalinfo_domain_Personne_DateDeNaissance" object="${personne}" z="1Q0wE7MVGN5ttRX8on6IAtvJkTU="/>
+        <field:display field="nombreRecommandations" id="s_fr_imag_professionalinfo_domain_Personne_NombreRecommandations" object="${personne}" z="6kHRlSzVAfGIKuHEpZ5b6peXLCU="/>
+        <field:display field="nombreTotalPositionsPassees" id="s_fr_imag_professionalinfo_domain_Personne_NombreTotalPositionsPassees" object="${personne}" z="zAVIjpp4WpyjnDmjPh1SYL1dbGA="/>
+        <field:display field="tempsDerniereModifProfil" id="s_fr_imag_professionalinfo_domain_Personne_TempsDerniereModifProfil" object="${personne}" z="64tVh+U+QKoH1HlpbNrYntQAvMk="/>
+        <field:display field="partageCourant" id="s_fr_imag_professionalinfo_domain_Personne_PartageCourant" object="${personne}" z="z+ZiR+p29E1Je3ZqrZENOQs1o0A="/>
+        <field:display field="URLNom" id="s_fr_imag_professionalinfo_domain_Personne_URLNom" object="${personne}" z="UK0w2BWDGbgD9Ojmq2LnZ7eDfpo="/>
+        <field:display field="nom" id="s_fr_imag_professionalinfo_domain_Personne_Nom" object="${personne}" z="+ErcJUgaBFHTXWH/nj/QSG1j3Do="/>
+        <field:display field="distance" id="s_fr_imag_professionalinfo_domain_Personne_Distance" object="${personne}" z="vb0n302P6n0+0wAMK05s/gZgfc4="/>
+        <field:display field="relationVisiteurLien" id="s_fr_imag_professionalinfo_domain_Personne_RelationVisiteurLien" object="${personne}" z="YQHmx5YQig6dPVYY5PJ02/xniTo="/>
+        <field:display field="URLLinkedInPublic" id="s_fr_imag_professionalinfo_domain_Personne_URLLinkedInPublic" object="${personne}" z="Lwwfk2MQ+kR88Y8TwrDfHnQmzJg="/>
+        <field:display field="etablissement" id="s_fr_imag_professionalinfo_domain_Personne_Etablissement" object="${personne}" z="ITNZ0OPYf9xCPuh0YFxoqxuxaJA="/>
+        <field:display field="connexions" id="s_fr_imag_professionalinfo_domain_Personne_Connexions" object="${personne}" z="zYW6KeaXitBK3kY6LLOSOn4W5/I="/>
+        <field:display field="nombreTotalExperiencesVolontariat" id="s_fr_imag_professionalinfo_domain_Personne_NombreTotalExperiencesVolontariat" object="${personne}" z="fX4C4/D0BGDUW4nCPG5/nPotffg="/>
+        <field:display field="property4" id="s_fr_imag_professionalinfo_domain_Personne_Property4" object="${personne}" z="R3wNTxvypcNxcSa8rQsS6g0lLqw="/>
+        <field:display field="jobsSuivis" id="s_fr_imag_professionalinfo_domain_Personne_JobsSuivis" object="${personne}" z="CgGN8PdgqHqh0QpQxHl75HGfQ7w="/>
+        <field:display field="suggestionsSuivis" id="s_fr_imag_professionalinfo_domain_Personne_SuggestionsSuivis" object="${personne}" z="OqfhxBqZONfKfZdugQp1pBjIVyk="/>
+        <field:display field="URLPartagees" id="s_fr_imag_professionalinfo_domain_Personne_URLPartagees" object="${personne}" z="p8hasrLQcov7xy06rsvGPIZz9Y8="/>
+        <field:display field="URLPhoto" id="s_fr_imag_professionalinfo_domain_Personne_URLPhoto" object="${personne}" z="lidIVlmD0OQ0OsIMn959moRgoX8="/>
+        <field:display field="email" id="s_fr_imag_professionalinfo_domain_Personne_Email" object="${personne}" z="9VaH4lSRYiPIe9DXM+ZpzHyBO48="/>
+        <field:display field="nomPhonetique" id="s_fr_imag_professionalinfo_domain_Personne_NomPhonetique" object="${personne}" z="lNwb24z/N5dlehrpVlBQ7qnLQuA="/>
+        <field:display field="nombreTotalCours" id="s_fr_imag_professionalinfo_domain_Personne_NombreTotalCours" object="${personne}" z="3kUh2AEjshPLMnZj4H4xuLLIKJk="/>
+        <field:display field="nombreConnexions" id="s_fr_imag_professionalinfo_domain_Personne_NombreConnexions" object="${personne}" z="ghyMyWY/FVZj/eEiQy6nnuzIs6w="/>
+        <field:display field="interets" id="s_fr_imag_professionalinfo_domain_Personne_Interets" object="${personne}" z="y9Wxb/1m98KryEIrXxBd9FQBnuw="/>
+        <field:display field="experiencePersonne" id="s_fr_imag_professionalinfo_domain_Personne_ExperiencePersonne" object="${personne}" z="GIJQs4gs4X73Yf4/a6Sl6Z2L1eA="/>
+        <field:display field="positionEntreprise" id="s_fr_imag_professionalinfo_domain_Personne_PositionEntreprise" object="${personne}" z="Kz9lQshvlnDxLZCtECjd74mjOgM="/>
+        <field:display field="autresProfilsVisites" id="s_fr_imag_professionalinfo_domain_Personne_AutresProfilsVisites" object="${personne}" z="KKrjFCBc4wXraQ42VLI2LxnmpcM="/>
+        <field:display field="niveauCours" id="s_fr_imag_professionalinfo_domain_Personne_NiveauCours" object="${personne}" z="uCTU3qKBbf/9hUrS0uD+qcbXcRM="/>
+        <field:display field="telephoneLie" id="s_fr_imag_professionalinfo_domain_Personne_TelephoneLie" object="${personne}" z="prF/CmMVsb3+2mbdWYs08EGguUM="/>
+        <field:display field="publicationPersonne" id="s_fr_imag_professionalinfo_domain_Personne_PublicationPersonne" object="${personne}" z="3Wc6vIVoWF6PQibpArpZDLzfNCo="/>
+        <field:display field="competencePersonne" id="s_fr_imag_professionalinfo_domain_Personne_CompetencePersonne" object="${personne}" z="1HizLREzIXlgGWd1vu3+D2i/LZI="/>
+        <field:display field="niveauCertification" id="s_fr_imag_professionalinfo_domain_Personne_NiveauCertification" object="${personne}" z="pTXph978WmJhSGnI3DdwvkYQF/4="/>
+        <field:display field="compteTwitterAssocie" id="s_fr_imag_professionalinfo_domain_Personne_CompteTwitterAssocie" object="${personne}" z="OigcleeZ0L2fNYjhLaTYce1o0C8="/>
+        <field:display field="messageriePersonnelle" id="s_fr_imag_professionalinfo_domain_Personne_MessageriePersonnelle" object="${personne}" z="xwW7O7h2+7kuBR6CqUmEhSxeTWI="/>
+        <field:display field="languesParlees" id="s_fr_imag_professionalinfo_domain_Personne_LanguesParlees" object="${personne}" z="Jc7k9kygg4EP1QtYFS9EPsJ1++Y="/>
+        <field:display field="brevetsObtenus" id="s_fr_imag_professionalinfo_domain_Personne_BrevetsObtenus" object="${personne}" z="c8pmuC/A6bQrrMhi4kw1bNjY71Q="/>
+        <field:display field="niveauEducation" id="s_fr_imag_professionalinfo_domain_Personne_NiveauEducation" object="${personne}" z="dykOflFfF1NvtEkDCjqpGV0txwE="/>
+    </page:show>
+</div>

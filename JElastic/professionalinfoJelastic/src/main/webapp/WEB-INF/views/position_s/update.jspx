@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_fr_imag_professionalinfo_domain_Position_" modelAttribute="position_" path="/position_s" versionField="Version" z="FBjOJu3T0iVEVm1aD0slDM8S/PU=">
+        <field:input field="Resume" id="c_fr_imag_professionalinfo_domain_Position__Resume" max="0" min="0" required="true" z="iErO2kSs0vibgt1G3IhMYVgpGQo="/>
+        <field:datetime dateTimePattern="${position__datefin_date_format}" field="DateFin" id="c_fr_imag_professionalinfo_domain_Position__DateFin" z="HYUTmloctzn0EuXAnuhae0G5Vdc="/>
+        <field:input field="PositionActuelle" id="c_fr_imag_professionalinfo_domain_Position__PositionActuelle" z="pCQFBq/IiyPqGemyvMPO0AL0mDE="/>
+        <field:datetime dateTimePattern="${position__datedebut_date_format}" field="DateDebut" id="c_fr_imag_professionalinfo_domain_Position__DateDebut" z="IS51sNAa4v6JotCSslgJGIyz890="/>
+        <field:input field="Id2" id="c_fr_imag_professionalinfo_domain_Position__Id2" z="W32U4THcAq1ARWFlk56hhLp5i9o="/>
+        <field:input field="Titre" id="c_fr_imag_professionalinfo_domain_Position__Titre" max="0" min="0" required="true" z="4EnocFVPQ3+k/IM+KaIrC18z2I8="/>
+        <field:select field="SituationHierarchique" id="c_fr_imag_professionalinfo_domain_Position__SituationHierarchique" itemValue="id" items="${entreprises}" path="/entreprises" z="7j9yP6LeP/9E5CU54aBjdS0I3Bk="/>
+    </form:update>
+</div>

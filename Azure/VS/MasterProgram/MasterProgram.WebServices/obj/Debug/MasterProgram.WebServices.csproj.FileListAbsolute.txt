@@ -3,3 +3,8 @@ C:\Users\Valiani\Documents\Visual Studio 2012\Projects\MasterProgram\MasterProgr
 C:\Users\Valiani\Documents\Visual Studio 2012\Projects\MasterProgram\MasterProgram.WebServices\bin\MasterProgram.WebServices.pdb
 C:\Users\Valiani\Documents\Visual Studio 2012\Projects\MasterProgram\MasterProgram.WebServices\obj\Debug\MasterProgram.WebServices.dll
 C:\Users\Valiani\Documents\Visual Studio 2012\Projects\MasterProgram\MasterProgram.WebServices\obj\Debug\MasterProgram.WebServices.pdb
+C:\Users\Valiani\Documents\4_IF\Stage_4IF\Clouds\Azure\VS\MasterProgram\MasterProgram.WebServices\bin\MasterProgram.WebServices.dll
+C:\Users\Valiani\Documents\4_IF\Stage_4IF\Clouds\Azure\VS\MasterProgram\MasterProgram.WebServices\bin\MasterProgram.WebServices.pdb
+C:\Users\Valiani\Documents\4_IF\Stage_4IF\Clouds\Azure\VS\MasterProgram\MasterProgram.WebServices\obj\Debug\MasterProgram.WebServices.dll
+C:\Users\Valiani\Documents\4_IF\Stage_4IF\Clouds\Azure\VS\MasterProgram\MasterProgram.WebServices\obj\Debug\MasterProgram.WebServices.pdb
+C:\Users\Valiani\Documents\4_IF\Stage_4IF\Clouds\Azure\VS\MasterProgram\MasterProgram.WebServices\obj\Debug\MasterProgram.WebServices.csprojResolveAssemblyReference.cache

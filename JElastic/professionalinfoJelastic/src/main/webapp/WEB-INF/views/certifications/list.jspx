@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_fr_imag_professionalinfo_domain_Certification" items="${certifications}" z="qRDJxJazDQfXHg8iGVt2WFCxGlM=">
+        <table:table data="${certifications}" id="l_fr_imag_professionalinfo_domain_Certification" path="/certifications" z="kHqlZeXhdnOrJLT/+i4nehMRrm4=">
+            <table:column id="c_fr_imag_professionalinfo_domain_Certification_NumeroDeLicence" property="numeroDeLicence" z="kmykX07uGUy36DfuhOxKJzUaNlg="/>
+            <table:column id="c_fr_imag_professionalinfo_domain_Certification_AutoriteDeCertification" property="autoriteDeCertification" z="oXvWzT8YDbckmlxtW1s7kywM1Ok="/>
+            <table:column id="c_fr_imag_professionalinfo_domain_Certification_Id2" property="id2" z="W5dqiaxRr4JXXS0GI2O/Ml7Ab7U="/>
+            <table:column date="true" dateTimePattern="${certification_expiration_date_format}" id="c_fr_imag_professionalinfo_domain_Certification_Expiration" property="expiration" z="2G95IQBMpEIw4vDDb15rBMtrNvM="/>
+            <table:column date="true" dateTimePattern="${certification_obtention_date_format}" id="c_fr_imag_professionalinfo_domain_Certification_Obtention" property="obtention" z="rt3O+9FZgiyF5fHhfxx2M1iHxMA="/>
+            <table:column id="c_fr_imag_professionalinfo_domain_Certification_Nom" property="nom" z="R50bcsgf1TOZZQkcPO0njXzWK74="/>
+        </table:table>
+    </page:list>
+</div>

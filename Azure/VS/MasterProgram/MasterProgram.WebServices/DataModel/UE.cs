@@ -7,7 +7,7 @@ namespace MasterProgram.WebServices.DataModel
 {
     public class UniteEnseignement
     {
-        public int IdUE;
+        public String IdUE;
         public String Intitule;
         public String Descriptif;
         public int Semestre;

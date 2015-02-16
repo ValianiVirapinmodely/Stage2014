@@ -7,7 +7,7 @@ namespace MasterProgram.WebServices.DataModel
 {
     public class Matiere
     {
-        public int IdMatiere;
+        public String IdMatiere;
         public String Intitule;
         public int NbCM;
         public int NbTD;

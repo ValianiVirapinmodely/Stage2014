@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_fr_imag_professionalinfo_domain_Brevet" object="${brevet}" path="/brevets" z="um8mK+TwZsKb+EU3oNwVQvzQEdQ=">
+        <field:display date="true" dateTimePattern="${brevet_dateattribution_date_format}" field="dateAttribution" id="s_fr_imag_professionalinfo_domain_Brevet_DateAttribution" object="${brevet}" z="yAtejf0umD33R3xEcfADuBO9vDs="/>
+        <field:display field="titre" id="s_fr_imag_professionalinfo_domain_Brevet_Titre" object="${brevet}" z="l06NDSvDfHl7Fs77Ay2Qj9UlcLk="/>
+        <field:display field="numero" id="s_fr_imag_professionalinfo_domain_Brevet_Numero" object="${brevet}" z="O8XL2iLIVXQr7mpP2uePtqPCsHk="/>
+        <field:display field="id2" id="s_fr_imag_professionalinfo_domain_Brevet_Id2" object="${brevet}" z="59i7ARCI9BRzLadZAANRdnCsNM0="/>
+        <field:display field="URLBrevet" id="s_fr_imag_professionalinfo_domain_Brevet_URLBrevet" object="${brevet}" z="h+GaSQBnXP84Pi1Nr0YxCmDalC8="/>
+        <field:display field="intituleStatut" id="s_fr_imag_professionalinfo_domain_Brevet_IntituleStatut" object="${brevet}" z="DuzOqrDTQtJf7C87i4aoB4wtsQY="/>
+        <field:display field="statut" id="s_fr_imag_professionalinfo_domain_Brevet_Statut" object="${brevet}" z="OyGfLedx2c9sssZ/zMVvwjiWDWs="/>
+        <field:display field="resume" id="s_fr_imag_professionalinfo_domain_Brevet_Resume" object="${brevet}" z="6xg6nWp2HbDr22JytpE3lBbx1xg="/>
+        <field:display field="brevetOrganisme" id="s_fr_imag_professionalinfo_domain_Brevet_BrevetOrganisme" object="${brevet}" z="sD0kaR3UgeemLKiMeZuQUTXl8vw="/>
+        <field:display field="brevetInventeur" id="s_fr_imag_professionalinfo_domain_Brevet_BrevetInventeur" object="${brevet}" z="E01qS6CdXGW5DC0N9XwsnuU01Fo="/>
+    </page:show>
+</div>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_fr_imag_professionalinfo_domain_ExperienceVolontaire" object="${experiencevolontaire}" path="/experiencevolontaires" z="GkPiOE3aykHPHrXPn9HH/9Vw+Kk=">
+        <field:display field="organisation" id="s_fr_imag_professionalinfo_domain_ExperienceVolontaire_Organisation" object="${experiencevolontaire}" z="F0vunkNuXX+E+u1aSfzhkD9pTXQ="/>
+        <field:display field="cause" id="s_fr_imag_professionalinfo_domain_ExperienceVolontaire_Cause" object="${experiencevolontaire}" z="DCze07dX0a00mHwbRfJd+vWm7Y8="/>
+        <field:display field="id2" id="s_fr_imag_professionalinfo_domain_ExperienceVolontaire_Id2" object="${experiencevolontaire}" z="CL61LVKW3O9GgXEVphl48BhWbEM="/>
+        <field:display field="fonction" id="s_fr_imag_professionalinfo_domain_ExperienceVolontaire_Fonction" object="${experiencevolontaire}" z="hA77TOyGLXU5fb+lLJxQgntjq5U="/>
+    </page:show>
+</div>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_fr_imag_professionalinfo_domain_Secteur" items="${secteurs}" z="WGrGEmx8gw038YOqoFCcv1GDSaI=">
+        <table:table data="${secteurs}" id="l_fr_imag_professionalinfo_domain_Secteur" path="/secteurs" z="8rFCWSWwXXc1pdQWTGhlKuQ6hd4=">
+            <table:column id="c_fr_imag_professionalinfo_domain_Secteur_Id2" property="id2" z="SrkAGQZbeuhgg7KroM1M4vFBXOo="/>
+            <table:column id="c_fr_imag_professionalinfo_domain_Secteur_Nom" property="nom" z="MOVZe3xTGwk1ryCdHw7A6/aquzs="/>
+        </table:table>
+    </page:list>
+</div>

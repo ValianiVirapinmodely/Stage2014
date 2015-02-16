@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_fr_imag_professionalinfo_domain_Position_" items="${position_s}" z="a7xDA7lr6TjAdV9NDBzqPxJ2D9s=">
+        <table:table data="${position_s}" id="l_fr_imag_professionalinfo_domain_Position_" path="/position_s" z="f2L/Zm07JKrnbZbEUskLO+EInx4=">
+            <table:column id="c_fr_imag_professionalinfo_domain_Position__Resume" property="resume" z="qDo6Co2EyTTauY2qaeWRK+xir5s="/>
+            <table:column date="true" dateTimePattern="${position__datefin_date_format}" id="c_fr_imag_professionalinfo_domain_Position__DateFin" property="dateFin" z="evqaurQ+5I1//m9sWcHsjRwKXhU="/>
+            <table:column id="c_fr_imag_professionalinfo_domain_Position__PositionActuelle" property="positionActuelle" z="Ds3Z2QZelzvej7ZjRC+hi3m2wFg="/>
+            <table:column date="true" dateTimePattern="${position__datedebut_date_format}" id="c_fr_imag_professionalinfo_domain_Position__DateDebut" property="dateDebut" z="aCG0bMC+12jdLSG3AN49uhG9j/0="/>
+            <table:column id="c_fr_imag_professionalinfo_domain_Position__Id2" property="id2" z="PbHBQMThQskjw45UCXb46Z47a9o="/>
+            <table:column id="c_fr_imag_professionalinfo_domain_Position__Titre" property="titre" z="gAAQZIfao+zXvoyaYdfmUgWqCnQ="/>
+        </table:table>
+    </page:list>
+</div>

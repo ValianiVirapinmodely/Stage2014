@@ -17,13 +17,13 @@ namespace MasterProgram.WebServices
         Diplome getDiplome(String IdDiplome);
 
         [OperationContract]
-        UniteEnseignement getUE(int IdUE);
+        UniteEnseignement getUE(String IdUE);
 
         [OperationContract]
-        Module getModule(int IdModule);
+        Module getModule(String IdModule);
 
         [OperationContract]
-        Matiere getMatiere(int IdMatiere);
+        Matiere getMatiere(String IdMatiere);
 
         [OperationContract]
         List<Diplome> getAllDiplomes();
@@ -36,7 +36,6 @@ namespace MasterProgram.WebServices
 
         [OperationContract]
         List<Matiere> getAllMatieres();
-
 
     }
 }

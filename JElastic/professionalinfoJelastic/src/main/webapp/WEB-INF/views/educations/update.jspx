@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_fr_imag_professionalinfo_domain_Education" modelAttribute="education" path="/educations" versionField="Version" z="U1Xu7rJPiXPgpDycnjb6jNBEQ88=">
+        <field:input field="AutresDetails" id="c_fr_imag_professionalinfo_domain_Education_AutresDetails" max="0" min="0" required="true" z="O0aunvWGhPpHikNR76jCCwHmdJ0="/>
+        <field:datetime dateTimePattern="${education_datedebut_date_format}" field="DateDebut" id="c_fr_imag_professionalinfo_domain_Education_DateDebut" z="7KMiG9LDWQ+ad9TUhfbzeul3aKQ="/>
+        <field:input field="Diplome" id="c_fr_imag_professionalinfo_domain_Education_Diplome" max="0" min="0" required="true" z="Eq3n6SdXIio8WLQJhQGHRqf5DDM="/>
+        <field:input field="Secteur" id="c_fr_imag_professionalinfo_domain_Education_Secteur" max="0" min="0" required="true" z="ogiRDdR36SbbW52JFOduhjx9m/k="/>
+        <field:input field="NomEcole" id="c_fr_imag_professionalinfo_domain_Education_NomEcole" max="0" min="0" required="true" z="utHkhbcvybmZtca+QS3rPNKaI3k="/>
+        <field:input field="Id2" id="c_fr_imag_professionalinfo_domain_Education_Id2" z="CzRoIhScIPJwZc9FmRuD5mfrw3Y="/>
+        <field:datetime dateTimePattern="${education_datefin_date_format}" field="DateFin" id="c_fr_imag_professionalinfo_domain_Education_DateFin" z="e2x8oJGZrreHMx+ZiJ9oF7jq+QQ="/>
+        <field:input field="Activites" id="c_fr_imag_professionalinfo_domain_Education_Activites" max="0" min="0" required="true" z="v9wDrOu2PSNvyuZ8YojwNFF4h/c="/>
+    </form:update>
+</div>

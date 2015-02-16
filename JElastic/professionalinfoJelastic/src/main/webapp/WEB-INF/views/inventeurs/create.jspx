@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_fr_imag_professionalinfo_domain_Inventeur" modelAttribute="inventeur" path="/inventeurs" render="${empty dependencies}" z="iVjGsvU42MqvmDA2e5f/Zu0qdmw=">
+        <field:input field="Id2" id="c_fr_imag_professionalinfo_domain_Inventeur_Id2" z="Fa/97IBisAWgOMyJ9RBFtNpl1HY="/>
+        <field:input field="Nom" id="c_fr_imag_professionalinfo_domain_Inventeur_Nom" max="0" min="0" required="true" z="iqPBYh7+9UdyqUNW5UXYIRK5giI="/>
+        <field:select field="InventeurProfil" id="c_fr_imag_professionalinfo_domain_Inventeur_InventeurProfil" itemValue="id" items="${personnes}" path="/personnes" z="gB1XaFEbrCgkO+padqTBgSq0+yY="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_fr_imag_professionalinfo_domain_Inventeur" render="${not empty dependencies}" z="zK6AvIx8V3Eg58gtrHSHzZ3Rq30="/>
+</div>

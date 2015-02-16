@@ -27,7 +27,11 @@ CREATE TABLE formation.MODULES
 CREATE TABLE formation.MATIERE
 (
 	IdMatiere NVARCHAR(20) PRIMARY KEY,
-	Intitule NVARCHAR(150)
+	Intitule NVARCHAR(150), 
+    NbCM integer,
+    NbTD integer,
+    NbTP integer,
+    IdModules NVARCHAR(20) REFERENCES formation.MODULES(IdModules)
 );
 
 CREATE TABLE formation.CONSTITUTION_DIPLOME
@@ -37,13 +41,4 @@ CREATE TABLE formation.CONSTITUTION_DIPLOME
     PRIMARY KEY (IdDiplome,IdUE)
 );
 
-CREATE TABLE formation.CONSTITUTION_MODULES
-(
-    IdModules NVARCHAR(20) REFERENCES formation.MODULES(IdModules),
-    IdMatiere NVARCHAR(20) REFERENCES formation.MATIERE(IdMatiere),
-    NbCM integer,
-	NbTD integer,
-    NbTP integer, 
-    PRIMARY KEY (IdModules,IdMatiere)
-);
 GO

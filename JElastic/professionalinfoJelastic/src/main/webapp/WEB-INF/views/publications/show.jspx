@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_fr_imag_professionalinfo_domain_Publication" object="${publication}" path="/publications" z="dWTcahTDOWMXoHfDM3poPuLeWFI=">
+        <field:display date="true" dateTimePattern="${publication_datepublication_date_format}" field="datePublication" id="s_fr_imag_professionalinfo_domain_Publication_DatePublication" object="${publication}" z="3NUflomKhO5uypBkkfRYVeX2XwU="/>
+        <field:display field="titre" id="s_fr_imag_professionalinfo_domain_Publication_Titre" object="${publication}" z="px0Ybmy+V1CLQslQ2ceUFBmiPYk="/>
+        <field:display field="resume" id="s_fr_imag_professionalinfo_domain_Publication_Resume" object="${publication}" z="FdnHkoYuVA8g5npecnojwXaH4N0="/>
+        <field:display field="editeur" id="s_fr_imag_professionalinfo_domain_Publication_Editeur" object="${publication}" z="9+TVoBWhlenCb2SQ9RYFoueE+AY="/>
+        <field:display field="id2" id="s_fr_imag_professionalinfo_domain_Publication_Id2" object="${publication}" z="jz1bBZNJDm6SGSdQdKlE85QyKKM="/>
+        <field:display field="URL" id="s_fr_imag_professionalinfo_domain_Publication_URL" object="${publication}" z="Agks+zGqheUgRXx30A5zOfNYfB4="/>
+        <field:display field="publicationDeAuteur" id="s_fr_imag_professionalinfo_domain_Publication_PublicationDeAuteur" object="${publication}" z="otCbRvyRorfscTD2YWeJ3LTJP+M="/>
+    </page:show>
+</div>

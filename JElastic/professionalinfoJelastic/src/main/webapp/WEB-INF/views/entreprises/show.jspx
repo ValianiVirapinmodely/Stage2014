@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_fr_imag_professionalinfo_domain_Entreprise" object="${entreprise}" path="/entreprises" z="Y7Z/mmspoP6hJ76I8jGEKKofBMs=">
+        <field:display field="type" id="s_fr_imag_professionalinfo_domain_Entreprise_Type" object="${entreprise}" z="4eOHnoBABG9Th6Q58Pq7BBTNfpY="/>
+        <field:display field="secteur" id="s_fr_imag_professionalinfo_domain_Entreprise_Secteur" object="${entreprise}" z="WGMXNQZH9IF3njqSkeZuWIclrkU="/>
+        <field:display field="nomBourse" id="s_fr_imag_professionalinfo_domain_Entreprise_NomBourse" object="${entreprise}" z="Aq7gBiN3cCab8gqv8Nht2KMldpg="/>
+        <field:display field="id2" id="s_fr_imag_professionalinfo_domain_Entreprise_Id2" object="${entreprise}" z="DSttMFewW8yKLqipl6owJB8o2+E="/>
+        <field:display field="nombreEmployes" id="s_fr_imag_professionalinfo_domain_Entreprise_NombreEmployes" object="${entreprise}" z="K3Fn6mgFII1XkZR3Oj29lfrVIMY="/>
+        <field:display field="nomOfficiel" id="s_fr_imag_professionalinfo_domain_Entreprise_NomOfficiel" object="${entreprise}" z="NXoplJyb9TfjRbUAliKPKmaGNTM="/>
+        <field:display field="secteurEntreprise" id="s_fr_imag_professionalinfo_domain_Entreprise_SecteurEntreprise" object="${entreprise}" z="cmlgfTppREqYXOLialZV4pgRago="/>
+    </page:show>
+</div>

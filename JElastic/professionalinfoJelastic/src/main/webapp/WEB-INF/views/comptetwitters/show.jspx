@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_fr_imag_professionalinfo_domain_CompteTwitter" object="${comptetwitter}" path="/comptetwitters" z="HNIi0NwDGxhYgDLOTO6lL8vz8dA=">
+        <field:display field="id2" id="s_fr_imag_professionalinfo_domain_CompteTwitter_Id2" object="${comptetwitter}" z="m6oJwC8lq6vY2fkXLdlP2AcClDs="/>
+        <field:display field="estPrimaire" id="s_fr_imag_professionalinfo_domain_CompteTwitter_EstPrimaire" object="${comptetwitter}" z="B8HzGnu5rq9ASrQl2vo+Ytb17Qc="/>
+        <field:display field="twitterFournisseur" id="s_fr_imag_professionalinfo_domain_CompteTwitter_TwitterFournisseur" object="${comptetwitter}" z="5T6VX5EGmYGhAhrtOhj3Pc8ZwPU="/>
+    </page:show>
+</div>

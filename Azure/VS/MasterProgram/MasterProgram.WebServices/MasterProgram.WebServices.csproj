@@ -61,8 +61,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MasterProgamDbService.svc" />
-    <Content Include="MasterProgramDB.sql" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataModel\Diplome.cs" />
@@ -96,7 +97,7 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerPort>49583</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:49553/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_fr_imag_professionalinfo_domain_Brevet" modelAttribute="brevet" path="/brevets" versionField="Version" z="hPBdaWkDl2S3JebLZSa47nN3vo4=">
+        <field:datetime dateTimePattern="${brevet_dateattribution_date_format}" field="DateAttribution" id="c_fr_imag_professionalinfo_domain_Brevet_DateAttribution" z="/DhBZHyHjNKy/qAFfb6WIyH03gI="/>
+        <field:input field="Titre" id="c_fr_imag_professionalinfo_domain_Brevet_Titre" max="0" min="0" required="true" z="hpGtrKvw83y+mH5t9I8jlDpyLLA="/>
+        <field:input field="Numero" id="c_fr_imag_professionalinfo_domain_Brevet_Numero" max="0" min="0" required="true" z="TM6Ibpyu23bBjKDsNnwgh7elUUE="/>
+        <field:input field="Id2" id="c_fr_imag_professionalinfo_domain_Brevet_Id2" z="bhn6geEV7nsZiANqm8/e4a9sgUU="/>
+        <field:input field="URLBrevet" id="c_fr_imag_professionalinfo_domain_Brevet_URLBrevet" max="0" min="0" required="true" z="qhm6Ykdwd4mw0VTFBAI8XoiocBE="/>
+        <field:input field="IntituleStatut" id="c_fr_imag_professionalinfo_domain_Brevet_IntituleStatut" z="VnWyPtgAF6oRRoFcqiQY1ZH8Yy4="/>
+        <field:input field="Statut" id="c_fr_imag_professionalinfo_domain_Brevet_Statut" z="2hOajG5eig4laDGy+Wstlz/R7iU="/>
+        <field:input field="Resume" id="c_fr_imag_professionalinfo_domain_Brevet_Resume" max="0" min="0" required="true" z="vJ7reKlUUUFTZjcPQ9pvBXQmrkw="/>
+        <field:select field="BrevetOrganisme" id="c_fr_imag_professionalinfo_domain_Brevet_BrevetOrganisme" itemValue="id" items="${organismes}" path="/organismes" z="6pZRe4Onz1WZZrcAA2ERxPhvVrk="/>
+        <field:select field="BrevetInventeur" id="c_fr_imag_professionalinfo_domain_Brevet_BrevetInventeur" itemValue="id" items="${inventeurs}" path="/inventeurs" z="DIlQ8C5WlEKq5jkoJt+Uf/fAIvM="/>
+    </form:update>
+</div>
